@@ -1,0 +1,6 @@
+założona kopia w githubie
+powiązanie przez stary klucz
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+lpUd6/A1UdcSTtp+w/EkfxnuZwBiz/V+g+SUtf+tL+Hm+cL4n9CU62NnA30gK7Sp5K+whWHl2yaGv113J7Obqec1KgIgxJ5eFI7xonUFYbB+VmIfqD2MNT4/pu02Vcq0Z5xILa0t2fPklCtw1LRylse5FD/QEHfjC5dbthKMPG1B4D/RqsqN56fvTE0xGpxODEisdi23epueh03lwm66y2IGwNZFZP5KQbrG6Qe0iIg4ZEg5lbiPTdmLtzyluir3iq5CM0WcMWig6gWsKem3rQRWhbrX6HokQ4BIOLHSwi9W5YZRaIrL/qEfEVHXye62y9fDyERXXmXUne2mm5q7 jacek@thinkpad
+
+kolejny backup:)
+https://github.com/CairnsAlasdair/creative_writing
