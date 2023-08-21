@@ -1,0 +1,4275 @@
+\documentclass[oneside,polish,11pt,sfheadings]{mwbk}
+%polonizacja
+\usepackage[T1]{fontenc}
+%\usepackage{times}
+%\usepackage{palatino}
+%\usepackage{bookman}
+\usepackage{utopia}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{polski} 
+\frenchspacing 
+\usepackage{indentfirst} 
+%koniec polonizacja
+%grafika
+\usepackage{graphicx}
+%pakiet czcionki
+\usepackage{times}
+\usepackage[a5paper]{geometry} %wielkość papieru (148x210-book w~PL)
+%gwiazdki
+\newcommand{\threeast}{\par\centerline{*\,*\,*}\medskip\par}
+
+%EPUB
+\usepackage[hyperfootnotes=true]{hyperref} 
+%move footnotes to endnotes
+%\usepackage{enotez}
+%\let\footnote=\endnote
+%\setenotez{
+%  list-name = Przypisy,
+%  backref = true
+%}
+
+%pdf anonimize
+%dla EPUB wykomentować
+%\pdfsuppressptexinfo=-1 %Suppress PTEX.Fullbanner and info of imported PDFs
+
+%pakiet odnośników i~pdf metadata
+%\usepackage[unicode, pdftex]{hyperref}
+%\hypersetup{pdfauthor={Errico Malatesta},
+%            pdftitle={W Kawiarni},
+%            pdfsubject={At the Cafe},
+%            pdfkeywords={tłum. Jacek Hummel, Creative Commons, tłumaczenie CC BY %4.0},
+%            pdfcreator={pdfLaTeX}}
+%dla EPUB koniec wykomentowania
+
+
+\begin{document}
+
+\title{W Kawiarni}
+\author{Errico Malatesta}
+
+
+%--titlepage start
+\DeclareRobustCommand{\cs}[1]{\texttt{\char`\\#1}}
+\newlength{\tpheight}\setlength{\tpheight}{0.9\textheight}
+\newlength{\txtheight}\setlength{\txtheight}{0.9\tpheight}
+\newlength{\tpwidth}\setlength{\tpwidth}{0.9\textwidth}
+\newlength{\txtwidth}\setlength{\txtwidth}{0.9\tpwidth}
+\newlength{\drop}
+\newcommand*{\titleSI}{\begingroup% Sagas
+\drop = 0.13\txtheight
+\centering
+{\Huge \textsf{~}}\\[1\baselineskip]
+{\huge \textsf{~}}\\[1\baselineskip]
+%{\LARGE  \textsf{~}}\\[4\baselineskip]
+{\Huge \textsc{W Kawiarni}}\\[1\baselineskip]
+{\LARGE \textsc{Dialogi o anarchizmie}}\\[2\baselineskip]
+{\huge \textsc{Errico Malatesta}}\\[4\baselineskip]
+{\large Na podstawie \href{libcom.org}{libcom.org} \\ przetłumaczył i~opracował:}\\
+{\Large \href{mailto:theskymyladythesky@zoho.eu}{Jacek Hummel}}\\[1\baselineskip]
+{\normalsize \textit{Tłumaczenie jest dostępne na licencji\\
+\href{https://creativecommons.org/licenses/by/4.0/deed.pl}{Creative Commons Uznanie autorstwa 4.0 Międzynarodowe}} \\ [1\baselineskip] \par}
+\includegraphics[scale=0.3]{CC.png}
+
+~
+
+\vfill
+{\Large {Warszawa, 2023}}\\
+%\vspace*{\drop}
+\endgroup}
+\titleSI
+\thispagestyle{empty}
+%--titlepage end
+
+\chapter*{Wstęp}
+ 
+
+
+
+Malatesta zaczął pisać serię dialogów, które się składają \begin{itshape}W kawiarni: dialogi o anarchizmie \end{itshape} w~marcu 1897 roku, kiedy ukrywał się w~Ankonie i~redagował czasopismo
+\textit{Agitacja}. Luigi Fabbri w~swojej relacji z~tego okresu, napisanej dla pełnego wydania zestawu dialogów z~1922 roku (\begin{itshape}Bologna, Edizioni di Volontà \end{itshape}), pod redakcją Malatesty
+(\begin{itshape}Przedruk, Torino, Sargraf,
+1961\end{itshape}), daje nam zwodniczy obraz Malatesty, gładko ogolonego dla przebrania, wychodzącego na
+miasto z~fajką w~ustach, uśmiechającego się bezczelnie do swoich przyjaciół, którzy dla jego bezpieczeństwa życzyli mu,
+żeby przebywał gdzie indziej. 
+
+ 
+Idea dialogów została mu zasugerowana przez fakt, że często bywał w~kawiarni, która zwykle nie była miejscem spotkań
+wywrotowców takich jak on. Rzeczywiście, jeden ze stałych bywalców, który był członkiem policji, zwykł angażować
+Malatestę w~rozmowę, oczywiście, jak zauważa Fabbri, nie mając pojęcia, że w~jego zasięgu znajduje się
+prawdziwa nagroda. Anarchizm prawie na pewno byłby jednym z~tematów rozmów, ponieważ anarchiści z~miasta nieustannie
+bombardowali swoich współmieszkańców propagandą, która wywoływała częste procesy sądowe. 
+
+ 
+Forma, jaką miały przybrać dialogi, została więc zaczerpnięta z~rzeczywistego miejsca i~z własnego doświadczenia
+Malatesty. Zaowocowało to narzędziem literackim doskonale pasującym do jego szczególnego geniuszu, jakim jest jego
+umiejętność przekładania złożonych idei na prosty język i~udostępniania ich bezpośrednio. Forma dialogu pozwoliła
+również Malatescie na debatę nad ideami jego przeciwników, poddając jednocześnie krytycznej analizie własne
+anarchistyczne poglądy, mając  na celu przekazanie czytelnikom ich politycznego znaczenia i~praktycznego zastosowania.
+Rzeczywiście, jedną z~mocnych stron dialogów jest brak słomianych ludzi. Badanie anarchizmu jest dociekliwe i~autentyczne, często podkreślające to, co przeciwnicy uznaliby za słabe i~wrażliwe punkty. To sprawia, że
+ zadziorna obrona Malatesty jest jeszcze bardziej imponująca. 
+
+ 
+Pod koniec 1897 roku Malatesta został zidentyfikowany i~odkryty przez policję w~Ankonie. Aresztowany, a następnie
+zwolniony. Natychmiast rozpoczął rundę wykładów, porzucając zarówno swój dziennik, jak i~niedokończone dialogi. W~1898
+r. został umieszczony w~areszcie domowym, a w~marcu 1899 r. uciekł za granicę, ponownie stając się uchodźcą. Dialogi
+pozostawały niedokończone od numeru dziesiątego i~w~tej formie zostały opublikowane, zarówno w~czasopismach i~jako
+broszura. 
+
+ 
+Głównymi propagandystami pierwszych dziesięciu dialogów są alter ego Malatesty, Giorgio, anarchista, Prospero, bogaty
+burżuj, Cesare, sklepikarz i~Ambrogio, sędzia. Malatesta jest zatem w~stanie odzwierciedlić szereg stanowisk
+politycznych i~poglądów zaczerpniętych z~szerokiego spektrum społeczeństwa. Jeśli Prospero opowiada się za bogactwem i~przywilejami, Cesare przemawia za mniejszymi właścicielami i~klasami średnimi. Wykazuje się świadomością problemów
+społecznych i~wydaje się podatny na perswazję Giorgia, ale też troskę o to, by żadne rozwiązanie nie mogło zakłócić
+istniejącego porządku społecznego. Ambrogio jest głosem prawa i~liberalnego państwa oraz akceptowanych idei dotyczących
+praw i~sprawiedliwości. Jest także, jako główny przeciwnik Giorgio, tym, który wyraża zdroworozsądkowe poglądy na temat
+ludzkiej natury i~ludzkich zachowań. Jego poglądy zawierają liberalny wyraz teorii praw, złagodzony przez to, co
+nazwałby uznaniem ograniczeń nałożonych na wolność przez nieuniknione dyktaty rzeczywistości. Rezultatem jest szerokie
+płótno, na którym Malatesta jest w~stanie, odpowiadając na różne punkty widzenia i~odpowiadając na liczne krytyki,
+jakie wywołują poglądy Giorgio, namalować umiejętnie narysowany i~szczegółowy anarchistyczny obraz świata. 
+
+ 
+Na stosunkowo krótkiej przestrzeni Malatesta przedstawia nam wszystkie podstawowe doktryny komunistycznego anarchizmu i~rozważa jeden po drugim wiele głównych zarzutów wobec jego stanowiska. Po zarysowaniu sceny, są to własność prywatna i~własność prawa, które stają się przedmiotem zainteresowania. W~Dialogach Drugim, Trzecim i~Czwartym argumentuje się, że
+przyczyny ubóstwa tkwią w~naturze systemu własności i~związanej z~nim struktury klasowej, przy czym następuje
+zdecydowany atak na prawo własności prywatnej i~system kapitalistyczny, z~incydentalnymi dyskusjami na temat Malthusa i~wolnego handlu. Jednocześnie wprowadzane są idee całkowitej zmiany ustroju własnościowego i~stworzenia społeczeństwa
+bez rządu. Pochodzenie własności i~praw własności jest rozważane w~Dialogu piątym, a Giorgio utrzymuje, że prawa
+własności muszą zostać zniesione, jeśli ma się uniknąć wyzysku. W~Dialogu szóstym przedstawiana jest sprawa wspólnej
+własności i~wprowadzana jest idea komunizmu. Dyskusja komunizmu trwa w~Dialogu Siódmym, sprzeciwiając się mu jako
+tyrańskiemu i~opresyjnemu systemowi, silnie podtrzymywanemu przez Ambrogio w~imię abstrakcyjnej wolności. Giorgio
+przeciwstawia się poprzez przedstawienie społeczeństwa anarchistycznego jako dobrowolnej, złożonej federacji
+stowarzyszeń, a przy okazji przeciwstawia anarchistyczną formę wolnego komunizmu tej ze szkoły autorytarnej. Dialog
+Ósmy przenosi uwagę na kwestię rządu i~państwa oraz tego, jak społeczeństwo może funkcjonować pod ich nieobecność.
+Zostaje także przedstawiona rozszerzona krytyka parlamentaryzmu i~reprezentacji oraz obrona anarchizmu jako porządku
+społecznego utrzymywanego przez dobrowolne porozumienie i~dobrowolną delegację. Spór jest kontynuowany w~następnym
+Dialogu (Dialog dziewiąty), gdzie ponownie wymienione zostają zarzuty wobec społeczeństwa bez rządu, a Giorgio dalej
+rozwija formę argumentu Kropotkina na temat uniwersalności wzajemnej pomocy, idei wprowadzonej po raz pierwszy w~Dialogu szóstym. Dyskurs Dziesięć zwraca się w~nowym kierunku, skupiając się na seksie, miłości i~rodzinie. Omawiając
+wiele kwestii związanych z~feminizmem, przekonująco odrzuca się wszelkie nieodłączne podstawy nierówności płci. 
+
+ 
+Dopiero 15 lat później, w~1913 roku, Malatesta powrócił do dialogów. W~tym czasie ponownie osiedlił się w~Ankonie i~rozpoczął publikację swojego nowego dziennika \begin{itshape}Volonta \end{itshape}. W~tej
+nowej publikacji ponownie wydał oryginalne dziesięć dialogów w~zredagowanej i~poprawionej formie oraz dodał cztery
+kolejne. Początkowo w~Dialogach Jedenastym i~Dwunastym to ponownie Cesare, Prospero i~Ambrogio są rozmówcami Giorgia.
+Kwestia przestępczości zostaje poruszona w~Dialogu Jedenastym. Jak radzimy sobie z~przestępcami pod nieobecność rządu,
+prawa, sądów czy więzień? Giorgio odpowiada, że sprawa ta musi być rozwiązywana wspólnie. Od tego momentu dyskusja
+przechodzi do kontrastu między pracą umysłową i~fizyczną oraz starym wątkiem, kto ma wykonywać prace, których nikt nie
+chce wykonywać. Czyż nie każda osoba  będzie chciała zostać poetą? Podana jest typowa odpowiedź, czyli rotacji  dobrowolna zadań
+i rozwijania wielu umiejętności przez członków społeczności. Dialog Dwunasty bada potrzebę rewolucji i~przedstawia
+argumenty za smutną koniecznością gwałtownej rewolucji, ponieważ istniejący porządek jest utrzymywany przez przemoc, a
+uprzywilejowane klasy nie zrezygnują z~władzy, dopóki nie zostanie ona wstrząśnięta. 
+
+ 
+W Dialogu trzynastym poznajemy nową postać, Vincenzo, młodego republikanina, i~wywiązuje się dyskusja na temat zalet i~ograniczeń republikańskiego podejścia do zmiany. Główna wada zostaje zidentyfikowana, mianowicie poleganie na rządzie i~systemach demokratycznej reprezentacji. Stwierdza się, że republikanizm nie jest tak radykalny, jak uważają jego
+zwolennicy, ponieważ pozostaje ofiarą zła istniejącego systemu politycznego. Ostatni dialog tej nowej serii (Dialog
+czternasty) powraca do tematu rewolucji. Giorgio podkreśla, że anarchizm w~swoim dążeniu do usunięcia państwa i~rządu
+jest nowym czynnikiem w~historii i~proponuje zmiany zupełnie inne i~głębsze niż poprzednie rewolucje, których celem
+była po prostu zmiana ustroju politycznego. 
+
+ 
+Po raz kolejny dialogi miały zostać przerwane przez wydarzenia polityczne. W~czerwcu 1914 roku, gdy zbierały się burzowe
+chmury i~wojny światowej, w~Marchii i~Romagna, w~tak zwanym Czerwonym Tygodniu. Malatesta był zaangażowany w~te
+popularne walki, w~wyniku czego został zmuszony do schronienia się w~Londynie. Minęło sześć lat i~Malatesta wrócił do
+Włoch, osiedlając się w~Mediolanie, gdzie redagował gazetę \begin{itshape}Umanita
+Nova \end{itshape}. Fabbri zauważa, że zbyt był zajęty, aby poświęcać uwagę starym dialogom i~nie
+zamierzał ich uzupełniać. Fabbri informuje nas jednak, że ktoś, kto spędził u niego dwa tygodnie jako gość, namówił go
+do kontynuowania projektu. Można by pomyśleć, że tajemniczym gościem był sam Fabbri. Rezultatem były kolejne trzy
+dialogi, raczej kontynuacja niż zakończenie, ponieważ nie ma oczywistego punktu zamknięcia. 
+
+ 
+W tych trzech ostatnich esejach Malatesta powraca się do niektórych starych tematów i~zwraca się uwagę na niektóre nowe
+tematy o współczesnym znaczeniu. Dialogue Piętnasty przedstawia Gino, robotnika, i~analizuje obawy zwykłych ludzi
+dotyczące braku porządku obywatelskiego w~proponowanym społeczeństwie bezpaństwowym i~postrzeganej potrzeby policji.
+Policja, argumentuje Malatesta za pośrednictwem Giorgio, hoduje przestępców, tak jak argumentował wcześniej w~\begin{itshape}Anarchia\end{itshape}, że \textit{louvreterie} (łapacze wilków) hodują
+wilki, ponieważ bez wilków lub przestępców przetrwanie odpowiednich ciał urzędników byłoby zagrożone (Londyn, 1974:
+33–34). Twierdzi, że obrona społeczna jest obowiązkiem społeczności. Fakt, że ta kwestia była już omawiana w~Dialogu
+Jedenastym, wskazuje na jej wagę dla Malatesty. W~Dialogue Szesnastym poznajemy Pippo, kalekiego weterana wojennego,
+który porusza kwestie nacjonalizmu i~patriotyzmu. Uwagi Malatesty są echem wezwania Lenina do solidarności klasowej w~obliczu dzielącego i~destrukcyjnego nacjonalizmu pierwszej wojny światowej. Giorgio wyjaśnia, że jego zdaniem
+patriotyzm jest po prostu narzędziem, za pomocą którego burżuazja rekrutuje poparcie klasy robotniczej dla istniejącego
+reżimu własności i~terytorialnych ambicji tych, którzy z~niego korzystają. Wreszcie, w~Dialogu Siedemnastym, Luigi,
+socjalista, wchodzi i~rozpoczyna dyskusję. Wynika z~niej, że ma na celu odróżnienie anarchizmu zarówno od socjalizmu
+parlamentarnego, jak i~autorytarnego, ale z~głównym naciskiem na nieuchronną porażkę ścieżki parlamentarnej i~jakiejkolwiek formy tego, co Eduard Bernstein nazwał socjalizmem ewolucyjnym. Podkreśla się potrzebę rewolucyjnej
+zmiany. 
+
+ 
+Prace nad dialogami w~ich obecnym kształcie zakończono do października 1920 roku.  16 października Malatesta został
+aresztowany i~osadzony w~więzieniu San Vittore. Policja przeprowadziła zakrojone na szeroką skalę przeszukanie jego
+mieszkania za bronią i~materiałami wybuchowymi, ale rękopis dialogów pozostał nieodkryty lub zignorowany. Zostały one
+opublikowane jako zestaw, ze wstępem Fabbriego, w~1922 roku. 
+
+ 
+Te dialogi Malatesty stanowią nie tylko znaczący wkład w~anarchistyczną teorię polityczną, ale także znaczący dokument
+historyczny. Napisane w~ciągu 23 lat są komentarzem do burzliwych czasów i~ważnych wydarzeń historycznych, obejmujących
+epokę wyróżniającą się w~szczególności lewicową agitacją i~organizacją w~całej Europie. W~czasie, który obejmowały te
+rozważania na temat anarchizmu, świat był świadkiem II Międzynarodówki, powstania bolszewizmu, pierwszej wojny
+światowej, narodzin faszyzmu i~rosyjskich rewolucji, zarówno w~1904, jak i~1917 r.  Bez żadnej bezpośredniej aluzji do
+każdego z~tych wydarzeń dialogi prowadzą ożywioną debatę dotyczącą wielu kwestii, które poruszają. W~pewnym sensie
+Malatesta przekształcił anarchistyczną teorię w~bieżący komentarz do swoich czasów. To dzieło inteligencji, stylu i~prawdziwego artyzmu. 
+
+Paul Nursey-Bray\ 
+
+
+\chapter*{Jeden}
+
+
+
+ 
+\noindent PROSPERO [\textit{Pulchny mieszczanin, pełen ekonomii politycznej i~innych nauk}]: Ale oczywiście\ldots
+oczywiście\ldots my o tym wszystko wiemy. Są ludzie cierpiący głód, kobiety prostytuujące się, dzieci umierające z~braku
+opieki. Zawsze mówisz to samo\ldots w~końcu stajesz się nudny. Pozwól mi delektować się moimi gelati w~spokoju\ldots
+Oczywiście, w~naszym społeczeństwie jest tysiące zła, głód, ignorancja, wojna, zbrodnia, zaraza, straszne
+nieszczęścia\ldots i~co z~tego? Dlaczego jest to twoje zmartwienie? 
+
+
+
+
+ 
+\noindent MICHELE [\textit{Student, który dotrzymuje towarzystwa socjalistom i~anarchistom}]: Przepraszam? Dlaczego to moje
+zmartwienie? Masz wygodny dom, dobrze zaopatrzony stół, służbę na twoje rozkazy; dla ciebie wszystko jest w~porządku. I~dopóki ty i~twoi macie się dobrze, nawet jeśli świat wokół was się zawali, nic nie ma znaczenia. Naprawdę, gdybyś tylko
+miał trochę serca\ldots 
+
+
+
+
+ 
+\noindent PROSPERO: Dosyć, dość\ldots nie każ\ldots Przestań się wściekać, młodzieńcze. Myślisz, że jestem niewrażliwy, obojętny na
+nieszczęścia innych. Wręcz przeciwnie, moje serce krwawi (kelner, przynieś mi koniak i~cygaro), moje serce krwawi; ale
+wielkich problemów społecznych nie rozwiązuje się sentymentami. Prawa natury są niezmienne i~ani wielkie przemowy, ani
+ckliwe sentymentalizmy nie mogą tego zdziałać cokolwiek na ten temat. Mądry człowiek akceptuje los i~czerpie z~życia
+to, co najlepsze, bez gonienia za bezsensownymi marzeniami. 
+
+
+
+
+ 
+\noindent MICHELE: Ach? A więc mamy do czynienia z~prawami natury?\ldots A co jeśli biedni wbili sobie do głowy, żeby te\ldots prawa
+natury poprawić. Słyszałem przemówienia z~trudem popierające te nadrzędne prawa. 
+
+
+
+
+ 
+\noindent PROSPERO: Oczywiście, oczywiście. Dobrze znamy ludzi, z~którymi się zadajesz. W~moim imieniu powiedz tym łajdakom
+socjalistom i~anarchistom, których wybrałeś na swoje preferowane towarzystwo, że dla nich i~dla tych, którzy będą
+próbowali wprowadzić w~życie ich nikczemne teorie, mamy dobrych żołnierzy i~doskonałych
+\begin{itshape}karabinierów \end{itshape}. 
+
+
+
+
+ 
+\noindent MICHELE: Och! Jeśli zamierzasz sprowadzić żołnierzy i~\begin{itshape}karabinierów \end{itshape}, nie będę już mówić. To tak, jakby proponować walkę
+na pięści, aby pokazać, że moje opinie są błędne. Nie polegaj jednak na brutalnej sile, jeśli nie masz innych
+argumentów. Jutro możesz znaleźć się w~słabszej pozycji; co wtedy? 
+
+
+
+
+ 
+\noindent PROSPERO: A więc co? Cóż, gdyby doszło do tego nieszczęścia, nastąpiłby wielki nieład, eksplozja złych namiętności,
+masakry, grabieże\ldots a potem wszystko wróciłoby do tego, co było przedtem. Może kilku biednych by się wzbogaciło, kilku
+bogatych popadłoby w~biedę, ale ogólnie nic by się nie zmieniło, bo świat się nie może zmienić. Przyprowadź mi, po
+prostu przyprowadź mi jednego z~tych twoich anarchistycznych agitatorów, a zobaczysz, jak wygarbuję mu skórę. Są dobrzy
+w napełnianiu głów ludzi takich jak ty nieprawdopodobnymi historiami, ponieważ wasze głowy są puste; ale zobaczysz, czy
+ze mną będą w~stanie utrzymać swoje absurdy. 
+
+
+
+
+ 
+\noindent MICHELE: W~porządku. Przyprowadzę mojego przyjaciela, który wyznaje socjalistyczne i~anarchistyczne zasady i~z
+przyjemnością poprowadzę z~nim waszą dyskusję. W~międzyczasie przedyskutuj ze mną sprawy, bo choć nie mam jeszcze
+dobrze wykształconych poglądów, to wyraźnie widzę, że społeczeństwo w~jego dzisiejszym kształcie jest czymś sprzecznym
+ze zdrowym rozsądkiem i~przyzwoitością. No już, jesteś taki tłusty i~kwitnący, że odrobina podniecenia nie zaszkodzi.
+Pomoże ci to w~trawieniu. 
+
+
+
+
+ 
+\noindent PROSPERO: Chodź więc; porozmawiajmy. Jednak powinieneś wiedzieć, że byłoby lepiej, gdybyś się uczył, zamiast wypluwać
+opinie na tematy, które go dotyczącą domeną innych, bardziej uczonych i~mądrzejszych. Wydaje mi się, że wyglądasz na 20
+lat? 
+
+
+
+
+ 
+\noindent MICHELE: To nie dowodzi, że uczyłeś się więcej i~jeśli mam cię oceniać na podstawie tego, co mówisz, wątpię, nawet jeśli
+dużo się uczyłeś, czy wiele z~tego zyskałeś. 
+
+
+
+
+ 
+\noindent PROSPERO: Młody człowieku, młody człowieku, naprawdę! Trochę szacunku. 
+
+
+
+
+ 
+\noindent MICHELE: W~porządku, szanuję cię. Ale nie rzucaj mi w~twarz moim wiekiem, gdy w~istocie sprzeciwiasz się przy pomocy
+policji. Argumenty nie są stare ani młode, są dobre lub złe; to wszystko. 
+
+
+
+
+ 
+\noindent PROSPERO: No, no, przejdźmy do tego, co masz do powiedzenia? 
+
+
+
+
+ 
+\noindent MICHELE: Muszę powiedzieć, że nie mogę zrozumieć, dlaczego chłopi, którzy sieją, sieją i~żną, nie mają wystarczającej
+ilości chleba, wina ani mięsa; dlaczego murarze budujący domy nie mają dachu jako schronienia, dlaczego szewcy noszą
+znoszone buty. Innymi słowy, dlaczego tym, którzy pracują, którzy wszystko produkują, brakuje podstawowych artykułów
+pierwszej potrzeby; podczas gdy ci, którzy nic nie robią, rozkoszują się obfitością. Nie mogę zrozumieć, dlaczego
+istnieją ludzie, którym brakuje chleba, skoro jest tyle nieuprawianej ziemi i~tak wielu ludzi, którzy byliby
+niezmiernie szczęśliwi, gdyby mogli ją uprawiać; dlaczego jest tak wielu murarzy bez pracy, podczas gdy wielu ludzi
+potrzebuje domów; dlaczego wielu szewców, krawców itp\ldots jest bez pracy, podczas gdy większości społeczeństwa brakuje
+butów, ubrań i~wszelkich artykułów niezbędnych do życia cywilnego. Czy mógłbyś powiedzieć, które prawa naturalne
+wyjaśnia i~uzasadnia takie absurdy? 
+
+
+
+
+ 
+\noindent PROSPERO: Nic nie mogłoby być prostsze i~jaśniejsze. 
+
+ 
+Do produkcji nie wystarczy praca ludzka, potrzeba ziemi, materiałów, narzędzi, pomieszczeń, maszyn, a także środków do
+przeżycia w~oczekiwaniu na wytworzenie produktu i~dostarczenie go na rynek: jednym słowem potrzebny jest kapitał. Twoi
+chłopi, twoi robotnicy, mają tylko swoją pracę fizyczną; w~konsekwencji nie mogą pracować, jeśli nie jest to życzeniem
+tych, którzy posiadają ziemię i~kapitał. A ponieważ jest nas niewielu i~mamy dość, nawet jeśli przez jakiś czas
+pozostawiamy naszą ziemię nieuprawianą, a nasz kapitał nieczynny, podczas gdy robotników jest wielu i~zawsze
+ograniczają ich pilne potrzeby, wynika z~tego, że muszą oni pracować kiedykolwiek i~jakkolwiek, gdy tak sobie życzymy,
+i na warunkach, które nam odpowiadają. A kiedy już nie będziemy potrzebować ich pracy i~uznamy, że nie ma żadnego zysku
+z ich pracy, muszą trwać na bezrobociu, nawet gdy naprawdę potrzebują tych rzeczy, które potrafią wyprodukować. 
+
+ 
+Czy jesteś teraz zadowolony? Czy mam to wyjaśnić jaśniej? 
+
+
+
+
+ 
+\noindent MICHELE: Oczywiście, to się nazywa szczerość, co do tego nie ma wątpliwości. 
+
+ 
+Jednak jakim prawem ziemia należy tylko do nielicznych? Jak to się dzieje, że kapitał znajduje się w~kilku rękach,
+szczególnie w~rękach tych, którzy nie pracują? 
+
+
+
+
+ 
+\noindent PROSPERO: Tak, tak, wiem, co o czym mówisz, a nawet znam mniej lub bardziej kulawe argumenty, którymi inni by ci się
+sprzeciwili; prawo właścicieli wywodzi się z~ulepszeń, jakie wnoszą do ziemi, z~oszczędności, za pomocą których odbywa
+się przekształcenie pracy w~kapitał itd. Ale pozwól mi być jeszcze bardziej szczerym. Rzeczy są takie, jakie są, w~wyniku faktów historycznych, wytworu setek lat historii ludzkości. Cała ludzka egzystencja była, jest i~zawsze będzie
+ciągłą walką. Są tacy, którym poszło dobrze i~tacy, którym poszło źle. Co mogę z~tym zrobić? Im gorzej dla jednych, tym
+lepiej dla innych. Biada pokonanym! To jest wielkie prawo natury, przeciwko któremu żaden bunt nie jest możliwy. 
+
+ 
+Co byś wolał? Czy powinienem pozbawić się wszystkiego, co mam, aby gnić w~biedzie, podczas gdy ktoś inny żywi się moimi
+pieniędzmi? 
+
+
+
+
+ 
+\noindent MICHELE: Nie do końca tego chce. Jednak myślę: co by było, gdyby robotnicy, korzystając ze swojej liczebności i~opierając się na waszej teorii, że życie jest walką, a prawa wynikają z~faktów, wbili sobie do głowy pomysł stworzenia
+nowego ,,faktu historycznego'', zabierając swoją ziemię i~kapitał i~inaugurację nowych praw? 
+
+
+
+
+ 
+\noindent PROSPERO: Ach! z~pewnością skomplikowałoby to sprawę. 
+
+ 
+Ale\ldots będziemy kontynuować przy innej okazji. Teraz muszę iść do teatru. 
+
+ 
+Dobry wieczór wam wszystkim. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Dwa}
+
+
+
+ 
+\noindent AMBROGIO [\textit{Sędzia}]: Słuchaj, Signor Prospero, teraz, kiedy to tylko między nami, wszyscy dobrzy
+konserwatyści. Tamtego wieczoru, kiedy rozmawiałeś z~tą pustą głową, Michele, nie chciałem interweniować; ale czy sądzi
+pan, że to był sposób na obronę naszych instytucji? 
+
+ 
+Prawie wydawało się, że jesteś anarchistą! 
+
+
+
+
+ 
+\noindent PROSPERO: Cóż, ja nigdy! Dlaczego? 
+
+
+
+
+ 
+\noindent AMBROGIO: Bo w~istocie twierdziłeś, że cała obecna organizacja społeczna opiera się na sile, dostarczając w~ten sposób
+argumentów tym, którzy chcieliby ją zniszczyć siłą. A co z~najwyższymi zasadami rządzącymi społeczeństwami
+obywatelskimi, prawami, moralnością, religią, czy one się na nic nie liczą? 
+
+
+
+
+ 
+\noindent PROSPERO: Oczywiście, zawsze masz usta pełne praw.  To zły nawyk wywodzący się z~twojego zawodu. 
+
+ 
+Jeśli jutro rządy zadekretują, załóżmy, kolektywizm, potępilibyście zwolenników własności prywatnej z~taką samą
+beznamiętnością, z~jaką potępiacie dzisiaj anarchistów\ldots i~zawsze w~imię najwyższych zasad wiecznych i~niezmiennych
+praw! 
+
+ 
+Widzisz, to tylko kwestia nazw. Ty mówisz prawa, ja mówię siła; ale tak naprawdę liczą się błogosławieni
+\begin{itshape}karabinierzy \end{itshape}, a kto ma ich po swojej stronie, ma rację. 
+
+
+
+
+ 
+\noindent AMBROGIO: No nie, signor Prospero! Wydaje się niemożliwe, aby twoja miłość do sofizmu zawsze tłumiła twoje konserwatywne
+instynkty. 
+
+ 
+Nie rozumiesz, jak wiele złych skutków wynika z~widoku osoby takiej jak ty, jednego ze starszych miasta, dostarczającej
+argumentów najgorszym wrogom porządku. 
+
+ 
+Wierz mi, że powinniśmy położyć kres temu złemu zwyczajowi sprzeczek między sobą, przynajmniej publicznie; wszyscy się
+jednoczmy, by bronić naszych instytucji, które z~powodu niegodziwości czasów otrzymują brutalne ciosy\ldots i~aby dbać o
+nasze zagrożone interesy. 
+
+
+
+
+ 
+\noindent PROSPERO: Zjednoczmy się za wszelką cenę; ale jeśli nie zostaną podjęte zdecydowane środki, jeśli nie przestaniecie
+używać liberalnych doktryn, niczego nie rozwiążemy. 
+
+
+
+
+ 
+\noindent AMBROGIO: O! Tak na pewno. Potrzebujemy surowego prawa, które będzie ściśle stosowane. 
+
+ 
+Ale to nie wystarczy. Sam przymus nie może długo utrzymywać ludzi w~niewoli, szczególnie w~dzisiejszych czasach. Trzeba
+propagandzie przeciwstawiać propagandę, trzeba przekonywać ludzi, że mamy rację. 
+
+
+
+
+ 
+\noindent PROSPERO: Naprawdę żartujesz sobie! Mój biedny przyjacielu, w~naszym wspólnym interesie, błagam cię, uważaj na
+propagandę. To wywrotowa rzecz, nawet jeśli jest prowadzona przez konserwatystów; a wasza propaganda zawsze obróciłaby
+się na korzyść socjalistów, anarchistów czy jakkolwiek oni się nazywają. 
+
+ 
+Idź i~przekonaj głodnego, że on po prostu nie je, tym bardziej że to on produkuje jedzenie! Dopóki o tym nie myślą i~nadal błogosławią Boga i~szefa za to, co otrzymują, jest w~porządku. Ale od chwili, gdy zaczną się zastanawiać nad
+swoją pozycją to koniec: staną się wrogiem, z~którym nigdy się nie pogodzicie. Nigdy w~życiu! Musimy za wszelką cenę
+unikać propagandy, zdusić prasę drukarską, z~lub bez, a może nawet wbrew prawu. 
+
+
+
+
+ 
+\noindent AMBROGIO: To prawda, to prawda. 
+
+
+
+
+ 
+\noindent PROSPERO: Zapobiegaj wszelkim zgromadzeniom, rozbijaj wszelkie stowarzyszenia, wsadzaj do więzienia wszystkich, którzy
+myślą\ldots 
+
+
+
+
+ 
+CESAR [\textit{sklepikarz}]: Spokojnie, spokojnie, nie daj się ponieść pasji. Pamiętaj, że inne rządy, w~bardziej
+sprzyjających czasach, przyjęły środki, które sugerujesz\ldots i~przyspieszyło to ich własny upadek. 
+
+
+
+
+ 
+\noindent AMBROGIO: Cicho, cicho! Nadchodzi Michele z~anarchistą, którego skazałem w~zeszłym roku na sześć miesięcy więzienia za
+wywrotowy manifest. Właściwie, między nami, manifest został sporządzony w~taki sposób, że prawo nie mogło go tknąć, ale
+co można zrobić? Był w~tym zbrodniczy zamiar\ldots a przecież społeczeństwa trzeba bronić! 
+
+
+
+
+ 
+\noindent MICHELE: Dobry wieczór panom. Czy mogę przedstawić wam mojego przyjaciela anarchistę, który przyjął wyzwanie rzucone
+któregoś wieczoru przez signora Prospero. 
+
+
+
+
+ 
+\noindent PROSPERO: Ale jakie wyzwanie, jakie wyzwanie?! Rozmawialiśmy tylko w~gronie przyjaciół dla zabicia czasu. 
+
+ 
+Jednak tłumaczyłeś nam, czym jest anarchizm, czyli czym jest coś, czego nigdy nie byliśmy w~stanie zrozumieć. 
+
+
+
+
+ 
+\noindent GIORGIO [\textit{Anarchista}]: Nie jestem nauczycielem anarchizmu i~nie przyszedłem wygłaszać wykładów na ten
+temat; ale w~razie potrzeby potrafię bronić swoich idei. Poza tym jest tu pewien dżentelmen (z ironicznym tonem
+nawiązując do sędziego Ambrogio), który powinien wiedzieć o tym więcej ode mnie. Potępił wielu ludzi za anarchizm; a
+ponieważ z~całą pewnością jest człowiekiem sumienia, nie zrobiłby tego bez uprzedniego dogłębnego przestudiowania
+związanych z~tym argumentów. 
+
+
+
+
+ 
+\noindent CESARE: Chodź, chodźmy, nie wchodźmy w~sprawy osobiste\ldots a ponieważ musimy mówić o anarchizmie, zacznijmy od razu ten
+temat. 
+
+ 
+Widzisz, ja również zdaję sobie sprawę, że sprawy idą źle i~że należy znaleźć środki zaradcze. Ale nie musimy stawać się
+utopistami, a przede wszystkim musimy unikać przemocy. Z~pewnością rząd powinien bardziej wziąć sobie do serca sprawę
+robotniczą: powinien zapewnić pracę bezrobotnym; chronić przemysł krajowy, zachęcać do handlu. Ale\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Ileż rzeczy chciałbyś, żeby zrobił ten biedny rząd! Rząd nie chce interesować się interesami robotników i~to
+jest zrozumiałe. 
+
+
+
+
+ 
+\noindent CESARE: Jak to może być zrozumiałe? Do tej pory rzeczywiście rząd wykazywał brak zdolności i~być może niewielkie
+pragnienie zaradzenia bolączkom kraju; ale jutro oświeceni i~sumienni ministrowie mogą zrobić to, czego nie zrobiono do
+tej pory. 
+
+
+
+
+ 
+\noindent GIORGIO: Nie, drogi panie, to nie jest kwestia tej czy innej posługi. Jest to ogólnie kwestia rządu; wszystkich rządów,
+dzisiejszych, wczorajszych i~jutrzejszych. Rząd pochodzi od właścicieli, potrzebuje wsparcia właścicieli, aby się
+utrzymać, jego członkowie sami są właścicielami; jak zatem może służyć interesom pracowników? 
+
+ 
+Z drugiej strony rząd, nawet gdyby chciał, nie mógłby rozwiązać kwestii społecznej, ponieważ jest to wypadkowa czynników
+ogólnych, których rząd nie może usunąć, a które de facto same określają charakter i~kierunek rządzenia. Aby rozwiązać
+kwestię społeczną, musimy radykalnie zmienić cały system, którego rząd ma misję bronić. 
+
+ 
+Mówisz o dawaniu pracy bezrobotnym. Ale co może zrobić rząd, jeśli nie ma pracy? Czy ma zmuszać ludzi do wykonywania
+bezużytecznej pracy, ale wtedy kto by im płacił? Czy powinien ukierunkować produkcję na zaspokajanie niezaspokojonych
+potrzeb ludności? Ale wtedy właściciele nie byliby w~stanie sprzedawać produktów, które wywłaszczają od robotników, w~rzeczywistości musieliby przestać być właścicielami, ponieważ rząd, aby zapewnić ludziom pracę, odebrałby im ziemię i~kapitał, które zmonopolizowali. 
+
+ 
+To byłaby rewolucja społeczna, likwidacja całej przeszłości, a dobrze wiecie, że jeśli nie dokonają tego robotnicy,
+chłopi i~nieuprzywilejowani, rząd na pewno nigdy tego nie zrobi. 
+
+ 
+Chroń przemysł i~handel, powiadasz: ale rząd może co najwyżej faworyzować jedną klasę przemysłową ze szkodą dla innej,
+faworyzować kupców z~jednego regionu kosztem kupców z~innego, więc w~sumie nic by się nie zyskało, tylko trochę
+faworyzowania, trochę niesprawiedliwości i~więcej nieproduktywnych wydatków. Jeśli chodzi o rząd, który chroni
+wszystkich, jest to pomysł absurdalny, ponieważ rządy niczego nie produkują i~dlatego mogą jedynie przekazywać bogactwo
+wyprodukowane przez innych. 
+
+
+
+
+ 
+\noindent CESARE: Ale co wtedy? Jeśli rząd nie chce i~nie jest w~stanie nic zrobić, to jakie jest lekarstwo? Nawet jeśli dokonasz
+rewolucji, będziesz musiał stworzyć inny rząd; a ponieważ mówisz, że wszystkie rządy są takie same, po rewolucji
+wszystko będzie takie samo jak przedtem. 
+
+
+
+
+ 
+\noindent GIORGIO: Miałbyś rację, gdyby nasza rewolucja doprowadziła po prostu do zmiany rządu. Jednak my chcemy całkowitego
+przekształcenia ustroju własności, systemu produkcji i~wymiany; a jeśli chodzi o rząd, bezużyteczny, szkodliwy i~pasożytniczy organ, w~ogóle go nie chcemy. Wierzymy, że dopóki istnieje rząd, czyli organ nałożony na społeczeństwo i~wyposażony w~środki do narzucania siłą własnej woli, nie będzie prawdziwej emancypacji, nie będzie pokoju między
+ludźmi. 
+
+ 
+Wiesz, że jestem anarchistą, a anarchia oznacza społeczeństwo bez rządu. 
+
+
+
+
+ 
+\noindent CESARE: Ale co masz na myśli? Społeczeństwo bez rządu! Jak mógłbyś żyć? Kto miałby stanowić prawo? Kto miałby je
+realizować? 
+
+
+
+
+ 
+\noindent GIORGIO: Widzę, że nie masz pojęcia, czego chcemy. Aby uniknąć marnowania czasu na dygresje, proszę pozwolić mi krótko,
+ale metodycznie wyjaśnić nasz program; a potem możemy omawiać sprawy dla naszej obopólnej korzyści. 
+
+ 
+Ale teraz jest późno; będziemy kontynuować następnym razem. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Trzy}
+
+
+
+ 
+\noindent CESARE: Więc dziś wieczorem wyjaśnisz, jak możemy żyć bez rządu? 
+
+
+
+
+ 
+\noindent GIORGIO: Zrobię, co w~mojej mocy. Ale przede wszystkim musimy wziąć pod uwagę, jak sprawy mają się w~społeczeństwie i~czy rzeczywiście konieczna jest zmiana jego składu. 
+
+ 
+Patrząc na społeczeństwo, w~którym żyjemy, pierwsze zjawiska, które nas uderzają, to bieda dotykająca mas, niepewność
+jutra, która bardziej lub mniej, ciąży na wszystkich, nieustająca walka wszystkich walczących ze wszystkimi, aby
+przezwyciężyć głód\ldots 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale, drogi panie, mógłbyś jeszcze długo mówić o tych społecznych nieszczęściach; niestety przykładów jest
+mnóstwo. Ale to nie służy żadnemu celowi i~nie pokazuje, że byłoby lepiej, gdybyśmy wszystko wywrócili do góry nogami.
+Nie tylko bieda dotyka ludzkość; są też zarazy, cholera, trzęsienia ziemi\ldots i~byłoby dziwne, gdybyście chcieli
+skierować rewolucję przeciwko tym plagom. 
+
+ 
+Zło tkwi w~naturze rzeczy\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Ale tak naprawdę chcę ci pokazać, że bieda zależy od obecnego sposobu organizacji społecznej i~że w~bardziej
+egalitarnym i~racjonalnie zorganizowanym społeczeństwie musi zniknąć. 
+
+ 
+Kiedy nie znamy przyczyn zła i~nie mamy rozwiązań, cóż, niewiele możemy z~tym zrobić; ale gdy tylko rozwiązanie zostanie
+znalezione, troską i~obowiązkiem każdego staje się wprowadzenie go w~życie. 
+
+
+
+
+ 
+\noindent AMBROGIO: Oto twój błąd: nędza wynika z~przyczyn nadrzędnych w~stosunku do woli ludzkiej i~ludzkiego prawa. Ubóstwo
+wynika z~podłości natury, która nie dostarcza wystarczającej ilości produktów do zaspokojenia ludzkich pragnień. 
+
+ 
+Przyjrzyj się zwierzętom, których nie można winić o \begin{itshape}hańbę
+kapitalizmu \end{itshape} ani o \textit{rząd tyrański}; muszą walczyć o jedzenie i~często umierają
+z głodu. 
+
+ 
+Kiedy szafa jest pusta, szafka jest pusta. Prawda jest taka, że  na świecie jest zbyt wielu ludzi. Gdyby
+ludzie potrafili panować nad sobą i~nie mieli dzieci, póki nie mogliby ich utrzymać\ldots Czytałeś Malthusa? 
+
+
+
+
+ 
+\noindent GIORGIO: Tak, trochę; ale wszystko jedno, gdybym nie czytał jego pracy. To, co wiem, bez konieczności czytania
+jakiejkolwiek części, to to, że trzeba mieć trochę odwagi, muszę powiedzieć, żeby utrzymywać takie rzeczy! 
+
+ 
+Bieda wynika z~podłości natury, mówisz, chociaż jesteś świadom, że istnieje nieuprawiana ziemia\ldots 
+
+
+
+
+ 
+\noindent AMBROGIO: Jeśli ziemia jest nieuprawiana, oznacza to, że nie można jej uprawiać, że nie może wyprodukować wystarczającej
+ilości, aby pokryć związane z~tym koszty. 
+
+
+
+
+ 
+\noindent GIORGIO: Wierzysz w~to? 
+
+ 
+Wypróbuj eksperyment i~daj ją chłopom, a zobaczysz, jakie ogrody stworzą. Ale ty nie mówisz poważnie? Przecież znaczna
+część tej ziemi była uprawiana w~czasach, gdy sztuka rolnictwa była w~powijakach, a chemia i~technika rolnicza prawie
+nie istniały! Czy nie wiesz, że dzisiaj nawet kamienie mogą zamienić się w~żyzną ziemię? Czy nie wiecie, że
+agronomowie, nawet ci mniej wizjonerscy, obliczyli, że terytorium takie jak Włochy, jeśli będzie racjonalnie uprawiane,
+z łatwością utrzyma w~obfitości stumilionową populację? 
+
+ 
+Prawdziwym powodem, dla którego ziemia pozostaje nieuprawiana i~dlaczego uprawiana ziemia daje tylko niewielką część
+swojego pełnego potencjału, biorąc pod uwagę przyjęcie mniej prymitywnych metod uprawy, jest to, że właściciele nie
+mają żadnego interesu w~zwiększaniu jej produkcji. 
+
+ 
+Nie troszczą się o dobro ludzi; produkują, aby sprzedawać, i~wiedzą, że gdy jest dużo towarów, ceny są obniżane, a zyski
+maleją i~w~sumie mogą być mniejsze niż wtedy, gdy towarów jest mało i~można je sprzedać po cenach, które im
+odpowiadają. 
+
+ 
+Nie chodzi o to, że dzieje się tak tylko w~odniesieniu do produktów rolnych. W~każdej gałęzi działalności człowieka jest
+tak samo. Na przykład: W~każdym mieście biedni są zmuszani do życia w~zarażonych ruderach, stłoczonych bez względu na
+higienę i~moralność, w~warunkach, w~których nie można utrzymać czystości i~osiągnąć ludzkich warunków. Dlaczego tak się
+dzieje? Może dlatego, że nie ma domów? Ale dlaczego nie buduje się solidnych, wygodnych i~pięknych domów dla
+wszystkich? 
+
+ 
+Kamieni, cegieł, wapna, stali, drewna, wszystkich materiałów potrzebnych do budowy istnieje pod dostatkiem; podobnie jak
+istnieją bezrobotni murarze, stolarze i~architekci, którzy nie pragną niczego więcej poza pracą; dlaczego więc jest tak
+dużo niewykorzystanych możliwości, skoro można je wykorzystać dla korzyści wszystkich. 
+
+ 
+Powód jest prosty i~polega na tym, że gdyby było dużo domów, czynsze by spadły. Właściciele już wybudowanych domów,
+czyli ci sami ludzie, którzy mają środki na budowę innych, tak naprawdę nie mają chęci patrzenia, jak ich czynsze
+spadają tylko po to, by zyskać aprobatę biednych. 
+
+
+
+
+ 
+\noindent CESARE: Jest trochę prawdy w~tym, co mówisz; ale łudzisz się co do wyjaśnienia bolesnych rzeczy, które nękają nasz
+kraj. 
+
+ 
+Przyczyną źle uprawianej lub pozostawionej bezczynności ziemi, ugrzęźnięcia interesów i~ogólnie nędzy jest brak rozmachu
+burżuazji. Kapitaliści albo się boją, albo są ignorantami i~nie chcą lub nie wiedzą, jak rozwijać przemysł; właściciele
+ziemscy nie wiedzą, jak zerwać z~metodami swoich dziadków i~nie chcą, aby im przeszkadzano; handlowcy nie wiedzą, jak
+znaleźć nowe rynki zbytu, a rząd ze swoją polityką fiskalną i~głupią polityką celną,  zamiast zachęcać do prywatnych
+inicjatyw, przeszkadza im i~dusi ich w~powijakach. Spójrz na Francję, Anglię i~Niemcy. 
+
+
+
+
+ 
+\noindent GIORGIO: Nie wątpię, że nasza burżuazja jest gnuśna i~ignorancka, ale jej niższość tylko wyjaśnia, dlaczego zostaje
+pokonana przez burżuazję innych krajów w~walce o podbój rynku światowego: W~żaden sposób nie wyjaśnia to przyczyny
+biedy ludzi. Wyraźnym dowodem jest to, że bieda, brak pracy i~cała reszta społecznego zła istnieje w~krajach, w~których
+burżuazja jest bardziej aktywna i~inteligentniejsza, tak samo jak we Włoszech; w~rzeczywistości zło to jest na ogół
+bardziej intensywne w~krajach, w~których przemysł jest bardziej rozwinięty, chyba że robotnicy byli w~stanie, dzięki
+organizacji, oporowi lub buntowi, uzyskać lepsze warunki życia. 
+
+ 
+Kapitalizm jest wszędzie taki sam.  Aby przetrwać i~prosperować, potrzebuje stałej sytuacji częściowego niedoboru:
+potrzebuje jej do utrzymania swoich cen i~stworzenia głodnych mas do pracy w~każdych warunkach. 
+
+ 
+Widzisz, w~rzeczywistości, kiedy produkcja w~kraju jest w~pełnym rozkwicie, nigdy nie ma to na celu zapewnienia
+producentom środków na zwiększenie konsumpcji, ale zawsze na sprzedaż na rynek zewnętrzny. Jeśli konsumpcja krajowa
+wzrasta, dzieje się to tylko wtedy, gdy robotnicy mogą skorzystać z~tych okoliczności, aby zażądać wzrostu ich płac, a
+w konsekwencji mogą kupić więcej towarów. Ale potem, kiedy z~tego czy innego powodu rynek zewnętrzny, dla którego
+produkują, już nie kupuje, przychodzi kryzys, praca się zatrzymuje, płace spadają, a straszne ubóstwo znów zaczyna siać
+spustoszenie. A jednak w~tym samym kraju, gdzie ogromnej większości brakuje wszystkiego, o wiele rozsądniej byłoby
+pracować na własne potrzeby! Ale, w~takim razie, co zyskaliby na tym kapitaliści! 
+
+
+
+
+ 
+\noindent AMBROGIO: Więc myślisz, że to wszystko wina kapitalizmu? 
+
+
+
+
+ 
+\noindent GIORGIO: Tak, oczywiście; lub bardziej ogólnie, wynika to z~faktu, że kilka jednostek zgromadziło ziemię i~wszystkie
+środki produkcji i~może narzucić robotnikom swoją wolę w~taki sposób, że zamiast produkować dla zaspokojenia potrzeb
+ludzi i~mając na uwadze te potrzeby, produkcja jest nastawiona na generowanie zysku dla pracodawców. 
+
+ 
+Wszystkie usprawiedliwienia, jakie wymyślacie, aby zachować burżuazyjne przywileje, są całkowicie błędne, lub raczej są
+kłamstwami. Przed chwilą mówiłeś, że przyczyną ubóstwa jest niedobór produktów. A innym razem, mierząc się z~problemami
+bezrobotnych, powiedzielibyście, że magazyny są pełne, że towarów nie można sprzedać, a właściciele nie mogą tworzyć
+miejsc pracy, żeby nie wyrzucać towarów. 
+
+ 
+W rzeczywistości jest to typowy przykład absurdalności systemu: umieramy z~głodu, ponieważ magazyny są pełne i~nie ma
+potrzeby uprawiać ziemi, a raczej właściciele ziemscy nie potrzebują uprawiać swojej ziemi; szewcy nie pracują, więc
+chodzą w~znoszonych butach, bo butów jest za dużo\ldots i~tak to idzie\ldots 
+
+
+
+
+ 
+\noindent AMBROGIO: Więc to kapitaliści powinni umrzeć z~głodu? 
+
+
+
+
+ 
+\noindent GIORGIO: O! Zdecydowanie nie. Powinni po prostu pracować jak wszyscy inni. Może ci się to wydawać surowe, ale nie
+rozumiesz: kiedy ktoś się dobrze odżywia, praca nie jest groźna. W~rzeczywistości mogę ci wykazać, że jest potrzebą i~spełnieniem ludzkiej natury. Ale bądź uczciwy, jutro muszę iść do pracy i~jest już bardzo późno. 
+
+ 
+Do następnego razu. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Cztery}
+
+
+
+ 
+\noindent CESARE: Lubię się z~tobą kłócić. Masz pewien sposób przedstawiania rzeczy, który sprawia, że  wydajesz się
+mieć rację\ldots i~rzeczywiście, nie twierdzę, że całkowicie się mylisz. 
+
+ 
+Istnieją z~pewnością pewne absurdy, rzeczywiste lub pozorne, w~obecnym porządku społecznym. Na przykład trudno mi
+zrozumieć politykę celną. Podczas gdy tutaj ludzie umierają z~głodu lub związanych z~tym chorób, ponieważ brakuje im
+wystarczającej ilości chleba dobrej jakości, rząd utrudnia import zboża z~Ameryki, gdzie mają więcej, niż potrzebują i~niczego bardziej nie pragną, niż sprzedać je nam. To tak, jakby być głodnym, ale nie chcieć jeść! 
+
+ 
+Jednakże\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Tak, rzeczywiście, ale rząd nie jest głodny; podobnie jak wielcy hodowcy pszenicy we Włoszech, w~interesie
+których rząd nakłada cła na pszenicę. Gdyby ci, którzy są głodni, mieli swobodę działania, zobaczylibyście, że nie
+odrzuciliby pszenicy! 
+
+
+
+
+ 
+\noindent CESARE: Wiem o tym i~rozumiem, że tego rodzaju argumentami zniechęcasz zwykłych ludzi, którzy widzą rzeczy tylko w~ogólnych kategoriach i~z jednego punktu widzenia. Ale aby uniknąć błędów, musimy patrzeć na wszystkie strony problemu,
+co właśnie miałem zrobić, kiedy mi przerwałeś. 
+
+
+
+
+ 
+Prawdą jest, że interesy właścicieli mają ogromny wpływ na nałożenie podatku importowego. Ale z~drugiej strony, gdyby
+granice były otwarte, Amerykanie, którzy mogą produkować pszenicę i~mięso na korzystniejszych warunkach niż u nas,
+zaopatrzyliby w~końcu cały nasz rynek: I~co wtedy zrobiliby nasi rolnicy? Właściciele byliby zrujnowani, ale robotnikom
+byłoby jeszcze gorzej. Chleb sprzedawano by za niewielkie kwoty. Ale gdyby nie było sposobu na zarobienie tych
+pieniędzy, i~tak umarłbyś z~głodu. A potem Amerykanie, niezależnie od tego, czy towary są drogie, czy tanie, chcą
+zarabiać, a jeśli we Włoszech nie produkujemy, to czym zapłacimy? 
+
+ 
+Możesz powiedzieć, że we Włoszech moglibyśmy uprawiać te produkty, które są odpowiednie dla naszej gleby i~klimatu, a
+następnie wymieniać je za granicą: na przykład wino, pomarańcze, kwiaty i~tym podobne. Ale co, jeśli rzeczy, które
+jesteśmy w~stanie wyprodukować na korzystnych warunkach, nie są pożądane przez innych, albo ponieważ nie mają z~nich
+pożytku, czy też dlatego, że sami je wytwarzają? Nie mówiąc już o tym, że do zmiany reżimu produkcyjnego potrzebny jest
+kapitał, wiedza i~przede wszystkim czas: co byśmy w~międzyczasie jedli? 
+
+
+
+
+ 
+\noindent GIORGIO: Doskonale! Trafiłeś w~punkt. Wolny handel nie może rozwiązać problemu ubóstwa bardziej niż protekcjonizm. Wolny
+handel jest dobry dla konsumentów i~szkodzi producentom, i~odwrotnie, protekcjonizm jest dobry dla chronionych
+producentów, ale szkodzi konsumentom; a ponieważ pracownicy są w~tym samym czasie zarówno konsumentami, jak i~producentami, w~końcu zawsze jest tak samo. 
+
+ 
+I zawsze będzie tak samo, dopóki system kapitalistyczny nie zostanie obalony. 
+
+ 
+Gdyby pracownicy pracowali dla siebie, a nie dla zysków właściciela, to każdy kraj byłby w~stanie wyprodukować
+wystarczająco dużo na własne potrzeby i~musieliby jedynie dojść do porozumienia z~innymi krajami w~sprawie podziału
+produktywnej pracy zgodnie z~jakością gleby, klimatem, dostępnością zasobów, skłonnościami mieszkańców itp., aby
+wszystkie ludzie mogli cieszyć się wszystkim, co najlepsze, przy minimalnym możliwym wysiłku. 
+
+
+
+
+ 
+\noindent CESARE: Tak, ale to tylko mrzonki. 
+
+
+
+
+ 
+\noindent GIORGIO: Dziś mogą być snami; ale kiedy ludzie zrozumieją, w~jaki sposób mogą poprawić życie, sen wkrótce zostanie
+przekształcony w~rzeczywistość. Jedynymi przeszkodami są egoizm jednych i~ignorancja innych. 
+
+
+
+
+ 
+\noindent CESARE: Są inne przeszkody, przyjacielu. Myślisz, że po wyrzuceniu właścicieli będziesz pławić się w~złocie\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Nie o to mi chodzi. Wręcz przeciwnie, myślę, że przezwyciężyć ten stan niedostatku, w~którym utrzymuje nas
+kapitalizm, i~zorganizować produkcję w~dużej mierze w~celu zaspokojenia potrzeb wszystkich, trzeba wykonać dużo pracy;
+ale ludziom nie brakuje nawet chęci do pracy, ale możliwości. Na obecny system narzekamy nie tyle dlatego, że musimy
+utrzymywać jakichś próżniaków: chociaż to nam się na pewno nie podoba, ale dlatego, że to właśnie ci próżniacy regulują
+pracę i~uniemożliwiają nam pracę w~dobrych warunkach i~produkcję obfitości dla wszystkich. 
+
+
+
+
+ 
+\noindent CESARE: Przesadzasz. To prawda, że często właściciele nie zatrudniają ludzi, aby spekulować na braku produktów, ale
+częściej dzieje się tak dlatego, że sami nie mają kapitału. 
+
+ 
+Ziemia i~surowce nie wystarczą do produkcji. Potrzebujecie, jak wiecie, narzędzi, maszyn, pomieszczeń, środków na
+opłacenie pracujących robotników, jednym słowem kapitału; a ten kumuluje się powoli. Ileż przedsięwzięć nie udaje się
+ruszyć z~miejsca lub, które już ruszyły, upada z~powodu braku kapitału! Czy możecie sobie wyobrazić skutek, gdyby tak,
+jak sobie życzycie, nastąpiła rewolucja społeczna? Wraz ze zniszczeniem kapitału i~wielkim chaosem, który by po nim
+nastąpił, nastąpiłoby ogólne zubożenie. 
+
+
+
+
+ 
+\noindent GIORGIO: To kolejny błąd lub kolejne kłamstwo obrońców obecnego porządku: brak kapitału. 
+
+ 
+Kapitału może brakować w~tym czy innym przedsięwzięciu, ponieważ został zabrany przez innych; ale jeśli weźmiemy pod
+uwagę społeczeństwo jako całość, okaże się, że istnieje wielka ilość nieaktywnego kapitału, podobnie jak wielka jest
+ilość nieuprawianej ziemi. 
+
+ 
+Czy nie widzicie, ile maszyn rdzewieje, ile fabryk pozostaje zamkniętych, ile domów jest bez lokatorów. 
+
+ 
+Istnieje zapotrzebowanie na żywność, która żywiłaby pracowników podczas ich pracy; ale tak naprawdę pracownicy muszą
+jeść, nawet jeśli są bezrobotni. Jedzą mało i~źle, ale pozostają przy życiu i~są gotowi do pracy, gdy tylko pracodawca
+ich potrzebuje. Tak więc to nie dlatego, że brakuje środków do życia, pracownicy nie pracują; a gdyby mogli pracować na
+własny rachunek, przystosowaliby się tam, gdzie było to naprawdę konieczne, do pracy żyjąc tak samo, jak gdy są
+bezrobotni, bowiem wiedzieliby, że dzięki temu tymczasowemu poświęceniu mogliby w~końcu uciec od społecznego stanu
+ubóstwa i~poddaństwa. 
+
+ 
+Wyobraź sobie, a to jest coś co, było wielokrotnie obserwowane, że trzęsienie ziemi niszczy miasto, rujnując całą
+dzielnicę. W~krótkim czasie miasto zostaje zrekonstruowane w~formie piękniejszej niż wcześniej i~po katastrofie nie
+pozostaje ani śladu. Ponieważ w~takim przypadku w~interesie właścicieli i~kapitalistów jest zatrudnianie ludzi, szybko
+znajdują się środki i~w~mgnieniu oka odbudowuje się całe miasto, gdzie przedtem ciągle twierdzili, że brakuje im
+środków na budowę kilku ,,domów robotniczych''. 
+
+ 
+Jeśli chodzi o zniszczenie kapitału, które miałoby miejsce w~czasie rewolucji, to należy mieć nadzieję, że w~ramach
+świadomego ruchu, mającego na celu wspólne posiadanie bogactwa społecznego, ludzie nie będą chcieli zniszczyć tego, co
+ma stać się ich własnością. W~każdym razie nie byłoby to tak złe jak trzęsienie ziemi! 
+
+ 
+Nie, z~pewnością będą trudności, zanim wszystko ułoży się jak najlepiej; ale widzę tylko dwie poważne przeszkody, które
+należy pokonać, zanim zaczniemy: brak świadomości ludzi
+i\ldots\begin{itshape}karabinierzy \end{itshape}. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale powiedz mi coś więcej; mówisz o kapitale, pracy, produkcji, konsumpcji itp.; ale nigdy nie mówisz o
+prawach, sprawiedliwości, moralności i~religii? 
+
+ 
+Kwestie najlepszego wykorzystania ziemi i~kapitału są bardzo ważne; ale jeszcze ważniejsze są kwestie moralne. Chciałbym
+też, aby wszystkim dobrze się żyło, ale jeśli w~celu osiągnięcia tej utopii musimy złamać prawa moralne, jeśli musimy
+odrzucić odwieczne zasady prawa, na których powinno opierać się każde społeczeństwo obywatelskie, to wolałbym
+nieskończenie, aby dzisiejsze cierpienia trwały wiecznie! 
+
+ 
+Pomyśl tylko, że musi istnieć przecież także najwyższa wola, która reguluje świat. Świat nie powstał sam z~siebie i~musi
+istnieć \begin{itshape}coś poza nim \end{itshape}. Nie mówię Bóg, raj, piekło, bo bylibyście
+zdolni nie wierzyć w~nie, musi istnieć\textit{coś poza} ten świat, co wszystko wyjaśnia i~gdzie można znaleźć
+rekompensatę za pozorne niesprawiedliwości tutaj na dole. 
+
+ 
+Myślisz, że możesz naruszyć tę z~góry ustaloną harmonię wszechświata? Nie jesteś w~stanie tego zrobić. Nie możemy zrobić
+nic innego, jak tylko się jej poddać. 
+
+ 
+Choć raz przestańcie podburzać masy, przestańcie budzić urojone nadzieje w~duszach najmniej szczęśliwych, przestańcie
+dmuchać w~ogień, który niestety tli się pod popiołem. 
+
+ 
+Czy wy lub inni współcześni barbarzyńcy chcielibyście zniszczyć w~straszliwym społecznym kataklizmie cywilizację, która
+jest chwałą naszych przodków i~nas samych? Jeśli chcesz zrobić coś wartościowego, jeśli chcesz w~jak największym
+stopniu ulżyć cierpieniu ubogich, powiedz im, aby pogodzili się ze swoim losem, ponieważ prawdziwe szczęście polega na
+zadowoleniu. W~końcu każdy niesie swój własny krzyż; każda klasa ma swoje własne udręki i~obowiązki, i~nie zawsze ci,
+którzy żyją wśród bogactw, są najbardziej szczęśliwi. 
+
+
+
+
+ 
+\noindent GIORGIO: Chodź, mój drogi sędzio, odłóż na bok deklaracje o ,,wielkich zasadach'' i~konwencjonalne oburzenie; nie jesteśmy
+tutaj w~sądzie i~na razie nie wydajesz na mnie żadnego wyroku. 
+
+ 
+Jak można by się domyślić, słysząc, jak mówisz, że nie jesteś jednym z~upośledzonych! i~jak użyteczna jest rezygnacja
+ubogich\ldots dla tych, którzy z~nich żyją. 
+
+ 
+Przede wszystkim błagam was, odłóżcie na bok argumenty transcendentalne i~religijne, w~które nawet wy nie wierzycie. Nic
+nie wiem o tajemnicach Wszechświata i~ty nic więcej nie wiesz; więc nie ma sensu wprowadzać ich do dyskusji. Co do
+reszty, bądźcie świadomi, że wiara w~najwyższego stwórcę, w~Boga stwórcę i~ojca ludzkości, nie byłaby dla was
+bezpieczną bronią. Jeśli kapłani, którzy zawsze służyli i~służą bogatym, wywnioskują z~tego, że obowiązkiem biednych
+jest poddanie się swemu losowi, to inni mogą wydedukować (i w~toku historii tak wywnioskowali) prawo do sprawiedliwości
+i równości. Jeśli Bóg jest naszym wspólnym ojcem, to wszyscy jesteśmy spokrewnieni. Bóg nie może chcieć, aby niektóre z~jego dzieci wykorzystywały i~męczyły inne; a bogaci, władcy, byłoby tak wielu Kainów przeklętych przez Ojca. 
+
+ 
+Ale zostawmy to. 
+
+
+
+
+ 
+\noindent AMBROGIO: W~takim razie zapomnijmy o religii, jeśli chcesz, bo tak wiele z~niej byłoby dla ciebie bezcelowe. Ale
+uznalibyście prawa, moralność, wyższą sprawiedliwość! 
+
+
+
+
+ 
+\noindent GIORGIO: Posłuchaj, jeśli to prawda, że prawa, sprawiedliwość i~moralność mogą wymagać i~sankcjonować ucisk i~nieszczęście choćby jednej istoty ludzkiej, od razu powiedziałbym ci, że prawa, sprawiedliwość i~moralność to tylko
+kłamstwa, haniebna broń wykuta do obrony uprzywilejowanych; i~tacy są, kiedy mają na myśli to, co ty przez nie
+rozumiesz. 
+
+ 
+Prawa, sprawiedliwość, moralność powinny dążyć do jak największego dobra dla wszystkich, w~przeciwnym razie są
+synonimami aroganckiego zachowania i~niesprawiedliwości. I~z pewnością prawdą jest, że ta ich koncepcja odpowiada
+potrzebom istnienia i~rozwoju ludzkiej współpracy społecznej, która ukształtowała się i~przetrwała w~ludzkiej
+świadomości i~stale zyskuje na sile, pomimo wszelkiego sprzeciwu ze strony tych, którzy teraz zdominowali świat. Ty sam
+nie mógłbyś obronić, inaczej niż żałosnym sofizmem, obecnych instytucji społecznych swoją interpretacją abstrakcyjnych
+zasad moralności i~sprawiedliwości. 
+
+
+
+
+ 
+\noindent AMBROGIO: Naprawdę jesteś bardzo zarozumiały. Nie wystarczy zaprzeczać, jak mi się wydaje, prawu własności, ale
+utrzymujesz, że nie jesteśmy w~stanie bronić go własnymi zasadami\ldots 
+
+
+
+
+ 
+Giorgio: Tak, dokładnie. Jeśli chcesz, zademonstruję ci to następnym razem. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Pięć}
+
+
+
+ 
+\noindent GIORGIO: Zatem, mój drogi sędzio, jeśli się nie mylę, mówiliśmy o prawie własności. 
+
+
+
+
+ 
+\noindent AMBROGIO: Rzeczywiście. Jestem bardzo ciekawy, jak broniłbyś w~imię sprawiedliwości i~moralności swoich propozycji
+plądrowania i~grabieży. 
+
+ 
+Społeczeństwo, w~którym nikt nie jest pewny swojej własności, nie byłoby już społeczeństwem, ale hordą dzikich bestii
+gotowych pożreć się nawzajem. 
+
+
+
+
+ 
+\noindent GIORGIO: Czy nie wydaje ci się, że tak właśnie jest w~przypadku dzisiejszego społeczeństwa? 
+
+ 
+Zarzucasz nam grabież i~rabunek; ale przeciwnie, czy to nie właściciele nieustannie plądrują robotników i~okradają ich z~owoców ich pracy? 
+
+
+
+
+ 
+\noindent AMBROGIO: Właściciele wykorzystują swoje towary w~sposób, który uważają za najlepszy i~mają do tego prawo, tak samo
+robotnicy swobodnie rozporządzają swoją pracą. Właściciele i~pracownicy swobodnie zawierają umowy za cenę pracy, a
+kiedy umowa jest przestrzegana, nikt nie może narzekać. 
+
+ 
+Dobroczynność może złagodzić dotkliwe kłopoty, niezasłużone kłopoty, ale prawa muszą pozostać nietykalne. 
+
+
+
+
+ 
+\noindent GIORGIO: Ale ty mówisz o wolnej umowie! Robotnik, który nie pracuje, nie może jeść, a jego wolność przypomina wolność
+napadniętego przez złodziei podróżnika, który w~obawie przed utratą życia oddaje sakiewkę. 
+
+
+
+
+ 
+\noindent AMBROGIO: W~porządku; ale nie można tego wykorzystać do zanegowania prawa każdej osoby do rozporządzania swoją
+własnością według własnego uznania. 
+
+
+
+
+ 
+\noindent GIORGIO: Ich własność, ich własność! Ale czy to nie dzieje się dlatego, że właściciele ziemscy mogą twierdzić, że ziemia
+i jej produkty są ich własnością, a kapitaliści mogą uważać za swoje narzędzia pracy i~inny kapitał stworzony przez
+ludzką działalność? 
+
+
+
+
+ 
+\noindent AMBROGIO: Prawo uznaje ich prawo do tego. 
+
+
+
+
+ 
+\noindent GIORGIO: Ach! Jeśli to tylko prawo, to nawet uliczny zabójca mógłby domagać się prawa do zabójstwa i~rabunku: musiałby
+tylko sformułować kilka artykułów prawnych uznających te prawa. Z~drugiej strony, tego właśnie dokonała klasa
+dominująca: stworzyła prawa legitymizujące uzurpacje, których już dokonała, i~uczyniła z~nich narzędzie nowych
+zawłaszczeń. 
+
+ 
+Jeśli wszystkie wasze ,,najwyższe zasady'' opierają się na kodeksach prawnych, wystarczy, że jutro powstanie ustawa o
+zniesieniu własności prywatnej, a to, co dzisiaj nazywacie rabunkiem i~grabieżą, stanie się natychmiast ,,najwyższą
+zasadą''. 
+
+
+
+
+ 
+\noindent AMBROGIO: O! Ale prawo musi być sprawiedliwe! Musi być zgodne z~zasadami praw i~moralności i~nie powinno być wynikiem
+nieokiełznanych kaprysów, bo inaczej\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Tak więc to nie ustawa tworzy prawa, ale prawa, które uzasadniają ustawę. Jakim więc prawem całe istniejące
+bogactwo, zarówno bogactwo naturalne, jak i~to, które zostało stworzone pracą ludzkości, należy do kilku jednostek i~daje im prawo życia i~śmierci nad masami nieuprzywilejowanych? 
+
+
+
+
+ 
+\noindent AMBROGIO: Jest to prawo, które każda osoba ma i~musi mieć, aby swobodnie rozporządzać produktem swojej działalności.
+Jest naturalne dla ludzkości, bez niej cywilizacja nie byłaby możliwa. 
+
+
+
+
+ 
+\noindent GIORGIO: Cóż, ja nigdy! Oto mamy teraz obrońcę praw pracowniczych. Brawo, naprawdę! Ale powiedz mi, dlaczego ci, którzy
+pracują, są tymi, którzy nic nie mają, podczas gdy własność faktycznie należy do tych, którzy nie pracują? 
+
+ 
+Czy nie przyszło ci do głowy, że logiczną konsekwencją twojej teorii jest to, że obecni właściciele są złodziejami i~że,
+sprawiedliwie, musimy ich wywłaszczyć, aby przekazać bogactwo, które przywłaszczyli, prawowitym właścicielom,
+robotnikom ? 
+
+
+
+
+ 
+\noindent AMBROGIO: Jeśli istnieją właściciele, którzy nie pracują, to dlatego, że jako pierwsi podjęli pracę, oni lub ich
+przodkowie, i~mieli zasługi, by oszczędzać, oraz geniusz, który sprawił, że ich oszczędności przyniosły owoce. 
+
+
+
+
+ 
+\noindent GIORGIO: Rzeczywiście, czy możesz sobie wyobrazić robotnika, który z~reguły zarabia ledwie na utrzymanie się przy życiu,
+oszczędzającego i~gromadzącego bogactwa! 
+
+ 
+Dobrze wiesz, że źródłem własności jest przemoc, rabunek i~kradzież, legalna lub nielegalna. Ale załóżmy, że jeśli
+podoba ci się, że ktoś osiągnął pewne oszczędności produkcji w~swojej pracy, swojej osobistej pracy: jeśli chce cieszyć
+się nimi później, kiedy i~jak chce, to jest w~porządku. Ale ten pogląd na sprawy zmienia się całkowicie, gdy zaczyna
+się proces oszczędzania, jak to nazywacie,\begin{itshape}niedźwiedzi owoc \end{itshape}.
+Oznacza to zmuszanie innych do pracy i~okradanie ich z~części tego, co oni produkują; oznacza gromadzenie niektórych
+towarów i~sprzedawanie ich po cenie wyższej niż ich koszt; oznacza sztuczne tworzenie niedoboru w~celu spekulacji;
+oznacza odbieranie innym środków do życia pochodzących z~wolnej pracy, aby zmusić ich do pracy za marne wynagrodzenie;
+i wiele innych podobnych rzeczy, które nie odpowiadają poczuciu sprawiedliwości i~dowodzą, że własność, jeśli nie
+pochodzi z~jawnego i~otwartego rabunku, pochodzi z~pracy innych, którą właściciele w~taki czy inny sposób obrócili dla
+swoich własną korzyść. 
+
+ 
+Czy wydaje ci się sprawiedliwe, że osoba, która (przyznajmy) swoją pracą i~swoim geniuszem zgromadziła trochę kapitału,
+może z~tego powodu okradać innych z~produktów swojej pracy, a ponadto pozostawić wszystkim pokoleniom swoich potomków
+prawo do życia w~bezczynności na koszt robotników? 
+
+ 
+Czy wydaje ci się sprawiedliwe, że ponieważ było kilku pracowitych i~oszczędnych ludzi — mówię to, aby uwypuklić twoje
+stanowisko — którzy zgromadzili trochę kapitału, wielkie masy ludzkości muszą być skazane na wieczną nędzę i~brutalizację? 
+
+ 
+A z~drugiej strony, nawet gdyby ktoś pracował na siebie, swoimi mięśniami i~mózgiem, nie wyzyskując nikogo; choćby,
+wbrew wszelkim przeciwnościom taki był w~stanie wyprodukować znacznie więcej, niż potrzebował, bez bezpośredniej lub
+pośredniej współpracy całego społeczeństwa, nie oznacza to, że z~tego powodu powinien być uprawniony do wyrządzania
+krzywdy innym, do odbierać innym środki do życia. Gdyby ktoś zbudował drogę wzdłuż brzegu, nie mógłby z~tego powodu
+domagać się prawa do odmowy innym dostępu do morza. Gdyby ktoś mógł samodzielnie uprawiać i~uprawiał całą ziemię
+prowincji, nie mógłby z~tego powodu zagłodzić wszystkich mieszkańców tej prowincji. Gdyby ktoś stworzył jakieś nowe i~potężne środki produkcji, nie miałby prawa używać swojego wynalazku w~taki sposób, aby podporządkować sobie ludzi, a
+tym bardziej przekazać niezliczonym potomkom prawa do dominacji i~wykorzystywania przyszłych pokoleń. 
+
+ 
+Ale gubię się w~myśleniu przez chwilę, że właściciele są robotnikami lub potomkami robotników! Czy chcesz, abym ci
+powiedział, skąd pochodzi majątek wszystkich panów w~naszej gminie, zarówno szlachciców starożytnego rodu, jak
+i\begin{itshape}nowobogackich \end{itshape}? 
+
+
+
+
+ 
+\noindent AMBROGIO: Nie, nie, na litość boską zostawmy sprawy osobiste. 
+
+ 
+Jeśli istnieją bogactwa zdobyte wątpliwymi środkami, nie stanowi to powodu do odmowy prawa własności. Przeszłość to
+przeszłość i~nie ma sensu ponownie rozkopywać starych problemów. 
+
+
+
+
+ 
+\noindent GIORGIO: Zostawimy je zakopane, jeśli tego chcesz. Na tyle na ile wiem, nie jest to ważne. Własność indywidualna powinna
+zostać zniesiona nie tyle dlatego, że została nabyta w~mniej lub bardziej wątpliwy sposób, ile dlatego, że daje prawo i~środki do wykorzystywania pracy innych, a jej rozwój zawsze doprowadzi do tego, że wielkie masy ludzi są zależne od
+kilku. 
+
+ 
+Ale, nawiasem mówiąc, jak możesz uzasadnić indywidualną własność ziemską swoją teorią oszczędności? Nie możesz mi
+powiedzieć, że to powstało dzięki pracy właścicieli lub ich przodków? 
+
+
+
+
+ 
+\noindent AMBROGIO: Widzisz. Nieuprawiana, sterylna ziemia nie ma żadnej wartości. Ludzie ją okupują, odzyskują, sprawiają, że
+plonuje i~naturalnie mają prawo do jej plonów, które nie zostałyby wyprodukowane bez ich pracy na tej ziemi. 
+
+
+
+
+ 
+\noindent GIORGIO: W~porządku: to jest prawo robotnika do owoców jego własnej pracy; ale to prawo ustaje, gdy przestaje uprawiać
+ziemię. Nie sądzisz? 
+
+ 
+Jak to się dzieje, że obecni właściciele posiadają terytoria, często ogromne, choć nie pracują, nigdy nie pracowali i~najczęściej nie pozwalają pracować innym? 
+
+ 
+Jak to jest, że ziemie, które nigdy nie były uprawiane, są własnością prywatną? Co to za dzieło, co to za ulepszenie,
+które mogło dać początek, w~tym przypadku, prawu własności? 
+
+ 
+Prawda jest taka, że  dla ziemii, a tym bardziej reszty, źródłem własności prywatnej jest przemoc. I~nie
+możesz tego skutecznie usprawiedliwić, jeśli nie zaakceptujesz zasady, że prawo równa się sile, na takim razie\ldots
+Niebiosa dopomóż, jeśli któregoś dnia staniesz się osłabiony. 
+
+
+
+
+ 
+\noindent AMBROGIO: Krótko mówiąc, tracisz z~oczu użyteczność społeczną, nieodłączną konieczność społeczeństwa obywatelskiego. Bez
+prawa własności nie byłoby bezpieczeństwa, uporządkowanej pracy, a społeczeństwo pogrążyłoby się w~chaosie. 
+
+
+
+
+ 
+\noindent GIORGIO: Co! Teraz mówisz o społecznym pożytku? Ale kiedy w~naszych wcześniejszych rozmowach zajmowałem się tylko
+szkodami powodowanymi przez własność prywatną, wezwaliście mnie z~powrotem do sporów o prawa abstrakcyjne! 
+
+ 
+Wystarczy na ten wieczór. Przepraszam, ale muszę iść. Zajmiemy się tym innym razem. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Sześć}
+
+
+
+ 
+\noindent GIORGIO: Cóż, słyszałeś, co się stało. Ktoś powiedział gazecie o rozmowie, którą odbyliśmy ostatnim razem, a za jej
+opublikowanie gazeta została ocenzurowana. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ach! 
+
+
+
+
+ 
+\noindent GIORGIO: Oczywiście, to oczywiste, że nic nie wiesz\ldots! Nie rozumiem, jak możesz twierdzić, że jesteś tak pewny swoich
+pomysłów, skoro tak bardzo boisz się publicznej dyskusji na ich temat. Gazeta wiernie przedstawiała zarówno twoje, jak
+i moje argumenty. Powinieneś się cieszyć, że opinia publiczna jest w~stanie docenić racjonalne podstawy, na których
+opiera się obecna konstytucja społeczna, i~oddaje sprawiedliwość daremnej krytyce jej przeciwników. Zamiast tego
+zamykasz ludzi, uciszasz ich. 
+
+
+
+
+ 
+\noindent AMBROGIO: Nie jestem w~to w~ogóle zaangażowany; należę do sądowniczej części, a nie do ministerstwa publicznego. 
+
+
+
+
+ 
+\noindent GIORGIO: Tak, wiem! Ale wszyscy jesteście takimi samymi kolegami i~ten sam duch ożywia was wszystkich. 
+
+ 
+Jeśli denerwuje cię moja paplanina, powiedz mi\ldots a pójdę sobie pogadać gdzie indziej. 
+
+
+
+
+ 
+\noindent AMBROGIO: Nie, nie, wręcz przeciwnie, przyznaję, że jestem zainteresowany. Kontynuujmy; co do zakazu zbliżania się,
+jeśli sobie życzysz, dogadam się z~prokuratorem. W~końcu przy obowiązującym prawie nikomu nie odmawia się prawa do
+dyskusji. 
+
+
+
+
+ 
+\noindent GIORGIO: Kontynuujmy zatem. Ostatnim razem, jeśli dobrze pamiętam, w~obronie prawa własności wziąłeś za podstawę prawo
+pozytywne, czyli kodeks cywilny, potem poczucie sprawiedliwości, potem użyteczność społeczną. Pozwól, że podsumuję w~kilku słowach moje poglądy na ten temat. 
+
+ 
+Z mojego punktu widzenia własność indywidualna jest niesprawiedliwa i~niemoralna, ponieważ opiera się albo na jawnej
+przemocy, na oszustwie, albo na legalnym wyzysku pracy innych; a to jest szkodliwe, bo przeszkadza produkcji i~uniemożliwia zaspokojenie potrzeb wszystkich przez to, co można uzyskać z~ziemi i~pracy, a także ponieważ tworzy biedę
+dla mas i~generuje nienawiść, zbrodnie i~większość zła, które dotyka współczesne społeczeństwo. 
+
+ 
+Z tych powodów chciałbym ją znieść i~zastąpić ustrojem własności opartym na wspólnej własności, w~którym wszyscy ludzie,
+wnosząc odpowiednią ilość pracy, otrzymają maksymalny możliwy poziom dobrobytu. 
+
+
+
+
+ 
+\noindent AMBROGIO: Doprawdy, nie rozumiem, z~jaką logiką doszedłeś do wspólnej własności. Walczyliście przeciwko własności,
+ponieważ według was wywodzi się ona z~przemocy i~wyzysku pracy innych; powiedziałeś, że kapitaliści regulują produkcję,
+mając na uwadze swoje zyski, a nie lepsze zaspokojenie potrzeb społecznych przy jak najmniejszym wysiłku pracowników;
+odmówiłeś sobie prawa do czerpania dochodów z~ziemi, której sam nie uprawiasz, czerpania zysków z~własnych pieniędzy
+lub uzyskiwania odsetek poprzez inwestowanie w~budowę domów i~inne gałęzie przemysłu; ale uznałeś jednak prawo
+robotników do produktów ich własnej pracy, właściwie broniłeś tego. W~konsekwencji, zgodnie ze ścisłą logiką, na
+podstawie tych kryteriów można kwestionować weryfikację tytułów własności i~domagać się zniesienia odsetek od pieniędzy
+i dochodów prywatnych; możesz nawet prosić o likwidację obecnego społeczeństwa i~podział ziemi i~narzędzi pracy między
+tych, którzy chcą z~nich korzystać\ldots ale nie możesz mówić o komunizmie. Zawsze musi istnieć indywidualna własność
+produktów własnej pracy; a jeśli chcesz, aby twój wyemancypowany robotnik miał w~przyszłości to zabezpieczenie, bez
+którego nie będzie wykonywana żadna praca, która nie przynosi natychmiastowego zysku, musisz uznać indywidualną
+własność ziemi i~narzędzi produkcji w~zakresie, w~jakim są one używane. 
+
+
+
+
+ 
+\noindent GIORGIO: Doskonale, proszę kontynuuj; można by powiedzieć, że nawet ty jesteś naznaczony smołą socjalizmu. Jesteś ze
+szkoły socjalistycznej różnej się od mojej, ale to wciąż socjalizm. Socjalistyczny sędzia to ciekawe zjawisko. 
+
+
+
+
+ 
+\noindent AMBROGIO: Nie, nie, nie jestem socjalistą. Pokazałem tylko twoje sprzeczności i~pokazałem ci, że logicznie powinieneś
+być \begin{itshape}mutualista \end{itshape}, a nie komunistą, zwolennikiem podziału
+własności. 
+
+ 
+A potem muszę ci powiedzieć, że podział własności na małe części uniemożliwiłby jakiekolwiek duże przedsięwzięcie i~doprowadziłby do powszechnej nędzy. 
+
+
+
+
+ 
+\noindent GIORGIO: Ale nie jestem mutualistą, zwolennikiem podziału własności, ani, o ile mi wiadomo, żadnym innym współczesnym
+socjalistą. 
+
+ 
+Nie sądzę, aby podział własności był gorszy niż pozostawienie jej w~całości w~rękach kapitalistów; ale wiem, że ten
+podział, tam, gdzie to możliwe, spowodowałby poważne szkody w~produkcji. Przede wszystkim nie mógłby przetrwać i~doprowadziłby ponownie do powstania wielkich fortun i~do proletaryzacji mas, aw ostatecznym rozrachunku do nędzy i~wyzysku. 
+
+ 
+Mówię, że \textit{pracownik ma prawo do całego produktu pracy}: ale uznaję, że to prawo jest tylko formułą
+abstrakcyjnej sprawiedliwości; i~oznacza w~praktyce, że nie powinno być wyzysku, że każdy musi pracować i~korzystać z~owoców swojej pracy, zgodnie z~uzgodnionym między sobą zwyczajem. 
+
+ 
+Pracownicy nie są odizolowanymi istotami, które żyją samodzielnie i~dla siebie, ale istotami społecznymi, które żyją w~ciągłej wymianie usług z~innymi pracownikami i~muszą skoordynować swoje prawa z~prawami innych. Co więcej, nie jest
+możliwe, tym bardziej przy nowoczesnych metodach produkcji, dokładne określenie pracy, jaką włożył każdy robotnik, tak
+jak niemożliwe jest określenie różnic w~produktywności każdego robotnika lub każdej grupy pracowników, ile wynika z~płodności gleby, jakości używanych narzędzi, korzyści lub trudności wynikające z~położenia geograficznego lub
+środowiska społecznego. Dlatego rozwiązania nie można znaleźć w~odniesieniu do ścisłych praw każdej osoby, ale należy
+go szukać w~braterskiej zgodzie, w~solidarności. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale w~takim razie nie ma już wolności. 
+
+
+
+
+ 
+\noindent GIORGIO: Wręcz przeciwnie, dopiero wtedy będzie wolność. Wy, tak zwani liberałowie, nazywacie wolność teoretycznym,
+abstrakcyjnym prawem do robienia czegoś; i~byłbyś w~stanie powiedzieć bez uśmiechu lub rumieńca, że osoba, która
+umarła z~głodu, ponieważ nie była w~stanie zdobyć dla siebie pożywienia, mogła jeść. My przeciwnie, nazywamy wolność
+możliwością zrobienia czegoś, i~ta wolność, jedyna prawdziwa, staje się tym większa, im większa jest zgoda między
+ludźmi i~wsparcie, jakiego sobie wzajemnie udzielają. 
+
+
+
+
+ 
+\noindent AMBROGIO: Powiedziałeś, że jeśli majątek zostanie podzielony, to wkrótce wielkie fortuny zostaną przywrócone i~nastąpi
+powrót do pierwotnej sytuacji. Dlaczego? 
+
+
+
+
+ 
+\noindent GIORGIO: Ponieważ na początku osiągnięcie idealnej równości byłoby celem niemożliwym do osiągnięcia. Istnieją różne
+rodzaje gruntów, niektóre dają dużo przy niewielkim nakładzie pracy, a inne mało przy dużym nakładzie pracy; różne
+miejsca mają wiele zalet i~wad; istnieją również wielkie różnice w~sile fizycznej i~intelektualnej między jedną osobą a
+drugą. Teraz z~tych podziałów wyłoniłaby się naturalnie rywalizacja i~walka: najlepsza ziemia, najlepsze narzędzia,
+najlepsze miejsca trafiłyby do najsilniejszych, najbardziej inteligentnych lub najbardziej przebiegłych. Stąd, będąc w~rękach najlepszych środków materialnych, ci ludzie szybko znaleźliby się w~pozycji wyższej od innych, a korzystając z~tych wczesnych przewag, łatwo by urośli w~siłę, rozpoczynając w~ten sposób nowy proces wyzysku i~wywłaszczania słabych,
+co doprowadziłoby do przywrócenia społeczeństwa burżuazyjnego. 
+
+
+
+
+ 
+\noindent AMBROGIO: Zatem, naprawdę poważnie, jesteś komunistą? Chcesz praw, które uznałyby udział każdej osoby za nieprzenoszalny
+i otaczałyby słabych poważnymi gwarancjami prawnymi. 
+
+
+
+
+ 
+\noindent GIORGIO: O! Zawsze myślisz, że można wszystko naprawić prawami. Nie na darmo jesteś sędzią. Prawa są ustanawiane i~uchylane, aby zadowolić najsilniejszych. 
+
+ 
+Ci, którzy są trochę silniejsi od przeciętnej, łamią je; ci, którzy są o wiele silniejsi, uchylają je i~zmuszają innych,
+aby dopasowali się do ich interesów. 
+
+
+
+
+ 
+\noindent AMBROGIO: A więc? 
+
+
+
+
+ 
+\noindent GIORGIO: No więc, już ci mówiłem, konieczne jest zastąpienie walki między ludźmi porozumieniem i~solidarnością, a żeby
+to osiągnąć, trzeba przede wszystkim znieść własność indywidualną. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale nie byłoby żadnych problemów ze wszystkimi dostępnymi dobrami. Wszystko należy do wszystkich, kto chce,
+może pracować, a kto nie, może się kochać; jedz, pij, raduj się! Och, co za Kraina Obfitości! Co za dobre życie! Co za
+piękny dom wariatów! Ha! Ha! Ha! 
+
+
+
+
+ 
+\noindent GIORGIO: Zważywszy na to, co robisz, chcąc racjonalnie bronić społeczeństwa, które utrzymuje się przy pomocy brutalnej
+siły, nie sądzę, żebyś miał z~czego się śmiać! 
+
+ 
+Tak, mój dobry panie, jestem komunistą. Ale wydaje mi się, że masz dziwne pojęcie komunizmu. Następnym razem postaram
+się, żebyś zrozumiał. Na razie dobry wieczór. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Siedem}
+
+
+
+ 
+\noindent AMBROGIO: No to może mi wyjaśnisz, o co chodzi z~tym twoim komunizmem. 
+
+
+
+
+ 
+\noindent GIORGIO: Z~przyjemnością. 
+
+ 
+Komunizm jest metodą organizacji społecznej, w~której ludzie, zamiast walczyć między sobą o zmonopolizowanie naturalnych
+korzyści i~alternatywnie wyzyskiwanie i~uciskanie się nawzajem, jak to ma miejsce w~dzisiejszym społeczeństwie,
+zrzeszają się i~zgadzają się współpracować w~najlepszym interesie wszystkich. Wychodząc z~zasady, że ziemia, kopalnie i~wszystkie siły natury należą do wszystkich i~że całe zgromadzone bogactwo i~zdobycze poprzednich pokoleń również należą
+do wszystkich, ludzie w~komunizmie chcieliby współpracować, aby wyprodukować wszystko, co niezbędne. 
+
+
+
+
+\noindent AMBROGIO: Rozumiem. Chcecie, jak stwierdzono w~ulotce, która trafiła w~ręce podczas procesu anarchistycznego, aby każdy
+mógł produkować zgodnie ze swoimi możliwościami i~konsumować zgodnie ze swoimi potrzebami\begin{itshape};
+lub,\end{itshape}aby każdy dawał, co może i~brał to, czego potrzebuje\textit{Czy tak nie
+jest?}
+
+
+
+
+ 
+\noindent GIORGIO: W~rzeczywistości są to zasady, które często powtarzamy; ale aby poprawnie reprezentowały naszą koncepcję
+społeczeństwa komunistycznego, konieczne jest zrozumienie, co mają na myśli. Nie chodzi oczywiście o absolutne prawo do
+zaspokojenia \begin{itshape}wszystkich \end{itshape} potrzeb, ponieważ potrzeby są
+nieskończone, rosną szybciej niż środki do ich zaspokojenia, a więc ich zaspokojenie jest zawsze ograniczone
+zdolnościami produkcyjnymi; nie byłoby też pożyteczne ani sprawiedliwe, aby społeczność w~celu zaspokojenia nadmiernych
+potrzeb, zwanych inaczej kaprysami, kilku jednostek, podejmowała pracę niewspółmierną do wytwarzanej użyteczności. Nie
+mówimy też o zatrudnieniu \textit{wszystkich } swoich sił w~wytwarzaniu rzeczy, bo dosłownie oznaczałoby to
+pracę do wyczerpania, co oznaczałoby, że maksymalizując zaspokojenie ludzkich potrzeb, niszczymy ludzkość. 
+
+ 
+Chcielibyśmy, aby wszyscy żyli jak najlepiej: aby każdy przy minimalnym wysiłku osiągnął maksimum satysfakcji. Nie wiem,
+jaką podać ci teoretyczną formułę, która poprawnie obrazuje taki układ spraw; ale kiedy pozbędziemy się społecznego
+środowiska szefa i~policji, a ludzie uznają się za rodzinę i~pomyślą o pomaganiu sobie nawzajem zamiast o wyzysku,
+wkrótce zostanie odkryta praktyczna formuła życia społecznego. W~każdym razie wykorzystamy w~pełni to, co wiemy i~co
+możemy zrobić, wprowadzając częściowe modyfikacje, gdy nauczymy się robić rzeczy lepiej. 
+
+
+
+
+ 
+\noindent AMBROGIO: Rozumiem: jesteś zwolennikiem tzw \begin{itshape}prise au tas \end{itshape}, jak
+powiedzieliby twoi towarzysze z~Francji, to znaczy każdy produkuje to, co mu się podoba i~na czym mu zależy,
+\textit{wrzuca na stos} lub, jeśli wolisz, przynosi do wspólnego magazynu to, co wyprodukował; i~każda osoba
+ \begin{itshape}bierze ze sterty\end{itshape} jak mu się podoba i~czego potrzebuje. Czy tak
+nie jest? 
+
+
+
+
+ 
+\noindent GIORGIO: Zauważyłem, że postanowiłeś się trochę doinformować w~tej sprawie i~chyba przeczytałeś dokumenty procesu
+dokładniej niż zwykle, kiedy wysyłasz nas do więzienia. Gdyby wszyscy sędziowie i~policjanci tak postępowali, to
+rzeczy, które nam kradną podczas rewizji, przynajmniej na coś by się przydały! 
+
+ 
+Wróćmy jednak do naszej dyskusji. Nawet ta formuła \begin{itshape}wziąć ze
+sterty \end{itshape} jest tylko formą słów, która wyraża skłonność do zastąpienia dzisiejszego ducha
+rynku duchem braterstwa i~solidarności, ale nie wskazuje z~całą pewnością określonej metody organizacji społecznej. Być
+może znalazłbyś wśród nas takich, którzy tę formułę traktują dosłownie, bo zakładają, że spontanicznie podejmowanej
+pracy zawsze będzie dużo, a produktów będzie się kumulować w~takiej ilości i~różnorodności, że zasady dotyczące pracy
+czy konsumpcji będą bezcelowe. Ale ja tak nie myślę: wierzę, jak już mówiłem, że ludzie zawsze mają więcej potrzeb niż
+możliwości ich zaspokojenia i~cieszę się z~tego, bo to bodziec do postępu; i~myślę, że nawet gdybyśmy mogli, absurdalną
+stratą energii byłoby produkowanie na ślepo w~celu zaspokojenia wszystkich możliwych potrzeb, zamiast kalkulować
+rzeczywiste potrzeby i~organizować je tak, aby jak najmniejszym wysiłkiem je zaspokoić. Tak więc raz jeszcze
+rozwiązanie leży w~zgodzie między ludźmi i~w~porozumieniach, wyrażonych lub milczących, które nastąpią, gdy osiągną
+równość warunków i~będą zainspirowani poczuciem solidarności. 
+
+ 
+Postaraj się wejść w~ducha naszego programu i~nie przejmuj się zbytnio formułami, które, w~naszej partii, jak każdej
+innej, nie są zwięzłe i~uderzające, ale zawsze są niejasnym i~niedokładnym sposobem wyrażenia szerokiego kierunku. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale czy nie rozumiesz, że komunizm jest zaprzeczeniem wolności i~osobowości człowieka? Być może istniało u
+początków ludzkości, kiedy istoty ludzkie, słabo rozwinięte intelektualnie i~moralnie, były szczęśliwe, kiedy mogły
+zaspokoić swoje materialne apetyty jako członkowie hordy. Być może jest to możliwe w~stowarzyszeniu religijnym lub
+zakonie, które dąży do stłumienia ludzkich namiętności i~szczyci się włączaniem jednostki do wspólnoty religijnej i~uważa posłuszeństwo za główny obowiązek. Ale w~nowoczesnym społeczeństwie, w~którym następuje wielki rozkwit
+cywilizacji, wytworzony przez swobodną działalność jednostek, z~potrzebą niezależności i~wolności, która dręczy i~uszlachetnia współczesnego człowieka, komunizm jest nie tylko niemożliwym marzeniem, jest powrotem do barbarzyństwa.
+Każda aktywność byłaby sparaliżowana; każdy obiecujący konkurs, w~którym można było się wyróżnić, zamanifestować swoją
+indywidualność, zgaszony\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: I~tak dalej, i~tak dalej. 
+
+ 
+Pospiesz się. Nie marnuj swojej elokwencji. Są to dobrze znane zwroty\ldots i~są niczym więcej niż mnóstwem bezczelnych i~nieodpowiedzialnych kłamstw. Wolność, indywidualność tych, którzy umierają z~głodu! Co za prymitywna ironia! Cóż za
+głęboka hipokryzja! 
+
+ 
+Bronicie społeczeństwa, w~którym ogromna większość żyje w~bestialskich warunkach, społeczeństwa, w~którym robotnicy
+umierają z~niedostatku i~głodu, w~którym tysiące i~miliony dzieci umierają z~powodu braku opieki, w~którym kobiety
+prostytuują się z~głodu, w~którym ignorancja zaćmiewa umysł, w~którym nawet wykształceni muszą sprzedawać swój talent i~kłamać, aby się najeść, w~którym nikt nie jest pewien jutra, a ty śmiesz mówić o wolności i~indywidualności? 
+
+ 
+Być może wolność i~możliwość rozwoju własnej indywidualności istnieją dla ciebie, dla małej kasty uprzywilejowanych\ldots a
+może nawet dla nich nie. Te same uprzywilejowane osoby są ofiarami walki między jednym człowiekiem a drugim, która
+zanieczyszcza całe życie społeczne, i~wiele by zyskały, gdyby mogły żyć w~społeczeństwie wzajemnego zaufania, wolnym
+wśród wolnych, równym wśród równych. 
+
+ 
+Czy jednak można podtrzymać pogląd, że solidarność szkodzi wolności i~rozwojowi jednostki? Gdybyśmy rozmawiali o
+rodzinie, a będziemy o tym rozmawiać, kiedy tylko zechcesz, wyśpiewywałbyś jeden ze zwykłych konwencjonalnych hymnów na
+cześć tej świętej instytucji, tego kamienia węgielnego itd. itd.  Cóż, co w~rodzinie wychwalamy, jeśli nie to, co
+powszechnie istnieje, miłość i~solidarność panujące wśród jej członkowie. Czy uważałbyś, że członkowie rodziny byliby
+bardziej wolni, a ich indywidualność bardziej rozwinięta, gdyby zamiast się kochać i~wspólnie pracować dla wspólnego
+dobra, kradli, nienawidzili się i~bili? 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale żeby uregulować społeczeństwo jak rodzinę, zorganizować i~sprawić, by społeczeństwo komunistyczne
+funkcjonowało, potrzebna jest ogromna centralizacja, żelazny despotyzm i~wszechobecne państwo. Wyobraź sobie, jaką
+opresyjną władzę miałby rząd, który mógłby rozporządzać całym społecznym bogactwem i~przydzielać wszystkim pracę, którą
+muszą wykonać, i~dobra, które mogliby skonsumować! 
+
+
+
+
+ 
+\noindent GIORGIO: Z~pewnością, jeśli komunizm miałby być tym, czym go sobie wyobrażasz i~jak jest postrzegany przez kilka
+autorytarnych szkół, to byłoby to niemożliwe do osiągnięcia, a jeśli możliwe, skończyłoby się kolosalną i~bardzo
+skomplikowaną tyranią, która nieuchronnie wywołałaby wielką reakcję. 
+
+ 
+Ale w~komunizmie, który chcemy, nie ma nic z~tych rzeczy. Chcemy wolnego komunizmu,
+\begin{itshape}anarchizmu \end{itshape}, jeśli to słowo cię nie obraża. Innymi słowy, chcemy
+komunizmu, który jest swobodnie zorganizowany, od dołu do góry, począwszy od jednostek, które jednoczą się w~stowarzyszeniach, które powoli rosną stopniowo w~coraz bardziej złożone federacje stowarzyszeń, ostatecznie obejmując
+całą ludzkość w~ogólnym porozumieniu współpracy i~solidarności. I~tak jak ten komunizm będzie swobodnie ukonstytuowany,
+musi dobrowolnie utrzymywać się dzięki woli zaangażowanych. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale aby stało się to możliwe, potrzebowalibyście ludzi, aby byli aniołami, aby wszyscy byli altruistami!
+Zamiast tego ludzie są z~natury egoistyczni, niegodziwi, obłudni i~leniwi. 
+
+
+
+
+ 
+\noindent GIORGIO: Z~pewnością dlatego, że aby komunizm stał się możliwy, konieczne jest, aby istoty ludzkie, częściowo z~powodu
+impulsu do towarzyskości, a częściowo z~wyraźnego zrozumienia swoich interesów, nie życzyły sobie nawzajem złej woli,
+ale chciały się dogadać i~praktykować wzajemną pomoc. Ale ten stan nie wydaje się niemożliwy, nawet teraz jest normalny
+i powszechny. Obecna organizacja społeczna jest permanentną przyczyną antagonizmów i~konfliktów między klasami i~jednostkami: I~jeśli pomimo tego społeczeństwo wciąż jest w~stanie się utrzymać i~nie przeradza się dosłownie w~stado
+pożerających się nawzajem wilków, to właśnie dzięki głębokiemu ludzkiemu instynktowi do socjalizacji, który wytwarza
+tysiące aktów solidarności, sympatii, oddania, poświęcenia, które są dokonywane w~każdej chwili, nawet o nich nie
+myśląc, który umożliwia przetrwanie społeczeństwa, niezależnie od przyczyn rozpadu, które niesie ze sobą w~sobie. 
+
+ 
+Istoty ludzkie są z~natury zarówno egoistyczne, jak i~altruistyczne, biologicznie zdeterminowane, powiedziałbym, do
+społeczności. Gdyby ludzie nie byli egoistami, to znaczy, gdyby nie mieli instynktu samozachowawczego, nie mogliby
+istnieć jako jednostki; i~gdyby nie byli altruistami, innymi słowy, gdyby nie mieli instynktu poświęcenia się dla
+innych, którego pierwszym przejawem jest miłość do własnych dzieci, nie mogliby istnieć jako gatunek i~najprawdopodobniej nie rozwinęliby życia społecznego. 
+
+ 
+Współistnienie uczucia egoistycznego i~altruistycznego oraz niemożność zaspokojenia ich w~istniejącym społeczeństwie
+sprawiają, że dzisiaj nikt nie jest usatysfakcjonowany, nawet ci, którzy zajmują uprzywilejowane pozycje. Z~drugiej
+strony komunizm jest formą społeczną, w~której mieszają się egoizm i~altruizm, i~wszyscy to zaakceptują, ponieważ
+przynosi korzyści wszystkim. 
+
+
+
+
+ 
+\noindent AMBROGIO: Może być tak, jak mówisz: ale czy myślisz, że wszyscy by chcieli i~wiedzieliby, jak przystosować się do
+obowiązków, jakie narzuca społeczeństwo komunistyczne, jeśli na przykład ludzie nie chcą pracować? Oczywiście na
+wszystko masz w~teorii odpowiedź, która najlepiej pasuje do twojej argumentacji, i~powiesz mi, że praca jest organiczną
+potrzebą, przyjemnością i~że każdy będzie walczył o jak najwięcej takiej przyjemności! 
+
+
+
+
+ 
+\noindent GIORGIO: Nie mówię tego, chociaż wiem, że wielu moich przyjaciół by tak powiedziało. Według mnie potrzebą organiczną i~przyjemnością jest ruch, aktywność nerwowa i~mięśniowa; ale praca jest zdyscyplinowaną działalnością skierowaną na
+obiektywny cel, zewnętrzny w~stosunku do organizmu. I~dobrze rozumiem, jak to się dzieje, że ktoś woli jazdę konną,
+kiedy zamiast tego trzeba sadzić kapustę. Wierzę jednak, że istoty ludzkie, kiedy mają jakiś cel na widoku, mogą się
+przystosować i~dostosowują się do warunków niezbędnych do jego osiągnięcia. 
+
+ 
+Ponieważ produkty, które uzyskuje się dzięki pracy, są niezbędne do przeżycia i~nikt nie będzie miał środków, by zmusić
+innych do pracy za nie, wszyscy uznają konieczność pracy i~będą faworyzować taką strukturę, w~której praca będzie mniej
+męcząca i~bardziej produktywna, a to jest, moim zdaniem, organizacja komunistyczna. 
+
+ 
+Weź również pod uwagę, że w~komunizmie ci sami pracownicy zorganizują i~pokierują pracą, a zatem mają interes w~uczynieniu jej lekką i~przyjemną; rozważ to, że w~komunizmie w~naturalny sposób rozwinie się opinia publiczna, która
+potępi bezczynność jako szkodliwą dla wszystkich, a jeśli znajdą się jacyś próżniacy, będą oni tylko znikomą
+mniejszością, którą można tolerować bez zauważalnej szkody. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale przypuśćmy, że wbrew twoim optymistycznym prognozom próżniaków będzie bardzo dużo, co byś zrobił?
+Poparłbyś ich? Jeśli tak, to równie dobrze możecie wspierać tych, których nazywacie burżuazją! 
+
+
+
+
+ 
+\noindent GIORGIO: Naprawdę jest wielka różnica; ponieważ burżuazja nie tylko bierze udział w~tym, co produkujemy, ale
+uniemożliwia nam produkowanie tego, czego chcemy i~jak chcemy to produkować. Niemniej jednak wcale nie mówię, że
+powinniśmy utrzymywać próżniaków, gdy jest ich tak dużo, że powodują szkody: bardzo się boję, aby bezczynność i~przyzwyczajenie do życia z~innych nie prowadziły do chęci dowodzenia. Komunizm to wolna umowa: kto jej nie akceptuje
+lub nie przestrzega, pozostaje poza nią. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale wtedy będzie nowa klasa nieuprzywilejowana? 
+
+
+
+
+ 
+\noindent GIORGIO: Wcale nie. Każda osoba ma prawo do ziemi, do narzędzi produkcji i~wszelkich korzyści, z~jakich człowiek może
+korzystać w~stanie cywilizacyjnym, jaki osiągnął. Jeśli ktoś nie chce zaakceptować komunistycznego życia i~obowiązku,
+to ich sprawa. Oni i~podobnie myślący dojdą do porozumienia, a jeśli znajdą się w~gorszym stanie niż inni, udowodni im
+to wyższość komunizmu i~zmusi ich do zjednoczenia się z~komunistami. 
+
+
+
+
+ 
+\noindent AMBROGIO: A więc będzie można nie akceptować komunizmu? 
+
+
+
+
+ 
+\noindent GIORGIO: Oczywiście: I~ktokolwiek to będzie, będzie miał takie same prawa jak komuniści do bogactwa naturalnego i~nagromadzonych produktów poprzednich pokoleń. Na miłość boską!! Zawsze mówiłem o wolnym porozumieniu, o wolnym
+komunizmie. Jak może istnieć wolność bez możliwej alternatywy? 
+
+
+
+
+ 
+\noindent AMBROGIO: Czyli nie chcesz na siłę narzucać swoich pomysłów? 
+
+
+
+
+ 
+\noindent GIORGIO: O! Oszalałeś? Bierzecie nas za policjantów czy sędziów? 
+
+
+
+
+ 
+\noindent AMBROGIO:Cóż, w~takim razie nie ma nic złego. Każdy może realizować swoje marzenia! 
+
+
+
+
+ 
+\noindent GIORGIO: Uważaj, żeby nie popełnić błędu: narzucanie idei to jedno, a obrona przed złodziejami i~przemocą, a odzyskanie
+swoich praw to co innego. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ach! Ach! Więc aby \begin{itshape}odzyskać swoje prawa \end{itshape} użyłbyś siły,
+prawda? 
+
+
+
+
+ 
+\noindent GIORGIO Na to ci nie odpowiem: może ci się to przydać do sporządzenia aktu oskarżenia w~jakimś procesie. Powiem wam, że
+z pewnością, kiedy ludzie staną się świadomi swoich praw i~będą chcieli położyć kres\ldots, istnieje ryzyko, że zostaniesz
+potraktowany dość szorstko. Ale będzie to zależeć od Twojego oporu. Jeśli zrezygnujesz w~dobrej woli, wszystko będzie
+spokojne i~przyjazne; jeśli wręcz przeciwnie, jesteś uparty, a jestem pewien, że taki będziesz, tym gorzej dla ciebie.
+Dobrego wieczoru. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Osiem}
+
+
+
+ 
+\noindent AMBROGIO: Wiesz! Im więcej myślę o waszym wolnym komunizmie, tym bardziej utwierdzam się w~przekonaniu, że jesteś\ldots
+prawdziwym oryginałem. 
+
+
+
+
+ 
+\noindent GIORGIO: A to dlaczego? 
+
+
+
+
+ 
+\noindent AMBROGIO: Bo zawsze mówisz o pracy, przyjemnościach, porozumieniach, umowach, ale nigdy nie mówisz o władzy społecznej,
+o rządzie. Kto będzie regulował życie społeczne? Jaki będzie rząd? Jak zostanie ukonstytuowany? Kto go wybierze? w~jaki
+sposób zapewni poszanowanie prawa i~karanie przestępców? Jak będą ukonstytuowane różne władze, ustawodawcza, wykonawcza
+czy sądownicza? 
+
+
+
+
+ 
+\noindent GIORGIO: Nie wiemy, co zrobić z~tymi wszystkimi władzami. Nie chcemy rządu. Czy nadal nie rozumiesz, że jestem
+anarchistą? 
+
+
+
+
+ 
+\noindent AMBROGIO: Cóż, mówiłem ci, że jesteś oryginałem. Jeszcze mogłem zrozumieć komunizm i~przyznać, że mógłby on przynieść
+wielkie korzyści, gdyby wszystko jeszcze regulował światły rząd, który miałby siłę, by wszyscy szanowali prawo. Ale
+tak, bez rządu, bez prawa! Jaki byłby bałagan? 
+
+
+
+
+ 
+\noindent GIORGIO: Przewidziałem to: najpierw byłeś przeciwko komunizmowi, ponieważ powiedziałeś, że potrzebuje silnego i~scentralizowanego rządu; teraz, kiedy usłyszałeś o społeczeństwie bez rządu, zgodziłbyś się nawet na komunizm, o ile
+istniałby rząd z~żelazną ręką. Krótko mówiąc, najbardziej przeraża cię wolność! 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale to jak wpaść z~deszczu pod rynnę! Pewne jest, że społeczeństwo bez rządu nie może istnieć. Jak można
+oczekiwać, że wszystko będzie działać bez zasad, bez jakichkolwiek przepisów? Będzie tak, że ktoś skręci w~prawo, ktoś
+inny w~lewo, a statek pozostanie nieruchomy lub, co bardziej prawdopodobne, opadnie na dno. 
+
+
+
+
+ 
+\noindent GIORGIO: Nie powiedziałem, że nie chcę zasad i~reguł. Powiedziałem ci, że nie chcę
+\begin{itshape}Rządu \end{itshape}, a przez rząd rozumiem władzę, która stanowi prawa i~narzuca je wszystkim. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale jeśli ten rząd jest wybierany przez ludzi, czyż nie jest to reprezentacja woli tych samych ludzi? Na co
+mógłbyś narzekać? 
+
+
+
+
+ 
+\noindent GIORGIO: To po prostu kłamstwo. Ogólna, abstrakcyjna, popularna wola jest niczym więcej niż metafizyczną fantazją.
+Społeczeństwo składa się z~ludzi, a ludzie mają tysiące różnych i~zróżnicowanych woli, w~zależności od różnic
+temperamentu i~okoliczności, i~oczekiwanie, że uda im się wydobyć z~nich, poprzez magiczne działanie urny wyborczej,
+ogólną wolę wspólną dla wszystkich, to po prostu absurdalność. Nawet jedna osoba nie byłaby w~stanie powierzyć komuś
+innemu wykonania swojej woli we wszystkich kwestiach, które mogą się pojawić w~danym okresie; bo oni sami nie potrafią
+z góry powiedzieć, jaka będzie ich wola przy tych różnych okazjach. Jak można mówić w~imieniu zbiorowości, ludzi,
+których członkowie już w~chwili wydawania mandatu byli już między sobą w~niezgodzie? 
+
+ 
+Pomyśl tylko przez chwilę, jak przebiegają wybory, i~zauważ, że zamierzam mówić o tym, jak by przebiegały, gdyby wszyscy
+ludzie byli wykształceni i~niezależni, a więc głosowanie w~pełni świadome i~wolne. Ty, na przykład, zagłosowałbyś na
+tego, kogo uważasz za najlepiej nadającego się do służenia twoim interesom i~wdrożenia twoich pomysłów. To już dużo
+ustępuje, bo masz tyle pomysłów i~tyle różnych zainteresowań, że nie wiedziałbyś, jak znaleźć osobę, która myśli zawsze
+tak jak ty we wszystkich sprawach: ale czy wtedy takiej osobie dasz twój głos i~kto będzie tobą rządził? w~żaden
+sposób. Twój kandydat może nie odnieść sukcesu, więc twoja wola nie stanowi części tak zwanej woli powszechnej: ale
+załóżmy, że odniesie sukces. 
+
+ 
+Na tej podstawie, czy ta osoba byłaby twoim władcą? Nawet w~snach. Byłaby tylko jednym z~wielu (na przykład we włoskim
+parlamencie jednym z~535), a w~rzeczywistości będziesz rządzony przez większość, którym nigdy nie daliście mandatu. I~ta większość (której członkowie otrzymali wiele różnych lub sprzecznych ze sobą mandatów, a jeszcze lepiej otrzymali
+tylko ogólne delegowanie uprawnień, bez żadnego konkretnego mandatu) nie jest w~stanie, nawet gdyby chciała, ustalić
+nieistniejącej woli ogólnej i~uszczęśliwić wszystkich, tylko zrobi to, czego chce, lub będzie postępować zgodnie z~życzeniami tych, którzy w~danej chwili nad nimi panują. 
+
+ 
+Daj spokój, lepiej odłożyć na bok to staroświeckie udawanie rządu, który reprezentuje wolę ludu. 
+
+ 
+Z pewnością istnieją pewne kwestie ogólnego porządku, co do których w~danym momencie wszyscy ludzie się zgodzą. Ale w~takim razie, jaki jest sens rządzenia? Kiedy wszyscy czegoś chcą, wystarczy, że to wcielą w~życie. 
+
+
+
+
+ 
+\noindent AMBROGIO: Krótko mówiąc, przyznałeś, że potrzebne są zasady, jakieś normy życia. Kto powinien je stworzyć? 
+
+
+
+
+ 
+\noindent GIORGIO: Sami zainteresowani, ci, którzy muszą przestrzegać tych przepisów. 
+
+
+
+
+ 
+\noindent AMBROGIO: Kto by narzucał przestrzeganie? 
+
+
+
+
+ 
+\noindent GIORGIO: Nikt, bo mówimy o normach, które są swobodnie akceptowane i~swobodnie przestrzegane. Nie mylcie norm, o których
+mówię, a które są praktycznymi konwencjami opartymi na poczuciu solidarności i~trosce wszystkich o interes zbiorowy, z~prawem, które jest regułą napisaną przez nielicznych i~narzuconą siłą wszystkim wszyscy. Nie chcemy praw, ale wolnych
+umów. 
+
+
+
+
+ 
+\noindent AMBROGIO: A jeśli ktoś złamie umowę? 
+
+
+
+
+ 
+\noindent GIORGIO: A dlaczego ktoś miałby naruszać umowę, na którą się zgodził? z~drugiej strony, gdyby doszło do naruszeń, byłoby
+to ostrzeżeniem, że umowa nie zadowoliła wszystkich i~musi zostać zmodyfikowana. I~każdy będzie szukał lepszego układu,
+bo w~interesie wszystkich leży, aby nikt nie był nieszczęśliwy. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale wydaje się, że tęsknisz za prymitywnym społeczeństwem, w~którym każdy jest samowystarczalny, a relacje
+między ludźmi są nieliczne, podstawowe i~ograniczone. 
+
+
+
+
+ 
+\noindent GIORGIO: Wcale nie. Ponieważ od chwili, gdy stosunki społeczne się zwielokrotniają i~stają się bardziej złożone,
+ludzkość doświadcza większej satysfakcji moralnej i~materialnej, będziemy dążyć do jak najliczniejszych i~bardziej
+złożonych relacji. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale wtedy będziesz musiał delegować funkcje, zlecać zadania, nominować przedstawicieli w~celu zawierania
+umów. 
+
+
+
+
+ 
+\noindent GIORGIO: Oczywiście. Jednak nie myśl, że jest to równoznaczne z~powołaniem rządu. Rząd tworzy prawa i~je egzekwuje,
+podczas gdy w~wolnym społeczeństwie istnieje tylko delegacja władzy do określonych, tymczasowych zadań, do określonych
+prac i~nie daje żadnych uprawnień ani żadnej specjalnej nagrody. A uchwały delegatów zawsze podlegają zatwierdzeniu
+przez tych, których reprezentują. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale nie wyobrażasz sobie, że wszyscy zawsze się zgodzą. Jeśli istnieją ludzie, którym nie odpowiada twój
+porządek społeczny, co zrobisz? 
+
+
+
+
+ 
+\noindent GIORGIO: Ci ludzie zrobią wszystko, co im najbardziej odpowiada, a my i~oni dojdziemy do porozumienia, żeby nie
+przeszkadzać sobie nawzajem. 
+
+
+
+
+ 
+\noindent AMBROGIO: A jeśli inni będą robić kłopoty? 
+
+
+
+
+ 
+\noindent GIORGIO: W~takim razie\ldots będziemy się bronić. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ach! Ale czy nie widzisz, że z~tej potrzeby obrony może powstać nowy rząd? 
+
+
+
+
+ 
+\noindent GIORGIO: Oczywiście, że to widzę: I~właśnie z~tego powodu zawsze mówiłem, że anarchizm nie jest możliwy, dopóki nie
+zostaną wyeliminowane najpoważniejsze przyczyny konfliktów, porozumienie społeczne nie będzie służyło interesom
+wszystkich, a duch solidarności nie zostanie dobrze rozwinięty wśród ludzkości. 
+
+ 
+Jeśli chcesz stworzyć anarchizm dzisiaj, pozostawiając nienaruszoną własność indywidualną i~inne instytucje społeczne,
+które z~niej się wywodzą, natychmiast wybuchłaby taka wojna domowa, że rząd, nawet tyrania, byłby mile widziany jako
+błogosławieństwo. 
+
+ 
+Ale jeśli w~tym samym czasie, gdy ustanowisz anarchizm, zniesiesz własność indywidualną, przyczyny konfliktów, które
+przetrwają, nie będą nie do pokonania i~osiągniemy porozumienie, ponieważ dzięki porozumieniu wszyscy będą
+uprzywilejowani. 
+
+ 
+W końcu jest zrozumiałe, że instytucje są tyle warte, ile ludzie, którzy sprawiają, że funkcjonują, a anarchizm w~szczególności, czyli panowanie wolnej umowy, nie może istnieć, jeśli ludzie nie rozumieją korzyści płynących z~solidarności i~nie chcą się ugodzić. 
+
+ 
+Dlatego angażujemy się w~szerzenie propagandy. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Dziewięć}
+
+
+
+ 
+\noindent AMBROGIO: Pozwólcie, że wrócę do Twojego anarchistycznego komunizmu. Szczerze mówiąc, nie mogę go znieść\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Ach! Wierzę ci. Po tym, jak przeżyłeś swoje życie między kodeksami i~księgami prawa, broniąc praw państwa i~praw właścicieli, społeczeństwo bez państwa i~właścicieli, w~którym nie będzie już buntowników i~głodujących ludzi do
+wysłania na galery, musi ci się wydawać czymś z~innego świata. 
+
+ 
+Ale jeśli chcesz odłożyć na bok tę postawę, jeśli masz siłę przezwyciężyć swoje nawyki myślowe i~zechcesz zastanowić się
+nad tą sprawą bez uprzedzeń, z~łatwością zrozumiesz, że pozwalając, aby celem społeczeństwa było jak największe dobro
+dla wszystkich, koniecznym rozwiązaniem jest anarchistyczny komunizm. Jeśli myślisz przeciwnie, że społeczeństwo jest
+stworzone dla interesów kilku osób kochających przyjemności kosztem reszty, cóż\ldots 
+
+
+
+
+ 
+\noindent AMBROGIO: Nie, nie, przyznaję, że społeczeństwo musi mieć za cel dobro wszystkich, ale z~tego powodu nie mogę
+zaakceptować waszego systemu. Usilnie próbuję poznać twój punkt widzenia, a ponieważ zainteresowałem się dyskusją,
+chciałbym przynajmniej dla siebie mieć jasne pojęcie, czego chcesz: ale twoje wnioski wydają się tak utopijne, więc\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Krótko mówiąc, co jest dla ciebie niejasne lub nie do przyjęcia w~wyjaśnieniu, które ci dałem. 
+
+
+
+
+ 
+\noindent AMBROGIO: Jest \ldots nie wiem\ldots cały system. 
+
+ 
+Zostawmy na boku kwestię prawa, co do której nie zgodzimy się; ale załóżmy, że, jak twierdzisz, wszyscy mamy równe prawo
+do korzystania z~istniejącego bogactwa, przyznaję, że komunizm wydawałby się rozwiązaniem najszybszym i~być może
+najlepszym. Ale, to, co wydaje mi się absolutnie niemożliwe, to społeczeństwo bez rządu. 
+
+ 
+Cały swój gmach budujecie na wolnej woli członków stowarzyszeń\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Dokładnie. 
+
+
+
+
+ 
+\noindent AMBROGIO: I~to jest twój błąd. Społeczeństwo oznacza hierarchię, dyscyplinę, podporządkowanie jednostki kolektywowi. Bez
+władzy nie jest możliwe żadne społeczeństwo. 
+
+
+
+
+ 
+\noindent GIORGIO:  Dokładnie odwrotnie. Społeczeństwo w~ścisłym tego słowa znaczeniu może istnieć tylko wśród równych; a ci równi
+sobie zawierają porozumienia między sobą, jeśli znajdują w~nich przyjemność i~wygodę, ale nie chcą się sobie
+podporządkowywać. 
+
+ 
+Te stosunki hierarchii i~uległości, które wydają ci się istotą społeczeństwa, są stosunkami między niewolnikami a
+panami: I~mam nadzieję, że zgodzisz się, że niewolnik nie jest w~rzeczywistości partnerem pana, tak jak zwierzę domowe
+nie jest partner osoby, która go posiada. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale czy ty naprawdę wierzysz w~społeczeństwo, w~którym każdy robi, co chce! 
+
+
+
+
+ 
+\noindent GIORGIO: Pod warunkiem, że rozumie się, że ludzie chcą żyć w~społeczeństwie i~dlatego dostosują się do potrzeb życia
+społecznego. 
+
+
+
+
+ 
+\noindent AMBROGIO: A jeśli nie chcą? 
+
+
+
+
+ 
+\noindent GIORGIO: Wtedy społeczeństwo nie byłoby możliwe. Ale skoro tylko w~społeczeństwie ludzkość, przynajmniej w~swojej
+nowoczesnej formie, może zaspokoić swoje potrzeby materialne i~moralne, dziwne jest przypuszczenie, że chcielibyśmy
+wyrzec się tego, co jest warunkiem wstępnym życia i~dobrobytu. 
+
+ 
+Ludzie mają trudności z~osiągnięciem porozumienia, gdy omawiają sprawy w~sposób abstrakcyjny; ale skoro tylko jest coś
+do zrobienia, to musi być zrobione i~co leży w~interesie wszystkich, dopóki nikt nie dysponuje środkami, by narzucić
+swoją wolę innym i~zmusić ich do robienia rzeczy po swojemu, upór i~zaciekłość wkrótce ustają, ludzie stają się zgodni
+i sprawa jest załatwiona z~maksymalną możliwą satysfakcją dla wszystkich. 
+
+ 
+Musisz zrozumieć: nic ludzkiego nie jest możliwe bez woli ludzkości. Cały problem dla nas polega na zmianie tej woli, to
+znaczy na uświadomieniu ludziom, że aby walczyć ze sobą, nienawidzić się, wykorzystywać, to stracić wszystko, oraz na
+przekonaniu innych, by życzyli sobie ładu społecznego opartego na wzajemnym wsparciu i~solidarności. 
+
+
+
+
+ 
+\noindent AMBROGIO: Tak więc, aby wprowadzić swój anarchistyczny komunizm, musisz poczekać, aż wszyscy będą do tego przekonani i~będą chcieli, aby to zadziałało. 
+
+
+
+
+ 
+\noindent GIORGIO: O nie! Żartowalibyśmy! Wola zależy głównie od środowiska społecznego i~jest prawdopodobne, że dopóki obecne
+warunki będą trwać, zdecydowana większość będzie nadal wierzyć, że społeczeństwo nie może być zorganizowane w~inny
+sposób niż ten, który istnieje obecnie. 
+
+
+
+
+ 
+\noindent AMBROGIO: A więc?! 
+
+
+
+
+ 
+\noindent GIORGIO: Stworzymy więc między sobą komunizm i~anarchizm\ldots kiedy będzie nas wystarczająco dużo, by to zrobić, przekonani,
+że jeśli inni zobaczą, że dobrze sobie radzimy, wkrótce pójdą w~nasze ślady, lub przynajmniej, nie mogąc osiągnąć
+komunizmu i~anarchizmu, będziemy pracować nad zmianą warunków społecznych w~taki sposób, aby wywołać zmianę woli w~pożądanym kierunku. 
+
+ 
+Musisz zrozumieć; chodzi o wzajemną interakcję między wolą a otaczającymi nas warunkami społecznymi\ldots Robimy i~będziemy
+robić wszystko, co w~naszej mocy, aby dążyć do naszego ideału. 
+
+ 
+To, co musisz jasno zrozumieć, jest następujące. Nie chcemy nikogo zmuszać; ale nie chcemy, aby inni narzucali swoją wolę
+ani wolę społeczeństwa. Buntujemy się przeciwko tej mniejszości, która przemocą wyzyskuje i~uciska lud. Kiedy wolność
+zostanie zdobyta dla nas i~dla wszystkich, i, co oczywiste, środki do bycia wolnymi, innymi słowy, prawo do użytkowania
+ziemi i~środki produkcji, będziemy polegać wyłącznie na sile słów i~przykładów, aby nasze idee zatriumfowały. 
+
+
+
+
+ 
+\noindent AMBROGIO: W~porządku; i~myślisz, że w~ten sposób dojdziemy do społeczeństwa, które rządzi się po prostu dzięki
+dobrowolnej zgodzie swoich członków? Jeśli tak jest, to byłoby sprawą bez
+\begin{itshape}precedensu \end{itshape}! 
+
+
+
+
+ 
+\noindent GIORGIO: Nie tak bardzo, jak myślisz. Właściwie zawsze tak było\ldots to znaczy, jeśli uznać pokonanych, zdominowanych,
+uciskanych pochodzących z~niższych warstw ludzkości, za tak naprawdę nienależących do społeczeństwa. 
+
+ 
+W sumie, nawet dziś zasadnicza część życia społecznego, zarówno w~klasie dominującej, jak i~w~klasie zdominowanej,
+dokonuje się poprzez spontaniczne, często nieświadome porozumienia między jednostkami: na mocy zwyczaju, punktów
+honoru, poszanowania obietnic, obawy przed opinią publiczną, poczucie uczciwości, miłości, sympatii, zasad dobrego
+wychowania, bez żadnej interwencji prawa i~rządu. Prawo i~rządy stają się konieczne tylko wtedy, gdy mamy do czynienia
+z relacjami między dominującymi a zdominowanymi. Wśród równych każdy wstydzi się wezwać policjanta lub zwrócić się do
+sędziego! 
+
+ 
+W państwach despotycznych, gdzie wszyscy mieszkańcy są traktowani jak stado w~służbie jedynego władcy, nikt nie ma
+władzy oprócz suwerena\ldots i~tych, których suweren potrzebuje, aby utrzymać masy w~uległości. Ale stopniowo, w~miarę jak
+przybywają inni, osiągają emancypację i~wchodzą do klasy panującej, czyli społeczeństwa w~ścisłym tego słowa znaczeniu,
+czy to przez bezpośredni udział w~rządzeniu, czy też przez posiadanie bogactwa, społeczeństwo kształtuje się w~sposób,
+który zaspokaja wolę wszystkich dominatorów. Cały aparat ustawodawczy i~wykonawczy, cały rząd ze swoimi prawami,
+żołnierzami, policjantami, sędziami itp. służy jedynie regulowaniu i~zapewnianiu wyzysku ludu. W~przeciwnym razie
+właściciele uznaliby za prostsze i~bardziej ekonomiczne uzgodnienia między sobą i~znieśliby państwo. Sami burżujowie
+wyrazili taką opinię\ldots kiedy na chwilę zapomną, że bez żołnierzy i~policjantów, ludzie zepsuliby imprezę. 
+
+ 
+Zniszcz podziały klasowe, upewnij się, że nie ma już niewolników do trzymania w~ryzach, a państwo natychmiast nie będzie
+miało powodu do istnienia. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale nie przesadzaj. Państwo również czyni dobro dla wszystkich. Edukuje, czuwa nad zdrowiem publicznym, broni
+życia obywateli, organizuje usługi publiczne\ldots nie mów mi, że to rzeczy bezwartościowe lub szkodliwe! 
+
+
+
+
+ 
+\noindent GIORGIO: Fuj! Zrobione tak, jak zwykle robi to państwo, czyli prawie wcale. Prawda jest taka, że to robotnicy naprawdę
+robią te rzeczy, a państwo, ustanawiając się ich regulatorem, przekształca takie usługi w~instrumenty dominacji,
+obracając je w~szczególną korzyść dla władców i~właścicieli. 
+
+ 
+Edukacja szerzy się, jeśli w~społeczeństwie jest pragnienie nauczania i~jeśli są nauczyciele zdolni do wychowania;
+zdrowie publiczne rozwija się, gdy społeczeństwo wie, docenia i~może je zastosować w~praktyce przepisy dotyczące
+zdrowia publicznego i~kiedy są lekarze, którzy mogą udzielać porad; życie obywateli jest bezpieczne, kiedy ludzie są
+przyzwyczajeni do uważania życia i~wolności ludzkich za święte i~kiedy\ldots nie ma sędziów ani policji, którzy dawaliby
+przykłady brutalności; usługi publiczne są organizowane wtedy, gdy społeczeństwo poczuje taką potrzebę. 
+
+ 
+Państwo niczego nie tworzy: W~najlepszym przypadku jest to tylko inny nadmiar, bezwartościowe marnowanie energii. Ale
+gdyby tylko to było bezużyteczne! 
+
+
+
+
+ 
+\noindent AMBROGIO: Zostaw to tutaj. W~każdym razie myślę, że powiedziałeś wystarczająco dużo. Chcę się nad tym zastanowić. 
+
+ 
+Dopóki znów się nie spotkamy\ldots 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Dziesięć}
+
+
+
+ 
+\noindent AMBROGIO: Zastanowiłem się nad tym, co mi mówiłeś podczas tych naszych rozmów\ldots i~poddaję się. Nie dlatego, że
+przyznaję się do porażki; ale\ldots jednym słowem masz swoje argumenty i~przyszłość może być po twojej stronie. 
+
+ 
+Tymczasem jestem sędzią i~dopóki istnieje prawo, muszę je szanować i~czuwać nad jego przestrzeganiem. Rozumiesz\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Och, rozumiem bardzo dobrze. Idź, idź, jeśli chcesz. Do nas będzie należało zniesienie prawa, a tym samym
+uwolnienie was od obowiązku działania wbrew sumieniu. 
+
+
+
+
+ 
+\noindent AMBROGIO: Spokojnie, spokojnie, tego nie powiedziałem\ldots ale nieważne. 
+
+ 
+Prosiłbym o kilka innych wyjaśnień. 
+
+ 
+Być może moglibyśmy dojść do porozumienia w~kwestiach dotyczących ustroju własnościowego i~politycznej organizacji
+społeczeństwa; w~końcu są to formacje historyczne, które wielokrotnie się zmieniały i~prawdopodobnie jeszcze się
+zmienią. Ale są pewne święte instytucje, pewne głębokie uczucia ludzkiego serca, które nieustannie obrażacie: rodzina,
+ojczyzna! 
+
+ 
+Na przykład, chcesz złożyć to wszystko razem. Naturalnie, nawet kobiety połączycie razem i~stworzycie w~ten sposób
+wielki seraj; czyż nie tak? 
+
+
+
+
+ 
+\noindent GIORGIO: Słuchaj; jeśli chcesz ze mną porozmawiać, proszę, nie mów głupich rzeczy i~nie żartuj w~złym guście. Sprawa, z~którą mamy do czynienia, jest zbyt poważna, by wtrącać wulgarne żarty! 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale\ldots  mówiłem poważnie. Co byś zrobił z~kobietami? 
+
+
+
+
+ 
+\noindent GIORGIO: Tym gorzej dla ciebie, bo to naprawdę dziwne, że nie rozumiesz absurdalności tego, co właśnie powiedziałeś. 
+
+ 
+Złącz kobiety! Dlaczego nie powiesz, że chcemy łączyć mężczyzn? Jedynym wyjaśnieniem tego twojego pomysłu jest to, że
+przez zakorzeniony przyzwyczajenie uważasz kobietę za gorszą istotę stworzoną i~umieszczoną na tym świecie, by służyła
+jako zwierzę domowe i jako narzędzie przyjemności dla płci męskiej, więc mówisz o niej tak, jakby była rzeczą, i~wyobrażasz sobie, że musimy jej przypisać to samo przeznaczenie, jakie przypisujemy rzeczom. 
+
+ 
+Ale my, którzy uważamy kobietę za istotę ludzką równą sobie, która powinna cieszyć się wszystkimi prawami i~wszystkimi
+zasobami, którymi cieszy się lub powinna cieszyć się płeć męska, uważamy pytanie: ,,Co zrobisz z~kobietami?{\textquotedbl} za pozbawione znaczenia. Zamiast tego zapytaj: ,,Co same kobiety zrobią?'' i~na to odpowiem
+\begin{itshape}zrobią co zechcą zrobić \end{itshape}, a ponieważ mają taką samą jak mężczyźni
+potrzebę życia w~społeczeństwie, jest to pewne\textit{Będą chciały} zgodzić się z~innymi stworzeniami,
+mężczyznami i~kobietami, w~celu zaspokojenia ich potrzeb z~jak najlepszą korzyścią dla nich samych i~dla wszystkich
+innych. 
+
+
+
+
+ 
+\noindent AMBROGIO: Rozumiem; uważasz kobiety za równe mężczyznom. Jednak wielu naukowców, badając budowę anatomiczną i~fizjologiczne funkcje kobiecego ciała, utrzymuje, że kobieta jest z~natury gorsza od mężczyzny. 
+
+
+
+
+ 
+\noindent GIORGIO: Tak, oczywiście. Cokolwiek jest potrzebne do utrzymania, zawsze znajdzie się naukowiec, który będzie chciał to
+utrzymać. Są naukowcy, którzy utrzymują niższość kobiet, ale są też tacy, którzy wręcz przeciwnie, utrzymują, że
+rozumienie kobiet i~ich możliwości rozwoju są takie same jak mężczyzn, i~jeśli obecnie kobiety ogólnie wydają się mieć
+mniejsze zdolności niż mężczyźni, to wynika z~otrzymanego wykształcenia i~środowiska, w~którym żyją. Jeśli dobrze
+poszukasz, znajdziesz nawet niektórych naukowców, a przynajmniej kobiety-naukowców, którzy twierdzą, że mężczyzna jest
+istotą gorszą, przeznaczoną do wyzwolenia kobiet z~materialnego trudu i~pozostawienia im swobody rozwijania swoich
+talentów w~nieograniczony sposób. Sądzę, że pogląd ten został przyjęty w~Ameryce. 
+
+ 
+Ale kogo to obchodzi. Tu nie chodzi o rozwiązanie problemu naukowego, ale o realizację przysięgi, ideału człowieka. 
+
+ 
+Daj kobietom wszelkie środki i~swobodę rozwoju, a co ma nadejść, to nadejdzie. Jeśli kobiety są równe mężczyznom lub są
+mniej lub bardziej inteligentne, okaże się to w~praktyce, a nawet nauka będzie miała przewagę, ponieważ będzie
+dysponować pewnymi pozytywnymi danymi, na których może oprzeć swoje wnioski. 
+
+
+
+
+ 
+\noindent AMBROGIO: A więc nie bierzecie pod uwagę zdolności, jakimi obdarzone są jednostki? 
+
+
+
+
+ 
+\noindent GIORGIO: Nie w~tym sensie, że te zdolności powinny tworzyć specjalne prawa. W~naturze nie znajdziesz dwóch równych
+osobników; domagamy się jednak równości społecznej dla wszystkich, innymi słowy tych samych zasobów, tych samych
+możliwości, i~uważamy, że ta równość nie tylko odpowiada poczuciu sprawiedliwości i~braterstwa, które rozwinęło się w~ludzkości, ale działa na korzyść wszystkich, niezależnie od tego, czy są silni lub słabi. 
+
+ 
+Nawet wśród mężczyzn, wśród mężczyzn, są tacy, którzy są bardziej, a inni mniej inteligentni, ale to nie znaczy, że
+jeden powinien mieć więcej praw niż drugi. Są tacy, którzy utrzymują, że blondynki są bardziej utalentowane niż
+brunetki i~vice versa, że rasy o podłużnych czaszkach są lepsze od tych o szerokich czaszkach i~vice versa; a
+zagadnienie, jeśli jest oparte na faktach, jest z~pewnością interesujące dla nauki. Jednak biorąc pod uwagę obecny stan
+uczuć i~ludzkie ideały, absurdem byłoby udawanie, że blondynki i~dolichocefalicy powinni dominować nad brunatnymi i~rozgałęzionymi lub odwrotnie. 
+
+ 
+Nie sądzisz? 
+
+
+
+
+ 
+\noindent AMBROGIO: W~porządku; ale spójrzmy na kwestię rodziny. Chcesz ją zlikwidować czy zorganizować na innej podstawie? 
+
+
+
+
+ 
+\noindent GIORGIO: Spójrz. Jeśli chodzi o rodzinę, musimy wziąć pod uwagę stosunki ekonomiczne, stosunki seksualne oraz relacje
+między rodzicami a dziećmi. 
+
+ 
+Na tyle na ile rodzina jest instytucją ekonomiczną, jasne jest, że po zniesieniu własności indywidualnej, a w~konsekwencji dziedziczenia, nie ma ona już racji bytu i~\begin{itshape}de facto \end{itshape}
+zaniknie. W~tym sensie rodzina dawno jest już zniesiona dla ogromnej większości ludności, która składa się z~pracowników. 
+
+
+
+
+ 
+\noindent AMBROGIO: A jeśli chodzi o stosunki płciowe? Czy chcesz wolnej miłości, \ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Och, daj spokój! Myślisz, że zniewolona miłość naprawdę może istnieć? Wymuszone współżycie istnieje, podobnie
+jak udawana i~wymuszona miłość, ze względu na interes lub wygodę społeczną; prawdopodobnie znajdą się mężczyźni i~kobiety, którzy będą szanować węzeł małżeński ze względu na przekonania religijne lub moralne; ale prawdziwa miłość nie
+może istnieć, nie może być poczęta, jeśli nie jest doskonale wolna. 
+
+
+
+
+ 
+\noindent AMBROGIO: To prawda, ale jeśli wszyscy podążą za fantazjami natchnionymi przez boga miłości, nie będzie już moralności,
+a świat stanie się burdelem. 
+
+
+
+
+ 
+\noindent GIORGIO: Jeśli chodzi o moralność, to naprawdę możesz się chwalić wynikami swoich instytucji! Cudzołóstwo, wszelkiego
+rodzaju kłamstwa, długo żywiona nienawiść, mężowie zabijający żony, żony trujące mężów, dzieciobójstwo, dzieci
+dorastające pośród skandali i~rodzinnych bójek\ldots i~to jest moralność, o której obawiasz, że jest zagrożona przez wolną
+miłość? 
+
+ 
+Dziś świat jest burdelem, ponieważ kobiety są często zmuszane do prostytucji z~powodu głodu; i~dlatego, że małżeństwo,
+często zawierane z~czystego rachunku zysków, jest przez cały czas trwania związkiem, do którego miłość albo wcale nie
+wchodzi, albo wchodzi tylko jako dodatek. 
+
+ 
+Zapewnić wszystkim środki do właściwego i~niezależnego życia, dać kobietom pełną swobodę rozporządzania własnym ciałem,
+zniszczyć uprzedzenia religijne i~inne, które wiążą mężczyzn i~kobiety z~mnóstwem konwencji wywodzących się z~niewolnictwa i~które je utrwalają, i~związki seksualne będą tworzone z~miłości i~dadzą początek szczęściu jednostek i~dobru gatunku. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale w~skrócie, czy jesteś za związkami trwałymi czy tymczasowymi? Czy chcesz oddzielnych par, czy wielości i~różnorodności stosunków seksualnych, a nawet rozwiązłości? 
+
+
+
+
+ 
+\noindent GIORGIO: Chcemy wolności. 
+
+ 
+Do tej pory stosunki seksualne bardzo cierpiały pod presją brutalnej przemocy, konieczności ekonomicznej, przesądów
+religijnych i~przepisów prawnych, że nie udało się ustalić, jaka forma stosunków seksualnych najlepiej odpowiada
+fizycznemu i~moralnemu dobru jednostek i~gatunku. 
+
+ 
+Z pewnością, gdy usuniemy warunki, które dziś czynią stosunki między kobietami i~mężczyznami sztucznymi i~wymuszonymi,
+zostanie ustanowiona higiena seksualna i~moralność seksualna, które będą szanowane nie ze względu na prawo, ale poprzez
+przekonanie oparte na doświadczeniu, że zaspokajają one dobro nasze i~gatunku. Może to nastąpić tylko jako efekt
+wolności. 
+
+
+
+
+ 
+\noindent AMBROGIO: A dzieci? 
+
+
+
+
+ 
+\noindent GIORGIO: Musisz zrozumieć, że kiedy będziemy mieli wspólny majątek i~ustalimy solidarność społeczną na solidnych
+podstawach moralnych i~materialnych, utrzymanie dzieci będzie przedmiotem troski wspólnoty, a ich wychowanie troską i~odpowiedzialnością wszystkich. 
+
+ 
+Prawdopodobnie wszyscy mężczyźni i~wszystkie kobiety pokochają wszystkie dzieci; a jeśli, jak sądzę, jest pewne, rodzice
+darzą własne dzieci szczególnym uczuciem, mogą być tylko zachwyceni wiedząc, że przyszłość ich dzieci jest bezpieczna,
+gdy dla ich utrzymania i~wychowania współpracuje całe społeczeństwo. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale szanujesz przynajmniej prawa rodziców do dzieci? 
+
+
+
+
+ 
+\noindent GIORGIO: Prawa nad dziećmi składają się z~obowiązków. Człowiek ma wiele praw, to znaczy wiele praw, aby im przewodzić i~troszczyć się o nie, kochać je i~martwić się o nie: a ponieważ rodzice na ogół kochają swoje dzieci bardziej niż
+ktokolwiek inny, zwykle ich obowiązkiem i~prawem jest zaspokojenie ich potrzeb. Nie trzeba obawiać się jakichkolwiek
+wyzwań, ponieważ jeśli kilku nienaturalnych rodziców da swoim dzieciom niewielką miłość i~nie będzie się nimi
+opiekować, będą zadowoleni, że inni zajmą się dziećmi i~uwolnią je od tego zadania. 
+
+ 
+Jeśli przez prawa rodzica nad dziećmi rozumiesz prawo do ich maltretowania, korumpowania i~wykorzystywania, to ja
+kategorycznie odrzucam te prawa i~myślę, że żadne społeczeństwo godne tego miana by ich nie uznało i~nie zniosło. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale czy nie sądzisz, że powierzając społeczności odpowiedzialność za utrzymanie dzieci, sprowokujesz taki
+wzrost liczby ludności, że nie starczy rzeczy dla wszystkich. Ale oczywiście nie będziecie chcieli słuchać żadnych
+rozmów o maltuzjanizmie i~powiecie, że to absurd. 
+
+
+
+
+ 
+\noindent GIORGIO: Powiedziałem ci przy innej okazji, że absurdalne jest udawanie, że obecna bieda zależy od przeludnienia, i~absurdalne jest pragnienie proponowania środków zaradczych opartych na praktykach maltuzjańskich. Jestem bardzo skłonny
+uznać powagę kwestii ludnościowej i~przyznaję, że w~przyszłości, gdy każde nowo narodzone dziecko będzie miało
+zapewnione wsparcie, bieda może odrodzić się z~powodu rzeczywistego nadmiaru ludności. Wyemancypowani i~wykształceni
+ludzie, kiedy uznają to za konieczne, rozważą stworzenie ograniczenia do zbyt szybkiego namnażania się gatunku; ale
+dodam, że zaczną się nad tym poważnie zastanawiać dopiero wtedy, gdy zniknie gromadzenie i~przywileje, przeszkody,
+jakie chciwość właścicieli stawiała produkcji, czy wszelkie społeczne przyczyny ubóstwa, wtedy dopiero konieczność
+osiągnięcia równowagi między liczbą istot żywych, zdolności produkcyjnych i~dostępnej przestrzeni wydadzą się każdemu
+jasne i~proste. 
+
+
+
+
+ 
+\noindent AMBROGIO: A jeśli ludzie nie będą chcieli o tym myśleć? 
+
+
+
+
+ 
+\noindent GIORGIO: Cóż w~takim razie tym gorzej dla nich! 
+
+ 
+Nie chcecie zrozumieć: nie ma opatrzności, czy to boskiej, czy naturalnej, która troszczyłaby się o dobro ludzkości.
+Ludzie muszą sami zadbać o swoje dobro, robiąc to, co uważają za przydatne i~konieczne do osiągnięcia tego celu. 
+
+ 
+Zawsze mówisz: ale co, jeśli nie chcą? w~takim przypadku nic nie osiągną i~zawsze pozostaną na łasce ślepych sił, które
+ich otaczają. 
+
+ 
+Tak jest dzisiaj: ludzie nie wiedzą, co zrobić, aby się uwolnić, a jeśli wiedzą, nie chcą robić tego, co trzeba, aby się
+wyzwolić. I~w~ten sposób pozostają niewolnikami. 
+
+ 
+Jednak mamy nadzieję, że szybciej, niż myślisz, będą wiedzieć, co robić i~będą w~stanie to zrobić. 
+
+ 
+Wtedy będą wolni. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Jedenaście}
+
+
+
+ 
+\noindent AMBROGIO: Któregoś dnia doszedłeś do wniosku, że wszystko zależy od woli. Mówiłeś, że jeśli ludzie chcą być wolni, jeśli
+chcą robić to, co trzeba, aby żyć w~społeczeństwie równych sobie, wszystko będzie dobrze, a jeśli nie, to tym gorzej
+dla nich. Byłoby w~porządku, gdyby wszyscy chcieli tego samego; ale jeśli jedni chcą żyć w~anarchii, a inni wolą
+kuratelę rządu, jeśli jedni są gotowi uwzględniać potrzeby społeczności, a inni chcą korzystać z~dobrodziejstw życia
+społecznego, ale nie chcą się dostosowywać do związane z~tym potrzeby i~chcą robić to, co im się podoba, nie biorąc pod
+uwagę szkód, jakie może to wyrządzić innym, co się stanie, jeśli nie będzie rządu, który określa i~nakłada obowiązki
+społeczne? 
+
+
+
+
+ 
+\noindent GIORGIO: Jeśli istnieje rząd, zatriumfuje wola rządzących i~ich partii oraz związanych z~nimi interesów, a problem, jak
+zaspokoić wolę wszystkich, nie zostanie rozwiązany. Wręcz przeciwnie, trudności się pogłębią. Frakcja rządząca może nie
+tylko wykorzystywać własne zasoby do ignorowania lub naruszania woli innych, ale ma do dyspozycji siłę całego
+społeczeństwa do narzucenia jej woli. Tak jest w~przypadku naszego obecnego społeczeństwa, w~którym klasa robotnicza
+dostarcza rządowi żołnierzy i~bogactwo, aby utrzymać robotników jako niewolników. 
+
+ 
+Myślę, że już wam powiedziałem: chcemy społeczeństwa, w~którym każdy ma środki do życia tak, jak chce, w~którym nikt nie
+może zmusić innych do pracy dla niego, w~którym nikt nie może zmusić drugiego do poddania się ich woli. Kiedy dwie
+zasady zostaną wprowadzone w~życie, wolność dla wszystkich i~narzędzia produkcji dla wszystkich, wszystko inne nastąpi
+naturalnie, siłą okoliczności, a nowe społeczeństwo zorganizuje się w~sposób, który najlepiej odpowiada interesom
+wszystkich. 
+
+
+
+
+ 
+\noindent AMBROGIO: A jeśli niektórzy chcą się narzucić brutalną siłą? 
+
+
+
+
+ 
+\noindent GIORGIO: Wtedy będą rządem; lub kandydatami na rząd, a my przeciwstawimy się im siłą. Musisz zrozumieć, że jeśli dziś
+chcemy zrobić rewolucję przeciwko rządowi, to nie po to, by podporządkować się nowym ciemiężcom. Jeśli tacy wygrają,
+rewolucja zostanie pokonana i~trzeba będzie ją powtórzyć. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale z~pewnością pozwoliłbyś na trochę etycznych zasad, wyższych od woli i~kaprysów ludzkości, do których każdy
+jest zobowiązany się dostosować\ldots przynajmniej moralnie? 
+
+
+
+
+ 
+\noindent GIORGIO: Cóż to za moralność, która przewyższa wolę ludzką? Kto to przepisał? Skąd się bierze? 
+
+ 
+Moralność zmienia się w~zależności od czasów, krajów, klas, okoliczności. Wyrażają to, co ludzie w~danych momentach i~okolicznościach uważają za najlepsze zachowanie. Krótko mówiąc, dla każdej osoby dobre obyczaje są zgodne z~tym, co
+lubi lub co sprawia jej przyjemność, z~powodów materialnych lub emocjonalnych. 
+
+ 
+Dla was moralność nakazuje poszanowanie prawa, to znaczy poddanie się przywilejom, którymi cieszy się wasza klasa; dla
+nas wymaga buntu przeciwko uciskowi i~poszukiwania dobra dla wszystkich. Dla nas wszystkie przepisy moralne są pojęte
+przez miłość między ludźmi. 
+
+
+
+
+ 
+\noindent AMBROGIO: A przestępcy? Czy uszanujesz ich wolność? 
+
+
+
+
+ 
+\noindent GIORGIO: Uważamy, że działanie przestępcze oznacza naruszenie wolności innych. Kiedy przestępcy są liczni, potężni i~zorganizowali swoją dominację na stabilnych podstawach, tak jak to ma miejsce dzisiaj z~właścicielami i~władcami, aby
+się wyzwolić, potrzebna jest rewolucja. 
+
+ 
+Kiedy wręcz przeciwnie, przestępczość sprowadza się do pojedynczych przypadków niewłaściwego zachowania lub choroby,
+podejmiemy próbę znalezienia przyczyn i~wprowadzenia odpowiednich środków zaradczych. 
+
+
+
+
+ 
+\noindent AMBROGIO: W~międzyczasie? Będziesz potrzebował policji, magistratu, kodeksu karnego, kilku strażników więziennych
+itp. 
+
+
+
+
+ 
+\noindent GIORGIO: A zatem, powiedzielibyście, rekonstytucja rządu, powrót do stanu ucisku, w~którym żyjemy dzisiaj. 
+
+ 
+W rzeczywistości największa szkoda wyrządzona przez przestępstwo to nie tyle jednorazowy i~przejściowy przypadek
+naruszenia praw kilku jednostek, ile niebezpieczeństwo, że stanie się ono okazją i~pretekstem do ukonstytuowania się
+władzy, która, pozornie broniąc społeczeństwa, ujarzmi je i~pognębi. 
+
+ 
+Znamy już cel policji i~magistratu oraz to, że są raczej przyczyną niż lekarstwem na niezliczone zbrodnie. 
+
+ 
+Musimy zatem spróbować zniszczyć przestępczość poprzez wyeliminowanie przyczyn; a kiedy pozostaną pozostali przestępcy,
+kolektyw bezpośrednio zainteresowany powinien pomyśleć o umieszczeniu ich w~sytuacji, w~której nie będą mogli wyrządzić
+krzywdy, bez powierzania komukolwiek szczególnej funkcji ścigania przestępców. 
+
+ 
+Znasz historię o koniu, który poprosił człowieka o ochronę i~pozwolił mu wsiąść na grzbiet? 
+
+
+
+
+ 
+\noindent AMBROGIO: W~porządku. W~tym momencie szukam tylko informacji, a nie dyskusji. 
+
+ 
+Inna sprawa. Widząc, że w~waszym społeczeństwie wszyscy są równi społecznie, wszyscy mają taki sam dostęp do edukacji i~rozwoju, wszyscy mają pełną swobodę wyboru własnego życia, jak zamierzacie wykonać konieczne prace. Są prace przyjemne
+i pracochłonne, zdrowe i~niezdrowe. Naturalnie każda osoba wybierze lepszą pracę, kto zajmie się innymi, często
+najbardziej potrzebnymi? 
+
+ 
+A do tego jest wielki podział na pracę umysłową i~fizyczną. Czy nie sądzisz, że każdy chciałby być lekarzem,
+\begin{itshape}literatem \end{itshape}, poetą, i~żeby nikomu nie chciało się uprawiać roli,
+robić butów itd. itd.  No ? 
+
+
+
+
+ 
+\noindent GIORGIO: Chcesz patrzeć w~przyszłość społeczeństwa, społeczeństwa równości, wolności, a przede wszystkim solidarności i~wolnego porozumienia, zakładającego kontynuację dzisiejszych warunków moralnych i~materialnych. Oczywiście coś takiego
+się pojawia i~jest niemożliwe. 
+
+ 
+Kiedy każdy będzie miał środki, każdy osiągnie maksymalny rozwój materialny i~intelektualny, na jaki pozwolą jego
+naturalne zdolności: każdy zostanie wtajemniczony w~intelektualne radości i~produktywną pracę; ciało i~mózg będą się
+harmonijnie rozwijać; na różnych poziomach, w~zależności od zdolności i~skłonności, wszyscy będą naukowcami i~\begin{itshape}literatami \end{itshape} biegłymi w~literaturze i~wszyscy będą robotnikami. 
+
+ 
+Co by się wtedy stało? 
+
+ 
+Wyobraź sobie, że kilka tysięcy lekarzy, inżynierów, pisarzy i~artystów ma być przetransportowanych na rozległą i~żyzną
+wyspę, zaopatrzonych w~narzędzia pracy i~pozostawionych samym sobie. 
+
+ 
+Myślisz, że pozwolą sobie umrzeć z~głodu, zamiast pracować własnymi rękami, czy raczej popełnić samobójstwo, niż dojść
+do porozumienia i~podzielić pracę według swoich upodobań i~możliwości? Gdyby istniały prace, których nikt nie chciał
+wykonywać, wszyscy wykonywaliby je po kolei i~każdy szukałby sposobów, aby niezdrowe i~nieprzyjemne prace uczynić
+bezpiecznymi i~przyjemnymi. 
+
+
+
+
+ 
+\noindent AMBROGIO: Dosyć, dość, muszę ci zadać jeszcze tysiąc pytań, ale ty błąkasz się po totalnej utopii i~znajdujesz
+wyimaginowane sposoby rozwiązania na wszystkie problemy. 
+
+ 
+Wolałbym, abyś porozmawiał ze mną o sposobach i~środkach, za pomocą których proponujesz zrealizować swoje marzenia. 
+
+
+
+
+ 
+\noindent GIORGIO: Z~przyjemnością, o tyle, że jeśli chodzi o mnie, to chociaż ideał jest użyteczny i~konieczny jako sposób
+wskazania ostatecznego celu, najpilniejszym pytaniem jest to, co trzeba zrobić dzisiaj iw najbliższej przyszłości. 
+
+ 
+Porozmawiamy o tym następnym razem. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Dwanaście}
+
+
+
+ 
+\noindent AMBROGIO: Więc dziś wieczorem porozmawiasz z~nami o środkach, za pomocą których zamierzasz osiągnąć swoje ideały\ldots
+stworzyć anarchizm. 
+
+ 
+Już sobie to wyobrażam. Będą bomby, masakry, doraźne egzekucje; a potem grabieże, podpalenia i~podobne subtelności. 
+
+
+
+
+ 
+\noindent GIORGIO: Po prostu trafiłeś, mój drogi panie, na niewłaściwą osobę, musiałeś pomyśleć, że rozmawiasz z~jakimś
+urzędnikiem, który dowodzi żołnierzami europejskimi, kiedy jadą
+\begin{itshape}cywilizować \end{itshape} Afrykę czy Azję, albo kiedy
+\textit{cywilizują } samych siebie w~kraju. 
+
+ 
+To nie w~moim stylu, proszę mi wierzyć. 
+
+
+
+
+ 
+\noindent CESARE: Myślę, drogi panie, że nasz przyjaciel, który w~końcu pokazał, że jest rozsądnym młodym człowiekiem, choć zbyt
+wielkim marzycielem, oczekuje triumfu idei poprzez naturalną ewolucję społeczeństwa, rozprzestrzenianie się edukacji,
+postęp nauki, rozwój produkcji. 
+
+ 
+I w~końcu nie ma w~tym nic złego. Jeśli anarchizm ma nadejść, to nadejdzie i~nie ma sensu męczyć się, by uniknąć
+nieuniknionego. 
+
+ 
+Ale w~takim razie\ldots to jest tak daleko! Żyjmy w~pokoju. 
+
+
+
+
+ 
+\noindent GIORGIO: Rzeczywiście, czy to nie byłby dobry powód, żebyś sobie pofolgować! 
+
+ 
+Ale nie, Signor Cesare, nie opieram się na ewolucji, nauce i~całej reszcie. Trzeba by było czekać zbyt długo! I, co
+gorsza, każdy czekałby na próżno! 
+
+ 
+Ewolucja człowieka zmierza w~kierunku, w~którym jest napędzana wolą ludzkości, i~nie ma żadnego prawa naturalnego, które
+mówiłoby, że ewolucja musi nieuchronnie dać pierwszeństwo wolności, a nie permanentnemu podziałowi społeczeństwa na
+dwie kasty, mógłbym prawie powiedzieć, że na dwie rasy, dominujących i~zdominowanych. 
+
+ 
+Każdy stan społeczeństwa, gdy znalazł wystarczające powody do istnienia, może również trwać w~nieskończoność, dopóki
+dominujący nie napotkają świadomego, aktywnego, agresywnego sprzeciwu ze strony zdominowanych. Czynniki dezintegracji i~spontanicznej śmierci, które istnieją w~każdym reżimie, nawet jeśli istnieją kompensacyjne czynniki odbudowy i~witalności działające jako antidotum, zawsze mogą zostać zneutralizowane dzięki umiejętnościom tego, kto rozporządza
+siłą społeczeństwa i~kieruje nią tak, jak sobie tego życzy. 
+
+ 
+Mógłbym ci zademonstrować, gdybym nie bał się zająć zbyt wiele czasu, jak burżuazja chroni się przed tymi
+\begin{itshape}naturalnymi \end{itshape} tendencjami, od których niektórzy socjaliści
+spodziewali się rychłej śmierci. 
+
+ 
+Nauka to potężna broń, której można używać zarówno w~dobrych, jak i~złych celach. A ponieważ w~obecnych warunkach
+nierówności jest bardziej dostępna dla uprzywilejowanych niż uciskanych, jest bardziej użyteczna dla tych pierwszych
+niż dla drugich. 
+
+ 
+Edukacja, przynajmniej ta wykraczająca poza powierzchowny pryzmat, jest prawie bezużyteczna i~niedostępna dla mas
+upośledzonych, a nawet wtedy może być kierowana w~sposób wybrany przez wychowawców, a raczej przez tych, którzy płacą i~wybierają wychowawców. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale wtedy zostaje tylko przemoc! 
+
+
+
+
+ 
+\noindent GIORGIO: Mianowicie rewolucja. 
+
+
+
+
+ 
+\noindent AMBROGIO: Gwałtowna rewolucja? Zbrojna rewolucja? 
+
+
+
+
+ 
+\noindent GIORGIO: Dokładnie. 
+
+
+
+
+ 
+\noindent AMBROGIO: Dlatego bomby\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Nieważne, signor Ambrogio. Jest pan sędzią pokoju, ale nie lubię powtarzać, że to nie jest trybunał i~przynajmniej na razie nie jestem oskarżonym, z~którego ust byłoby w~pana interesie wyciągnąć jakąś nierozważną
+uwagę. 
+
+ 
+Rewolucja będzie gwałtowna, ponieważ wy, klasa dominująca, utrzymujecie się przemocą i~nie wykazujecie żadnej skłonności
+do pokojowego poddania. Więc będą strzały, bomby, fale radiowe, które eksplodują wasze zapasy materiałów wybuchowych i~naboje w~skrzyniach waszych żołnierzy z~daleka\ldots to wszystko może się zdarzyć. Są to pytania techniczne, które, jeśli
+chcesz, zostawimy technikom. 
+
+ 
+Mogę was zapewnić, że o ile to od nas zależy, przemoc, która została na nas narzucona przez waszą przemoc, nie wyjdzie
+poza wąskie granice wskazane przez konieczność walki, to znaczy, że będzie ona przede wszystkim zdeterminowana przez
+stawiany przez was opór. Jeśli stanie się najgorsze, będzie to spowodowane waszym uporem i~krwiożerczą edukacją, którą
+na przykład udostępniasz publicznie. 
+
+
+
+
+ 
+\noindent CESARE: Ale jak dokonacie tej rewolucji, skoro jest was tak mało? 
+
+
+
+
+ 
+\noindent GIORGIO: Możliwe, że jest nas tylko ograniczona liczba. Masz taką nadzieję, a ja nie chcę odbierać ci tej słodkiej
+iluzji. Oznacza to, że będziemy zmuszeni podwoić, a następnie ponownie podwoić nasze liczby\ldots 
+
+ 
+Z pewnością naszym zadaniem, gdy nie ma możliwości zrobienia więcej, polega na wykorzystaniu propagandy do zgromadzenia
+mniejszości świadomych jednostek, które będą wiedziały, co mają robić i~zobowiążą się to robić. Naszym zadaniem jest
+przygotowanie mas, lub jak największej ich części, do działania we właściwym kierunku, gdy nadarzy się okazja. A przez
+właściwy kierunek rozumiemy: wywłaszczenie obecnych posiadaczy bogactwa społecznego, obalenie rządu, zapobieżenie
+powstaniu nowych przywilejów i~nowych form rządów oraz bezpośrednia reorganizacja poprzez działalność robotniczą,
+produkcji, dystrybucji i~całego życia społecznego. 
+
+
+
+
+ 
+\noindent CESARE: A jeśli okazja się nie nadarzy? 
+
+
+
+
+ 
+\noindent GIORGIO: Cóż, będziemy szukać sposobów, aby tak się stało. 
+
+
+
+
+ 
+\noindent PROSPERO: Ile ty masz złudzeń, mój chłopcze!!! 
+
+ 
+Myślisz, że żyjemy jeszcze w~czasach broni z~epoki kamienia. 
+
+ 
+Dzięki nowoczesnej broni i~taktyce zostałbyś zmasakrowany, zanim mógłbyś się ruszyć. 
+
+
+
+
+ 
+\noindent GIORGIO: Niekoniecznie. Nowemu uzbrojeniu i~taktyce można przeciwstawić odpowiednie reakcje. 
+
+ 
+I znowu, ta broń jest w~rzeczywistości w~rękach synów ludu, a wy, zmuszając wszystkich do podjęcia służby wojskowej,
+uczycie wszystkich, jak się nią posługiwać. 
+
+ 
+Och! Nie możecie sobie wyobrazić, jak naprawdę będziecie bezradni w~dniu, w~którym zbuntuje się wystarczająca liczba. 
+
+ 
+To my, proletariat, klasa uciskana, jesteśmy elektrykami i~gazownikami, to my kierujemy lokomotywami, to my wytwarzamy
+materiały wybuchowe i~budujemy kopalnie, to my kierujemy samochodami i~samolotami, to my jesteśmy żołnierzami\ldots to
+niestety my bronimy was przed samymi sobą. Przeżyjecie tylko dzięki nieświadomej zgodzie twoich ofiar. Uważaj, aby nie
+obudzić ich świadomości\ldots 
+
+ 
+No i~wiesz, wśród anarchistów każdy rządzi swoimi działaniami, a twoja policja tak jest przyzwyczajona do szukania
+wszędzie, z~wyjątkiem miejsc, w~których występuje prawdziwe niebezpieczeństwo. 
+
+ 
+Ale nie mam zamiaru uczyć cię techniki powstańczej. To jest sprawa, która\ldots was nie dotyczy. 
+
+ 
+Dobrego wieczoru. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Trzynaście}
+
+
+
+ 
+\noindent VINCENZO [\textit{Młody republikanin}]: Pozwolisz, że włączę się do twojej rozmowy, abym mógł zadać kilka pytań i~poczynić kilka obserwacji?\ldots Nasz przyjaciel Giorgio mówi o anarchizmie, ale mówi, że anarchizm musi przyjść
+swobodnie, bez narzucania się, z~woli ludu. I~on mówi też, że aby dać wolne ujście woli ludu, trzeba zburzyć przez
+powstanie monarchiczny i~militarystyczny reżim, który dziś tę wolę dusi i~fałszuje. Tego chcą republikanie,
+przynajmniej rewolucyjni republikanie, innymi słowy ci, którzy naprawdę chcą stworzyć republikę. Dlaczego więc nie
+ogłaszasz się republikaninem? 
+
+ 
+W republice lud jest suwerenny, a jeśli ktoś robi to, czego chce lud, a oni chcą anarchizmu, to będzie anarchizm. 
+
+
+
+
+ 
+\noindent GIORGIO: Naprawdę wierzę, że zawsze mówiłem o \begin{itshape}wola ludzkości \end{itshape} a
+nie\textit{wola ludu}, a jeśli powiedziałem ostatnie, to była to forma słów, niedokładne użycie języka, któremu
+cała moja rozmowa służy przecież poprawie. 
+
+
+
+
+ 
+\noindent VINCENZO: Ale po co to całe zainteresowanie słowami?!! Czy społeczeństwo nie składa się z~ludzi? 
+
+
+
+
+ 
+\noindent GIORGIO: To nie jest kwestia słów. Jest to kwestia istoty: jest to cała różnica między
+\begin{itshape}demokracją \end{itshape}, co oznacza rząd ludu, i\textit{anarchią}, co
+nie oznacza rządu, ale wolność dla każdego. 
+
+ 
+Lud z~pewnością składa się z~ludzkości, to znaczy ze świadomej jedności, współzależnej według własnego uznania, ale
+każda osoba ma swoją własną wrażliwość i~własne zainteresowania, pasje, szczególne pragnienia, które w~zależności od
+sytuacji zwiększają lub wzajemnie się znoszą, wzmacniają lub neutralizują. Najsilniejsza, najlepiej uzbrojona wola
+jednostki, partii, klasy zdolnej do panowania, narzuca się i~odnosi sukces, podając się za wolę wszystkich; w~rzeczywistości to, co nazywa siebie \begin{itshape}wolą ludu \end{itshape} jest wolą tych,
+którzy dominują, lub jest to hybrydowy produkt obliczeń numerycznych, który nie do końca odpowiada woli kogokolwiek i~który nikogo nie satysfakcjonuje. 
+
+ 
+Już własnymi wypowiedziami demokraci, czyli republikanie (bo tylko oni są prawdziwymi demokratami) przyznają, że tzw.
+rząd ludu jest jedynie rządem większości, który wyraża i~wdraża własną wolę poprzez swoich przedstawicieli. Dlatego
+,,suwerenność'' mniejszości jest po prostu prawem nominalnym, które nie przekłada się na działanie; i~zauważmy, że ta
+,,mniejszość'' oprócz tego, że jest często najbardziej zaawansowaną i~postępową częścią populacji, może być również
+większością liczbową, gdy mniejszość zjednoczona przez wspólnotę interesów lub idei, lub przez poddanie się przywódcy,
+znajdzie się w~obliczu wielu niezgodnych frakcji. 
+
+ 
+Ale czy partia, której kandydaci odnoszą sukces, a zatem rządzi w~imieniu większości, jest naprawdę rządem, który wyraża
+wolę większości? Funkcjonowanie systemu parlamentarnego (niezbędnego w~każdej republice, która nie jest małą i~odizolowaną, niezależną gminą) sprawia, że każdy przedstawiciel jest jednostką organu wyborczego, jednym z~wielu i~liczy się tylko jako setna lub tysięczna powstająca ustaw, które w~ostatecznym rozrachunku winny być wyrazem woli
+większości elektorów. 
+
+ 
+A teraz zostawmy na boku kwestię, czy reżim republikański potrafi zrealizować wolę wszystkich i~powiedz mi przynajmniej,
+czego wy chcecie, co chcielibyście, żeby ta republika robiła, jakie instytucje społeczne powinna powołać. 
+
+
+
+
+ 
+\noindent VINCENZO: Ale to oczywiste. 
+
+ 
+To, czego chcę, czego chcą wszyscy prawdziwi republikanie, to sprawiedliwość społeczna, emancypacja robotników, równość,
+wolność i~braterstwo. 
+
+
+
+
+ 
+\noindent GŁOS: Jak we Francji, w~Szwajcarii i~w~Ameryce. 
+
+
+
+
+ 
+\noindent VINCENZO: To nie są prawdziwe republiki. Powinieneś kierować swoją krytykę do prawdziwej republiki, której szukamy, a
+nie różnych rządów, burżuazyjnych, wojskowych i~duchownych, które w~różnych częściach świata noszą miano republiki. W~przeciwnym razie, przeciwstawiając się socjalizmowi i~anarchizmowi, mógłbym przytoczyć tak zwanych anarchistów, którzy
+są czymś zupełnie innym. 
+
+
+
+
+ 
+\noindent GIORGIO: Dobrze powiedziane. Ale dlaczego, u licha, istniejące republiki nie okazały się prawdziwymi republikami?
+Dlaczego tak naprawdę wszyscy lub prawie wszyscy, wychodząc od ideałów równości, wolności i~braterstwa, które są
+waszymi ideałami, a powiedziałbym, że także naszymi, stały się systemami przywilejów, które się umacniają, w~których
+robotnicy są wyzyskiwani w~skrajnościach, kapitaliści są bardzo potężni, ludzie bardzo uciskani, a rząd tak całkowicie
+nieuczciwy jak w jakimkolwiek ustroju monarchicznym? 
+
+ 
+Instytucje polityczne, organy regulujące społeczeństwo, prawa indywidualne i~zbiorowe uznane w~konstytucji są takie
+same, jak będą w~waszej republice. 
+
+ 
+Dlaczego konsekwencje były tak złe, a przynajmniej tak negatywne i~dlaczego miałyby być inne, gdyby to była wasza
+republika. 
+
+
+
+
+ 
+\noindent VINCENZO: Ponieważ\ldots ponieważ\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Powiem ci dlaczego, a mianowicie, że w~tych republikach warunki ekonomiczne ludności pozostały zasadniczo takie
+same; podział społeczeństwa na klasę posiadającą i~klasę proletariacką pozostał niezmieniony, a więc prawdziwa władza
+pozostała w~rękach tych, którzy posiadając monopol na środki produkcji, dzierżyli w~swej władzy wielkie masy
+nieuprzywilejowanych. Naturalnie klasa uprzywilejowana zrobiła wszystko, co w~jej mocy, aby umocnić swoją pozycję,
+która zostałaby zachwiana przez rewolucyjny zapał, z~którego zrodziła się republika, i~wkrótce wszystko wróciło do
+tego, co było wcześniej \ldots z~wyjątkiem, być może, w~odniesieniu do tych różnic, tych postępy, które nie zależą od
+formy rządów, lecz od wzrostu świadomości robotników, od wzrostu wiary we własne siły, których masy nabywają za każdym
+razem, gdy uda im się obalić rząd. 
+
+
+
+
+ 
+\noindent VINCENZO: Ale całkowicie zdajemy sobie sprawę ze znaczenia kwestii ekonomicznych. Wprowadzimy podatek progresywny, który
+sprawi, że bogaci będą ponosić większą część wydatków publicznych, zniesiemy cła ochronne, nałożymy podatek na
+nieuprawiane ziemie, ustalimy płacę minimalną, pułap cen, ustanowimy prawa, które będą chronić pracowników\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Nawet jeśli uda ci się to wszystko zrobić, kapitaliści jeszcze raz znajdą sposób, aby uczynić to bezużytecznym
+lub obrócić na swoją korzyść. 
+
+
+
+
+ 
+\noindent VINCENZO: W~takim razie oczywiście wywłaszczymy ich być może bez odszkodowania i~stworzymy komunizm. 
+
+ 
+Czy jesteś zadowolony? 
+
+
+
+
+ 
+\noindent GIORGIO: Nie, nie\ldots komunizm stworzony wolą rządu, a nie bezpośrednią i~dobrowolną pracą grup robotniczych, jakoś
+specjalnie do mnie nie przemawia. Gdyby to było możliwe, byłaby to najbardziej dusząca tyrania, jakiej społeczeństwo
+ludzkie kiedykolwiek zostało poddane. 
+
+ 
+Ale wy mówicie: zrobimy to czy tamto, jakby dlatego z~faktu bycia republikanami w~przededniu republiki, kiedy republika
+zostanie proklamowana, będziecie rządzić. 
+
+ 
+Ponieważ republika jest systemem tego, co nazywacie suwerennością ludu, a ta suwerenność wyraża się poprzez powszechne
+prawo wyborcze, rząd republikański będzie się składał z~mężczyzn wyznaczonych w~głosowaniu powszechnym. 
+
+ 
+A ponieważ nie złamałeś w~akcie rewolucji republikańskiej władzy kapitalistów przez wywłaszczenie ich w~sposób
+rewolucyjny, pierwszy parlament republikański będzie odpowiedni dla kapitalistów\ldots a jeśli nie pierwszy, który może
+nadal odczuwać skutki do rozmiarów rewolucyjnej burzy, z~pewnością kolejne parlamenty będą tym, czego pragną
+kapitaliści, i~będą zmuszone zniszczyć wszystko, co dobre rewolucja przypadkowo mogła zrobić. 
+
+
+
+
+ 
+\noindent VINCENZO: Ale w~takim razie, skoro anarchizm nie jest dziś możliwy, czy musimy spokojnie wspierać monarchię nie wiadomo
+jak długo? 
+
+
+
+
+ 
+\noindent GIORGIO: W~żadnym wypadku. Możecie liczyć na naszą współpracę, tak jak my będziemy prosić o waszą, byle tylko
+okoliczności sprzyjały ruchowi powstańczemu. Oczywiście zakres wkładów, które będziemy starali się wnieść do tego
+ruchu, będzie znacznie szerszy niż wasz, ale to nie unieważnia wspólnego interesu, jaki mamy w~zrzuceniu jarzma, które
+dziś ciąży na nas obu. Później zobaczymy. 
+
+ 
+W międzyczasie szerzmy razem propagandę i~spróbujmy przygotować masy, aby następny ruch rewolucyjny zapoczątkował
+najgłębszą możliwą przemianę społeczną i~pozostawił szeroko i~łatwo otwartą drogę do dalszego postępu. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Czternaście}
+
+
+
+ 
+\noindent CESARE: Wznówmy naszą zwykłą rozmowę. 
+
+ 
+Najwyraźniej tym, co najbardziej cię interesuje, jest powstanie; i~przyznaję, że jakkolwiek wydaje się to trudne,
+prędzej czy później można je zorganizować i~wygrać. Zasadniczo rządy polegają na żołnierzach; a poborowi niechętni
+żołnierze, którzy są wpychani do koszar wojskowych, są zawodną bronią. W~obliczu powszechnego powstania ludu żołnierze,
+którzy sami należą do tzw ludu, nie wytrzymają długo; a gdy tylko urok i~strach przed dyscypliną zostaną przełamane,
+albo się rozwiążą, albo dołączą do ludu. 
+
+ 
+Przyznaję więc, że szerząc dużo propagandy wśród robotników i~żołnierzy, czy też wśród młodzieży, która jutro będzie
+żołnierzami, stawiacie się w~sytuacji, w~której możecie wykorzystać sprzyjającą sytuację, takie jak kryzysy
+gospodarcze, nieudaną wojnę, strajk generalny, głód itp. itd., do obalenia rządu. 
+
+ 
+Ale wtedy? 
+
+ 
+Powiedz mi: ludzie sami zdecydują, zorganizują się itd.  Ale to są słowa. Prawdopodobnie nastąpi to, że po krótszym lub
+dłuższym okresie nieporządku, rozproszenia i~prawdopodobnie masakr, nowy rząd zajmie miejsce drugiego, przywróci
+porządek\ldots i~wszystko potoczy się po staremu. 
+
+ 
+W jakim więc celu było takie marnowanie energii? 
+
+
+
+
+ 
+\noindent GIORGIO: Gdyby tak się stało, jak sugerujesz, to nie znaczy, że powstanie byłoby bezużyteczne. Po rewolucji rzeczy nie
+wracają do tego, co było wcześniej, ponieważ ludzie cieszyli się okresem wolności i~wypróbowali własne siły, i~nie jest
+łatwo zmusić ich do ponownego zaakceptowania poprzednich warunków. Nowy rząd, jeśli rząd musi istnieć, będzie czuł, że
+nie może bezpiecznie utrzymać się u władzy, jeśli nie da mu to jakiejś satysfakcji, i~zwykle stara się usprawiedliwić
+swoje dojście do władzy, nadając sobie tytuł interpretatora i~następcy rewolucji. 
+
+ 
+Rzecz jasna, prawdziwym zadaniem, jakie postawi przed sobą rząd, będzie niedopuszczenie do dalszego rozwoju rewolucji
+oraz ograniczenie i~zmiana zdobyczy rewolucji w~celu dominacji; ale nie będzie mógł przywrócić rzeczy do stanu
+poprzedniego. 
+
+ 
+Tak było we wszystkich poprzednich rewolucjach. 
+
+ 
+Mamy jednak powody, by mieć nadzieję, że w~następnej rewolucji wypadniemy dużo lepiej. 
+
+
+
+
+ 
+\noindent CESARE: Dlaczego? 
+
+
+
+
+ 
+\noindent GIORGIO: Ponieważ w~poprzednich rewolucjach wszyscy rewolucjoniści, wszyscy inicjatorzy i~główni aktorzy rewolucji
+chcieli zmienić społeczeństwo za pomocą praw i~chcieli rządu, który by te prawa ustanawiał i~narzucał. Było to zatem
+nieuniknione, że to stworzy nowy rząd, i~było rzeczą naturalną, że nowy rząd myślał przede wszystkim o tym
+\begin{itshape}rządzeniu \end{itshape}, to znaczy skonsolidowaniu swojej władzę i~w~tym celu
+stworzeniu wokół siebie partii i~klasy uprzywilejowanej, której wspólnym interesem było trwałe utrzymanie się u
+władzy. 
+
+ 
+Ale teraz w~historii pojawił się nowy czynnik, który reprezentują anarchiści. Teraz są rewolucjoniści, którzy chcą
+zrobić rewolucję z~wyraźnie antyrządowymi celami, dlatego ustanowienie nowego rządu napotkałoby przeszkodę, jakiej
+nigdy wcześniej nie znaleziono. 
+
+ 
+Co więcej, dawni rewolucjoniści, chcąc dokonać upragnionej transformacji społecznej za pomocą praw, zwracali się do mas
+wyłącznie z~prośbą o podstawową współpracę, jaką mogli zapewnić, i~nie zadali sobie trudu, aby uświadomić im, czego
+można sobie życzyć i~jaką drogę mogliby spełnić swoje aspiracje. Naturalnie więc lud, podatny na samozagładę, sam
+prosił o rząd, gdy zachodziła potrzeba reorganizacji codziennego życia społecznego. 
+
+ 
+Z drugiej strony naszą propagandą i~organizacjami robotniczymi dążymy do ukształtowania świadomej mniejszości, która
+wie, co chce robić i~która wmieszana w~masy mogłaby zaspokoić najpilniejsze potrzeby i~podjąć te inicjatywy, które z~innej strony od rządu oczekiwano okazji. 
+
+
+
+
+ 
+\noindent CESARE: Bardzo dobrze; ale ponieważ będziecie tylko mniejszością i~prawdopodobnie w~wielu częściach kraju nie będziecie
+mieli żadnego wpływu, tak samo powstanie rząd i~będziecie musieli to znosić. 
+
+
+
+
+ 
+\noindent GIORGIO: Jest więcej niż prawdopodobne, że rząd ustanowi sam siebie; ale czy będziemy musieli to znosić\ldots to się
+okaże. 
+
+ 
+Zanotuj to dobrze. W~poprzednich rewolucjach głównym celem było utworzenie nowego rządu i~oczekiwanie na rozkazy tego
+rządu.  A tymczasem sytuacja zasadniczo się nie zmieniała, a raczej sytuacja ekonomiczna mas pogorszała się z~powodu
+przerwy w~przemyśle i~handlu. Dlatego ludzie szybko męczyli się tym wszystkim;  śpieszono się, aby to skończyć i~przy
+wrogości opinii publicznej wobec tych, którzy zbyt długo chcieli przedłużać stan powstańczy. I~tak każdy, kto wykazał
+się zdolnością do przywracania porządku, czy to był najemnik, czy też sprytny i~odważny polityk, a może jakiś wypędzony
+władca, był witany powszechnym aplauzem jako rozjemca i~wyzwoliciel.  
+
+ 
+Wręcz przeciwnie, rozumiemy rewolucję zupełnie inaczej. Chcemy, aby przemiana społeczna, do której zmierza rewolucja,
+zaczęła się urzeczywistniać od pierwszego aktu powstańczego.  Chcemy, aby ludzie natychmiast przejęli w~posiadanie
+istniejące bogactwo; ogłaszali rezydencje dżentelmenów własnością publiczną i~zapewniali poprzez dobrowolne i~aktywne
+inicjatywy minimum mieszkania dla całej ludności, a także natychmiast wprowadzać w~życie dzięki pracy stowarzyszenia
+budowniczych budowę tylu nowych domów, ile uzna się za konieczne. Chcemy, aby wszystkie dostępne produkty żywnościowe
+stały się własnością społeczności i~abyśmy zorganizowali, zawsze poprzez dobrowolne działania i~pod prawdziwą kontrolą
+społeczeństwa, równą dystrybucję produktów dla wszystkich. Chcemy, aby robotnicy rolni zawładnęli nieuprawianą ziemią i~ziemią właścicieli ziemskich i~w~ten sposób przekonali tych ostatnich, że teraz ziemia należy do robotników. Chcemy,
+aby robotnicy odsunęli się od kierownictwa właścicieli i~kontynuowali produkcję na własny rachunek i~dla społeczeństwa.
+Chcielibyśmy nawiązać od razu stosunki wymiany między różnymi stowarzyszeniami wytwórczymi i~różnymi gminami; a
+jednocześnie chcemy spalić, zniszczyć wszystkie tytuły i~wszelkie materialne oznaki indywidualnej własności i~dominacji
+państwowej. Krótko mówiąc, chcemy, aby od pierwszej chwili masy odczuły korzyści płynące z~rewolucji i~aby tak zakłócić
+sytuację, aby przywrócenie dawnego porządku było niemożliwe. 
+
+
+
+
+ 
+\noindent CESARE: I~myślisz, że to wszystko jest łatwe do przeprowadzenia?  
+
+
+
+
+ 
+\noindent GIORGIO: Nie, doskonale zdaję sobie sprawę ze wszystkich trudności, z~jakimi będziemy musieli się zmierzyć; Jasno
+przewiduję, że nasz program nie może być zastosowany wszędzie na raz, a zastosowany spowoduje tysiące nieporozumień i~tysiące błędów. Ale sam fakt, że są ludzie, którzy chcą ją zastosować i~będą próbowali ją zastosować wszędzie tam,
+gdzie to możliwe, jest już gwarancją, że w~tym momencie rewolucja nie może już być prostą transformacją polityczną i~musi zapoczątkować głęboką zmianę w~całość życia społecznego. 
+
+ 
+Co więcej, burżuazja zrobiła coś podobnego podczas wielkiej rewolucji francuskiej pod koniec XVIII wieku, choć w~mniejszym stopniu, a ancien régime nie mógł się odbudować pomimo Cesarstwa i~Restauracji. 
+
+
+
+
+ 
+\noindent CESARE: Ale jeśli, pomimo wszystkich twoich dobrych lub złych intencji, powstanie rząd, wszystkie twoje projekty wylecą
+w powietrze, i~musiałbyś podporządkować się prawu jak wszyscy. 
+
+
+
+
+ 
+\noindent GIORGIO: A to dlaczego? 
+
+ 
+To, że powstanie rząd lub rządy, jest z~pewnością bardzo prawdopodobne. Jest wielu ludzi, którzy lubią rozkazywać, a
+jeszcze więcej jest skłonnych do posłuszeństwa! 
+
+ 
+Ale bardzo trudno jest sobie wyobrazić, jak ten rząd mógłby się narzucić, dać się zaakceptować i~stać się regularnym
+rządem, jeśli w~kraju jest wystarczająco dużo rewolucjonistów i~nauczyli się wystarczająco angażować masy w~zapobieganie znajdowaniu przez nowy rząd sposobu na umocnienie się i~stabilizację. 
+
+ 
+Rząd potrzebuje żołnierzy i~zrobimy wszystko, co w~naszej mocy, aby odmówić im żołnierzy; rząd potrzebuje pieniędzy i~zrobimy wszystko, co w~naszej mocy, aby nikt nie płacił podatków i~nie udzielał mu kredytu. 
+
+ 
+Istnieją gminy i~być może niektóre regiony we Włoszech, gdzie rewolucjoniści są dość liczni, a robotnicy całkiem gotowi
+ogłosić autonomię i~zająć się własnymi sprawami, odmawiając uznania rządu i~przyjęcia jego agentów lub wysyłania do
+niego przedstawicieli. 
+
+ 
+Te regiony, te gminy staną się ośrodkami wpływów rewolucyjnych, wobec których żaden rząd będzie bezsilny, jeśli będziemy
+działać szybko i~nie damy mu czasu na uzbrojenie się i~umocnienie. 
+
+
+
+
+ 
+\noindent CESARE: Ale to jest wojna domowa! 
+
+
+
+
+ 
+\noindent GIORGIO: Bardzo możliwe. Jesteśmy za pokojem, tęsknimy za pokojem\ldots ale nie poświęcimy rewolucji dla naszego pragnienia
+pokoju. Nie poświęcimy go, ponieważ tylko tą drogą możemy osiągnąć prawdziwy i~trwały pokój. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Piętnaście}
+
+
+
+ 
+GINO [\textit{Pracownik}]: Słyszałem, że wieczorami omawiacie kwestie społeczne i~przyszedłem zadać, za
+pozwoleniem tych panów, pytanie mojemu przyjacielowi Giorgio. 
+
+ 
+Powiedzcie mi, czy to prawda, że wy anarchiści chcecie usunąć policję? 
+
+
+
+
+ 
+\noindent GIORGIO: Oczywiście. Co! Nie zgadzasz się? Od kiedy jesteś przyjacielem policji i~\begin{itshape}karabinierów \end{itshape}? 
+
+
+
+
+ 
+\noindent \noindent GINO: Nie jestem ich przyjacielem i~dobrze o tym wiesz. Ale nie jestem też przyjacielem morderców i~złodziei i~chciałbym, aby mój majątek i~moje życie były dobrze strzeżone i~strzeżone. 
+
+
+
+
+ 
+\noindent GIORGIO: A kto cię strzeże przed strażnikami?\ldots 
+
+ 
+Czy uważasz, że ludzie bez powodu stają się złodziejami i~mordercami? 
+
+ 
+Czy uważacie, że najlepszym sposobem na zapewnienie sobie bezpieczeństwa jest nadstawianie karku bandzie ludzi, którzy
+pod pretekstem naszej obrony gnębią nas i~dopuszczają się szantażu i~wyrządzają tysiąc razy większe szkody niż wszyscy
+złodzieje i~wszyscy mordercy? Czy nie lepiej byłoby zniszczyć przyczyny zła, czyniąc to tak, aby każdy mógł dobrze żyć,
+nie odbierając chleba z~ust innym, i~organizując to tak, aby każdy mógł się kształcić i~rozwijać, oraz móc wypędzić z~serc złe namiętności zazdrości, nienawiści i~zemsty? 
+
+
+
+
+ 
+\noindent \noindent GINO: Daj spokój! Istoty ludzkie są z~natury złe i~gdyby nie było praw, sędziów, żołnierzy i~innych
+\begin{itshape}karabinierów \end{itshape} trzymających nas w~ryzach, pożeralibyśmy się
+nawzajem jak wilki. 
+
+
+
+
+ 
+\noindent GIORGIO: Gdyby tak było, byłby to jeszcze jeden powód, by nie dawać nikomu władzy dowodzenia i~rozporządzania wolnością
+innych. Zmuszeni do walki ze wszystkimi, z~każdą osobą o przeciętnej sile, narazilibyśmy się na to samo ryzyko i~moglibyśmy na przemian być zwycięzcami i~przegranymi: bylibyśmy dzikusami, ale przynajmniej moglibyśmy cieszyć się
+względną swobodą dżungli i~zaciekłych emocje drapieżników. Ale gdybyśmy dobrowolnie dali nielicznym prawo i~władzę
+narzucania ich woli, to skoro według ciebie sam fakt bycia człowiekiem predysponuje nas do wzajemnego pożerania się,
+będzie to równoznaczne z~oddaniem się w~niewolę i~ubóstwo. 
+
+ 
+Jednak oszukujesz sam siebie, mój drogi przyjacielu. Ludzkość jest dobra lub zła w~zależności od okoliczności. To, co
+jest wspólne dla ludzi, to instynkt samozachowawczy i~dążenie do dobrego samopoczucia i~pełnego rozwoju własnych sił.
+Jeśli aby dobrze żyć, trzeba surowo traktować innych, tylko nieliczni będą mieli siłę niezbędną do oparcia się pokusie.
+Ale umieść ludzi w~społeczeństwie ich bliźnich, w~warunkach sprzyjających dobrobytowi i~rozwojowi, a stanie się złym
+będzie wymagało wielkiego wysiłku, tak jak dzisiaj potrzeba wielkiego wysiłku, aby być dobrym. 
+
+
+
+
+ 
+\noindent \noindent GINO: W~porządku, może być tak, jak mówisz. Tymczasem policja, czekając na przemiany społeczne, zapobiega popełnianiu
+przestępstw. 
+
+
+
+
+ 
+\noindent GIORGIO: Zapobiegać?! 
+
+
+
+
+ 
+\noindent \noindent GINO: W~każdym razie, policjanci zapobiegają ogromnej liczbie przestępstw i~stawiają przed sądem sprawców tych
+przestępstw, którym nie byli w~stanie zapobiec. 
+
+
+
+
+ 
+\noindent GIORGIO: Nawet to nie jest prawdą. Wpływ policji na liczbę i~znaczenie przestępstw jest prawie zerowy. W~rzeczywistości,
+niezależnie od tego, jak bardzo zreformowana zostanie organizacja magistratu, policji i~więzień, lub liczba policjantów
+zmniejszy się lub zwiększy, podczas gdy warunki ekonomiczne i~moralne ludności pozostaną niezmienione, przestępczość
+pozostanie mniej więcej stała. 
+
+ 
+Z drugiej strony, wymaga to jedynie najmniejszej zmiany w~stosunkach między właścicielami a robotnikami, czyli zmiany
+cen pszenicy i~innych żywotnie niezbędnych artykułów spożywczych, czy kryzysu pozbawiającego robotników pracy, czy
+szerzenia się naszych idei, które otwierają ludziom nowe horyzonty, wywołując u nich uśmiech nowej nadziei, i~natychmiastowy wpływ na wzrost lub spadek liczba przestępstw zostanie odnotowana. 
+
+ 
+Policja, to prawda, wysyła przestępców do więzienia, kiedy może ich złapać; ale to, ponieważ nie zapobiega nowym
+wykroczeniom, jest złem dodanym do zła, dalszym niepotrzebnym cierpieniem zadawanym istotom ludzkim. 
+
+ 
+A nawet jeśli policja odniesie sukces w~uniknięciu kilku przestępstw, to zdecydowanie nie wystarczy, aby zrekompensować
+przestępstwa, które prowokuje, i~nękanie, któremu poddaje społeczeństwo. 
+
+ 
+Sama funkcja, którą pełnią, budzi podejrzliwość wobec policji i~powoduje konflikt z~całym społeczeństwem; czyni ich
+łowcami ludzkości; prowadzi ich do ambicji odkrywania ,,wielkich'' przypadków przestępczości i~tworzy w~nich szczególną
+mentalność, co bardzo często prowadzi ich do rozwinięcia pewnych wyraźnie antyspołecznych instynktów. Nierzadko zdarza
+się, że policjant, który powinien zapobiegać przestępstwom lub je wykrywać, zamiast tego je prowokuje lub wymyśla, aby
+promować swoją karierę lub po prostu stać się ważnym i~potrzebnym. 
+
+
+
+
+ 
+\noindent \noindent GINO: Ale wtedy sami policjanci byliby tacy sami jak przestępcy! Takie rzeczy zdarzają się sporadycznie, tym bardziej,
+że policjanci nie zawsze rekrutują się z~najlepszej części społeczeństwa, ale generalnie\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Generalnie środowisko ma nieubłagany wpływ, a profesjonalne zniekształcenia uderzają nawet w~tych, którzy
+domagają się poprawy. 
+
+ 
+Powiedz mi: co może być lub co może stać się z~moralnością tych, którzy są zobowiązani przez swoje pensje do
+prześladowania, aresztowania, dręczenia kogokolwiek wskazanego przez przełożonych, nie martwiąc się, czy jest winny czy
+niewinny, przestępca czy anioł? 
+
+
+
+
+ 
+\noindent \noindent GINO: Tak\ldots ale\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Pozwól, że powiem kilka słów o najważniejszej części pytania; innymi słowy o tzw. przestępstwach, które policja
+zobowiązuje się powstrzymać lub im zapobiegać. 
+
+ 
+Z pewnością wśród czynów, za które prawo karze, są takie, które są i~zawsze będą złymi czynami; ale są wyjątki, które
+wynikają ze stanu bestialstwa i~rozpaczy, do którego doprowadza ludzi bieda. 
+
+ 
+Ogólnie jednak karalne są czyny naruszające przywileje klasy wyższej i~te, które atakują rząd w~wykonywaniu jego władzy.
+W ten sposób policja, skutecznie lub nie, służy ochronie nie całego społeczeństwa, ale klasy wyższej i~utrzymywaniu
+ludzi w~uległości. 
+
+ 
+Mówiłeś o złodziejach. Kto jest większym złodziejem niż właściciel, którzy bogaci się kradnąc produkty pracy
+robotników? 
+
+ 
+Mówiłeś o mordercach. Kto jest większym mordercą niż kapitaliści, którzy nie wyrzekając się przywileju kierowania i~życia bez pracy, są przyczyną strasznych niedostatków i~przedwczesnej śmierci milionów robotników, nie mówiąc już o
+ciągłej rzezi dzieci? 
+
+ 
+Ci złodzieje i~mordercy, o wiele bardziej winni i~o wiele bardziej niebezpieczni niż ci biedni ludzie, których popychają
+do przestępstwa nędzne warunki, w~jakich się znajdują, nie są przedmiotem troski policji: wręcz przeciwnie!\ldots 
+
+
+
+
+ 
+\noindent \noindent GINO: Krótko mówiąc, myślisz, że po dokonaniu rewolucji ludzkość stanie się niespodziewanie wieloma małymi aniołkami.
+Wszyscy będą szanować prawa innych; wszyscy będą życzyć sobie nawzajem jak najlepiej i~pomagać sobie nawzajem; nie
+będzie więcej nienawiści ani zazdrości\ldots raj ziemski, co za bzdury?! 
+
+
+
+
+ 
+\noindent GIORGIO: Wcale nie. Nie wierzę, że przemiana moralna nadejdzie nagle, niespodziewanie. Oczywiście wielka, niezmierna
+zmiana nastąpi przez prosty fakt, że zapewniony jest chleb i~zdobyta wolność; ale wszystkie złe namiętności, które
+ucieleśniły się w~nas pod wpływem odwiecznego niewolnictwa i~walki między ludźmi, nie znikną od razu. Jeszcze długo
+będą tacy, którzy będą odczuwać pokusę narzucania swojej woli przemocą innym, którzy będą chcieli wykorzystać
+sprzyjające okoliczności do stworzenia sobie przywilejów, którzy zachowają niechęć do pracy zainspirowani warunkami
+niewolnictwa, w~jakich są dziś zmuszani do pracy, i~tak dalej. 
+
+
+
+
+ 
+\noindent \noindent GINO: Czyli nawet po rewolucji będziemy musieli bronić się przed przestępcami? 
+
+
+
+
+ 
+\noindent GIORGIO: Bardzo prawdopodobne. Pod warunkiem że ci, których wtedy uważa się za przestępców, to nie ci, którzy raczej się
+buntują niż umierają z~głodu, a tym bardziej ci, którzy atakują istniejącą organizację społeczeństwa i~starają się
+zastąpić ją lepszą; ale ci, którzy wyrządziliby krzywdę wszystkim, ci, którzy naruszyliby integralność osobistą,
+wolność i~dobro innych. 
+
+
+
+
+ 
+\noindent \noindent GINO: W~porządku, więc zawsze będziesz potrzebować policji. 
+
+
+
+
+ 
+\noindent GIORGIO: Ależ wcale nie. Byłoby naprawdę wielką głupotą chronić się przed kilkoma brutalami, kilkoma próżniakami i~niektórymi degeneratami, otwierając szkołę dla próżniactwa i~przemocy oraz tworząc grupę rzezimieszków, którzy nauczą
+się traktować obywateli za więzienną przynętę i~którzy zrobią z~polowań swoje główne i~jedyne zajęcie. 
+
+
+
+
+ 
+\noindent \noindent GINO: A więc co! 
+
+
+
+
+ 
+\noindent GIORGIO: Cóż, będziemy się bronić. 
+
+
+
+
+ 
+\noindent \noindent GINO: I~myślisz, że to możliwe? 
+
+
+
+
+ 
+\noindent GIORGIO: Nie tylko uważam, że jest możliwe, że ludzie będą się bronić bez powierzania komukolwiek szczególnej funkcji
+obrony społeczeństwa, ale jestem pewien, że jest to jedyna skuteczna metoda. 
+
+ 
+Powiedz mi! Jeśli jutro przyjdzie do ciebie ktoś poszukiwany przez policję, wydasz go? 
+
+
+
+
+ 
+\noindent \noindent GINO: Co, zwariowałeś? Nawet gdyby byli najgorszymi ze wszystkich morderców. Co ty mnie masz za policjanta?! 
+
+
+
+
+ 
+\noindent GIORGIO: Ach! Ach! Zawód policjanta musi być straszny, jeśli ktokolwiek szanujący się uważa, że  się go
+hańbi, podejmując go, nawet jeśli uważa, że jest pożyteczny i~potrzebny społeczeństwu. 
+
+ 
+A teraz powiedz mi coś jeszcze. Gdybyś spotkał chorego z~chorobą zakaźną lub niebezpiecznego szaleńca, zabrałbyś go do
+szpitala? 
+
+
+
+
+ 
+\noindent \noindent GINO: Oczywiście. 
+
+
+
+
+ 
+\noindent GIORGIO: Nawet siłą? 
+
+
+
+
+ 
+\noindent \noindent GINO: Ale\ldots Musisz zrozumieć! Pozostawienie ich na wolności może zaszkodzić wielu ludziom! 
+
+
+
+
+ 
+\noindent GIORGIO: Wyjaśnij mi teraz, dlaczego bardzo pilnujesz się, aby nie wydać mordercy, podczas gdy szaleńca lub chorego na
+dżumę zabierasz do szpitala, jeśli to konieczne, nawet siłą? 
+
+
+
+
+ 
+\noindent \noindent GINO: Cóż\ldots przede wszystkim uważam, że bycie policjantem jest odrażające, a opieka nad chorymi jest rzeczą honorową i~humanitarną. 
+
+
+
+
+ 
+\noindent GIORGIO: Cóż, już widać, że pierwszym efektem działania policji jest sprawienie, że obywatele umywają ręce od obrony
+społecznej, a właściwie stają po stronie tych, których policja słusznie lub niesłusznie prześladuje. 
+
+
+
+
+ 
+\noindent \noindent GINO: Chodzi też o to, że kiedy zabieram kogoś do szpitala, wiem, że zostawiam go w~rękach lekarzy, którzy starają się
+go wyleczyć, żeby mógł wyjść na wolność, kiedy już nie będzie zagrożeniem dla innych ludzie. W~każdym przypadku, nawet
+nieuleczalnym, lekarze będą starali się ulżyć cierpieniu i~nigdy nie będą stosować surowszego traktowania, niż jest to
+bezwzględnie konieczne. Gdyby lekarze nie wykonywali swoich obowiązków, społeczeństwo by ich do tego zmuszało, ponieważ
+dobrze wiadomo, że ludzie są przetrzymywani w~szpitalach w~celu wyleczenia i~żeby się nie męczyć. 
+
+ 
+Natomiast, jeśli ktoś oddaje kogoś w~ręce policji, policja z~ambicji stara się go skazać, mało troszcząc się o to, czy
+jest winny, czy niewinny; następnie umieszcza go w~więzieniu, gdzie zamiast szukać ich poprawy poprzez troskliwą
+opiekę, robią wszystko, aby cierpieli, uczynili bardziej zgorzkniałymi, a następnie uwalniają go jako jeszcze bardziej
+niebezpiecznego wroga społeczeństwa, niż byli przed pójściem do więzienia. 
+
+ 
+Można to jednak zmienić poprzez radykalną reformę. 
+
+
+
+
+ 
+\noindent GIORGIO: Aby zreformować, mój drogi kolego, lub zniszczyć instytucję, pierwszą rzeczą nie jest tworzenie korporacji
+zainteresowanej jej utrzymaniem. 
+
+ 
+Policja (a to, co mówię o policji, odnosi się również do sędziów), wykonując swój zawód polegający na wysyłaniu ludzi do
+więzienia i~biciu ich, gdy nadarzy się okazja, zawsze będzie uważała się za sprzeciwiającą się społeczeństwu. Wściekle
+ścigają prawdziwego lub domniemanego przestępcę z~taką samą pasją, z~jaką myśliwy goni zwierzynę, ale jednocześnie w~interesie policji jest, aby przestępców było więcej, bo to oni są powodem ich istnienia, a im większa liczba i~szkodliwość przestępców, tym większa siła i~społeczne znaczenie policji! 
+
+ 
+Aby przestępstwo było traktowane racjonalnie, aby szukać jego przyczyn i~rzeczywiście czynić wszystko, co możliwe, aby
+je wyeliminować, konieczne jest powierzenie tego zadania tym, którzy są narażeni na przestępstwo i~ponoszą jego skutki,
+czyli innymi słowy, całemu społeczeństwu, a nie tym, dla których istnienie przestępczości jest źródłem władzy i~zarobków. 
+
+
+
+
+ 
+\noindent GINO: O! Możliwe, że masz rację. Do następnego razu. 
+
+
+
+
+
+
+
+
+
+
+\chapter*{Szesnaście}
+
+
+
+ 
+\noindent PIPPO [\textit{Kaleka wojenny}]: Mam dość! Proszę pozwólcie mi opowiedzieć wam, że jestem zdumiony, powiedziałbym
+prawie oburzony, że chociaż macie najróżniejsze opinie, wydajecie się zgadzać w~ignorowaniu zasadniczej kwestii, jaką
+jest ojczyzna, zapewnienia wielkości i~chwały naszym Włochom. 
+
+
+
+
+ 
+Prospero, Cesare, Vincenzo, \begin{itshape}i wszyscy obecni oprócz  \end{itshape}Giorgio i~Luigi (młody socjalista), \textit{hałaśliwie zaprotestowali i} Ambrogio \begin{itshape} powiedział w~imieniu wszystkich \end{itshape}: W~tych dyskusjach nie mówiliśmy o Włoszech, tak jak nie mówiliśmy o
+naszych matkach. Nie trzeba było mówić o tym, co już zostało zrozumiane, o tym, co jest lepsze od jakiejkolwiek opinii,
+od jakiejkolwiek dyskusji. Proszę, Pippo, nie wątp w~nasz patriotyzm, nawet w~patriotyzm Giorgio. 
+
+
+
+
+ 
+\noindent GIORGIO: Ale nie; w~mój patriotyzm z~pewnością można wątpić, bo nie jestem patriotą. 
+
+
+
+
+ 
+\noindent PIPPO: Już się domyśliłem: jesteś z~tych, co krzyczą \begin{itshape}koniec z~Włochami \end{itshape} i~chciałbyś zobaczyć nasz kraj upokorzony, pokonany, zdominowany przez
+cudzoziemców. 
+
+
+
+
+ 
+\noindent GIORGIO: Ależ wcale. Są to zwykłe oszczerstwa, którymi nasi przeciwnicy próbują oszukać ludzi, aby uprzedzić ich do nas.
+Nie wykluczam, że są ludzie, którzy w~dobrej wierze wierzą w~ten bełkot, ale jest to wynikiem ignorancji i~braku
+zrozumienia. 
+
+ 
+Nie chcemy dominacji wszelkiego rodzaju i~dlatego nie możemy chcieć, aby Włochy były zdominowane przez inne kraje, tak
+jak nie chcemy, aby Włochy dominowały nad innymi. 
+
+ 
+Cały świat uważamy za naszą ojczyznę, całą ludzkość za naszych braci i~siostry; dlatego dla nas byłoby to po prostu
+absurdem chcieć szkodzić i~upokarzać kraj, w~którym żyjemy; w~którym mamy naszych bliskich, którego językiem mówimy
+najlepiej, kraj, który daje nam najwięcej i~któremu dajemy najwięcej w~zakresie wymiany pracy, idei i~uczuć. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale ten kraj to ojczyzna, którą nieustannie przeklinacie. 
+
+
+
+
+ 
+\noindent GIORGIO: Nie przeklinamy naszej ojczyzny ani niczyjego kraju. Przeklinamy patriotyzm, który wy nazywacie patriotyzmem,
+który jest arogancją narodową, czyli głoszeniem nienawiści do innych krajów, pretekstem do nastawiania ludzi przeciwko
+ludziom w~śmiertelnych wojnach, aby służyć złowrogim interesom kapitalizmu i~nieumiarkowanym ambicjom władców i~drobnych polityków. 
+
+
+
+
+ 
+\noindent VINCENZO: Spokojnie, spokojnie. 
+
+ 
+Masz rację mówiąc o tzw \begin{itshape}patriotyzmie  \end{itshape}bardzo wielu kapitalistów i~bardzo wielu monarchistów, dla których miłość ojczyzny jest naprawdę pretekstem. I~tak jak ty gardzę i~brzydzę się
+tymi, którzy nie ryzykują nic dla kraju i~bogacą się w~imię ojczyzny na pot i~krew robotników i~uczciwych ludzi ze
+wszystkich klas. Ale są ludzie, którzy są prawdziwymi patriotami, którzy poświęcili i~są gotowi poświęcić wszystko,
+swój majątek, wolność i~życie dla swojego kraju. 
+
+ 
+Wiecie, że republikanami zawsze kierował najwyższy patriotyzm i~zawsze rzetelnie wywiązywali się ze swoich
+obowiązków. 
+
+
+
+
+ 
+\noindent GIORGIO: Zawsze podziwiam tych, którzy poświęcają się dla swoich idei, ale to nie przeszkadza mi dostrzegać, że ideały
+republikanów i~szczerych patriotów, których z~pewnością można znaleźć we wszystkich partiach, stały się w~tym momencie
+przestarzałe i~służą jedynie rządom i~kapitalistom jako sposób na maskowanie ich prawdziwych celów ideałami i~wpływanie
+na nieświadome masy i~entuzjastyczną młodzież. 
+
+
+
+
+ 
+\noindent VINCENZO: Co masz na myśli mówiąc nieaktualne?! Miłość ojczyzny jest naturalnym uczuciem ludzkiego serca i~nigdy się nie
+zdezaktualizuje. 
+
+
+
+
+ 
+\noindent GIORGIO: To, co nazywasz miłością do własnego kraju, jest przywiązaniem do tego kraju, z~którym łączy cię najsilniejszy
+związek moralny i~który daje największą pewność materialnego dobrobytu; i~z pewnością jest to naturalne i~zawsze takie
+pozostanie, przynajmniej do czasu, gdy cywilizacja rozwinie się do punktu, w~którym każdy człowiek będzie odnajdywał
+\begin{itshape}de facto \end{itshape} swój kraj w~dowolnej części świata. Ale to nie ma nic
+wspólnego z~tzw mitem ,,ojczyzny'', który każe uważać innych ludzi za gorszych, który każe pragnąć dominacji własnego
+kraju nad innymi, co uniemożliwia docenienie pracy tzw. obcych, a który sprawia, że uważasz, że pracownicy mają więcej
+wspólnego ze swoimi szefami i~policją w~swoim kraju niż z~pracownikami z~innych krajów, z~którymi mają wspólne
+zainteresowania i~aspiracje. 
+
+ 
+W końcu nasze międzynarodowe, kosmopolityczne uczucia wciąż się rozwijają, jako kontynuacja dokonanego już postępu.
+Możesz czuć się bardziej przywiązany do swojej rodzinnej wioski lub regionu z~tysiąca powodów sentymentalnych i~materialnych, ale to nie znaczy, że jesteś zaściankowy lub przywiązany do swojego regionu: szczycisz się będąc Włochem,
+i jeśli zajdzie taka konieczność, stawiałbyś ogólne interesy Włoch ponad interesami regionalnymi lub lokalnymi. Jeśli
+uważacie, że poszerzenie pojęcia własnego kraju od gminy do narodu jest postępem, dlaczego poprzestać na tym i~nie
+objąć całego świata ogólną miłością do rodzaju ludzkiego i~braterską współpracą między wszystkimi ludźmi? 
+
+ 
+Dziś stosunki między krajami, wymiana surowców oraz produktów rolnych i~przemysłowych są już takie, że kraj, który
+chciałby się odizolować od innych lub, co gorsza, wejść w~konflikt z~innymi, skazałby się na wycieńczoną egzystencję i~zupełną i~totalna porażka. Już teraz jest mnóstwo mężczyzn, którzy ze względu na swoje związki, rodzaj studiów i~pracy,
+ze względu na swoją pozycję ekonomiczną uważają się za obywateli świata i~są nimi naprawdę. 
+
+ 
+Poza tym, czy nie widzicie, że wszystko, co na świecie wielkie i~piękne, ma charakter globalny i~ponadnarodowy. Nauka
+jest międzynarodowa, tak samo jak sztuka, tak samo jest z~religią, która wbrew swoim kłamstwom jest wielką demonstracją
+duchowej aktywności ludzkości. Jak powiedziałby signor Ambrogio, prawa i~moralność są uniwersalne, ponieważ starają się
+rozszerzyć swoje własne koncepcje na każdego człowieka. Każda nowa prawda odkryta w~jakiejkolwiek części świata, każdy
+nowy wynalazek, każdy pomysłowy produkt ludzkiego mózgu jest lub powinien być użyteczny dla całej ludzkości. 
+
+ 
+Aby powrócić do izolacji, do rywalizacji i~nienawiści między narodami, trwanie w~ciasnym i~mizantropijnym patriotyzmie
+oznaczałoby stawianie się poza wielkimi nurtami postępu, które pchają ludzkość ku przyszłości pokoju i~braterstwa,
+oznaczałoby to stawianie się na zewnątrz i~przeciw cywilizacji. 
+
+
+
+
+ 
+\noindent CESARE: Zawsze mówisz o pokoju i~braterstwie; ale pozwól, że zadam ci praktyczne pytanie. Gdyby na przykład Niemcy lub
+Francuzi przybyli do Mediolanu, Rzymu lub Neapolu, aby zniszczyć nasze pomniki sztuki i~mordować lub ciemiężyć naszych
+rodaków, co byście zrobili? Byłbyś niewzruszony? 
+
+
+
+
+ 
+\noindent GIORGIO: Co ty mówisz? z~pewnością byłbym bardzo przygnębiony i~zrobiłbym wszystko, co w~mojej mocy, aby temu zapobiec.
+Ale zauważ to dobrze, byłbym równie zmartwiony i~gdybym mógł, zrobiłbym wszystko, aby uniemożliwić Włochom niszczenie,
+uciskanie i~zabijanie w~Paryżu, Wiedniu, Berlinie\ldots lub w~Libii. 
+
+
+
+
+ 
+\noindent CESARE: Naprawdę \begin{itshape}na równi \end{itshape} zakłopotany? 
+
+
+
+
+ 
+\noindent GIORGIO: Być może nie w~praktyce. Czułbym się gorzej z~powodu złych uczynków popełnionych we Włoszech, ponieważ we
+Włoszech mam więcej przyjaciół, znam Włochy lepiej, więc moje uczucia byłyby głębsze i~bardziej bezpośrednie. Ale to
+nie znaczy, że wykroczenia popełnione w~Berlinie byłyby mniej złe niż te popełnione w~Mediolanie. 
+
+ 
+To tak, jakby mieli zabić brata, przyjaciela. Z~pewnością cierpiałbym bardziej, niż gdyby zabili kogoś, kogo nie znam:
+ale to nie znaczy, że zabicie nieznanej mi osoby jest mniej zbrodnicze niż zabicie przyjaciela. 
+
+
+
+
+ 
+\noindent PIPPO: W~porządku. Ale co zrobiłeś, aby powstrzymać ewentualną inwazję Niemców na Mediolan? 
+
+
+
+
+ 
+\noindent GIORGIO: Nic nie zrobiłem. Właściwie moi przyjaciele i~ja zrobiliśmy wszystko, co w~naszej mocy, aby uniknąć walki;
+ponieważ nie byliśmy w~stanie zrobić tego, co byłoby pożyteczne i~konieczne. 
+
+
+
+
+ 
+\noindent PIPPO: Co masz na myśli? 
+
+
+
+
+ 
+\noindent GIORGIO: To oczywiste. Znaleźliśmy się w~sytuacji, w~której musieliśmy bronić interesów naszych szefów, naszych
+ciemiężców, zabijając niektórych naszych braci, robotników z~innych krajów, pędzonych do rzeźni tak jak my, przez ich
+szefów i~prześladowcy. I~odmówiliśmy bycia narzędziem tych, którzy są naszym prawdziwym wrogiem, czyli naszymi
+szefami. 
+
+ 
+Gdybyśmy, po pierwsze, potrafili uwolnić się od naszych wewnętrznych wrogów, to bylibyśmy w~stanie bronić naszego kraju,
+a nie kraju kapitalistów. Mogliśmy podać braterską dłoń wysłanym przeciwko nam zagranicznym robotnikom, a gdyby nie
+zrozumieli i~zechcieli nadal służyć swoim panom, sprzeciwiając się nam, bronilibyśmy się. 
+
+
+
+
+ 
+\noindent AMBROGIO: Wy troszczycie się tylko o interesy robotników, o interesy waszej klasy, nie rozumiejąc, że naród jest ponad
+interesami klasowymi. Istnieją pewne uczucia, pewne tradycje, pewne interesy, które jednoczą wszystkich ludzi tego
+samego narodu, pomimo różnic w~ich warunkach i~wszystkich antagonizmów klasowych. 
+
+ 
+I znowu, istnieje duma z~własnych korzeni. Czy nie jesteś dumny z~bycia Włochem, z~przynależności do kraju, który dał
+światu cywilizację i~nawet dzisiaj, pomimo wszystko, jest w~czołówce postępu? 
+
+ 
+Jak to się dzieje, że nie czujesz potrzeby obrony cywilizacji łacińskiej przed krzyżackim barbarzyństwem? 
+
+
+
+
+ 
+\noindent GIORGIO: Proszę, nie rozmawiajmy o cywilizacji i~barbarzyństwie tego czy innego kraju. 
+
+ 
+Mogłem od razu powiedzieć wam, że jeśli robotnicy nie są w~stanie docenić waszej ,,cywilizacji łacińskiej'', to wasza
+wina, wina burżuazji, która odebrała robotnikom środki do samokształcenia. Jak możesz oczekiwać, że ktoś będzie
+pasjonatem czegoś, co zabraniałeś mu poznać? 
+
+ 
+Przestań nas wprowadzać w~błąd. Czy chcesz, żebyśmy uwierzyli, że Niemcy są bardziej barbarzyńscy niż ktokolwiek inny,
+kiedy sam przez lata podziwiałeś wszystko, co pochodzi z~Niemiec? Gdyby jutro zmieniły się warunki polityczne i~inaczej
+ustawiły się kapitalistyczne interesy, po raz kolejny powiedziałbyś, że Niemcy stoją na czele cywilizacji, a Francuzi
+czy Anglicy to barbarzyńcy. 
+
+ 
+Co to znaczy? Jeśli czyjś kraj okaże się bardziej zaawansowany niż inny, ma obowiązek szerzyć swoją cywilizację, pomagać
+swoim rodakom, którzy są zacofani i~nie czerpią korzyści z~jego wyższości, aby uciskać i~wyzyskiwać\ldots ponieważ każde
+nadużycie władzy prowadzi do korupcji i~dekadencji. 
+
+
+
+
+ 
+\noindent AMBROGIO: Ale w~każdym razie przynajmniej szanujesz solidarność narodową, która musi przewyższać wszelką konkurencję
+klasową. 
+
+
+
+
+ 
+\noindent GIORGIO: Rozumiem. To właśnie ten pozór narodowej solidarności interesuje was szczególnie i~z tym właśnie walczymy.
+Solidarność narodowa oznacza solidarność między kapitalistami a robotnikami, między ciemiężycielami a ciemiężonymi,
+innymi słowy przyzwolenie ciemiężonych na ich stan podporządkowania. 
+
+ 
+Interesy robotników są sprzeczne z~interesami pracodawców, a kiedy w~szczególnych okolicznościach znajdują się
+tymczasowo w~zgodzie, staramy się zrobić z~nich antagonistów, biorąc pod uwagę, że emancypacja człowieka i~cały
+przyszły postęp zależą od walki między robotnikami a właścicielami, musi to doprowadzić do całkowitego zniknięcia
+wyzysku i~ucisku jednej osoby przez drugą. 
+
+ 
+Nadal próbujecie oszukać robotników kłamstwami nacjonalizmu: ale na próżno. Robotnicy zrozumieli już, że robotnicy
+wszystkich krajów są ich towarzyszami, a wszyscy kapitaliści i~wszystkie rządy, krajowe czy zagraniczne, są ich
+wrogami. 
+
+ 
+I tym miłym akcentem życzę wam dobrego wieczoru. Wiem, że nie przekonałem ani sędziów, ani właścicieli, którzy mnie
+posłuchali. Ale może nie na próżno opowiadałem się za Pippo, Vincenzo i~Luigim, którzy są proletariuszami jak ja. 
+
+
+\chapter*{Siedemnaście}
+
+
+
+ 
+\noindent LUIGI [\textit{socjalista}]: Skoro wszyscy tutaj wyrazili swoją opinię, pozwólcie, że ja wyrażę swoją? 
+
+ 
+To tylko niektóre z~moich własnych pomysłów i~nie chcę narażać się na połączoną nietolerancję burżuazji i~anarchistów. 
+
+
+
+
+ 
+\noindent GIORGIO: Jestem zdumiony, że tak mówisz. 
+
+ 
+Ponieważ obaj jesteśmy robotnikami, możemy i~musimy uważać się za przyjaciół i~towarzyszy, ale wydaje się, że sądzisz,
+że anarchiści są wrogami socjalistów. Wręcz przeciwnie, jesteśmy ich przyjaciółmi, współpracownikami. 
+
+ 
+Nawet jeśli wielu wybitnych socjalistów próbowało i~nadal próbuje przeciwstawić socjalizm anarchizmowi, prawda jest
+taka, że  jeśli socjalizm oznacza społeczeństwo lub aspiracje do społeczeństwa, w~którym ludzie żyją we
+wspólnocie, w~którym dobro wszystkich jest warunkiem dobrobytu każdego, w~którym nikt nie jest niewolnikiem ani
+wyzyskiwany i~każdy ma środki do maksymalnego rozwoju i~korzystania w~pokoju ze wszystkich dobrodziejstw cywilizacji i~pracy społecznej, nie tylko jesteśmy socjalistami, ale mamy prawo uważać się za najbardziej radykalnych i~konsekwentnych socjalistów. 
+
+ 
+W końcu nawet signor Ambrogio, który wysłał tak wielu z~nas do więzienia, wie, że jako pierwsi wprowadziliśmy,
+wyjaśniliśmy i~propagowaliśmy socjalizm; i~jeśli stopniowo porzuciliśmy tę nazwę i~nazywaliśmy siebie po prostu
+anarchistami, to dlatego, że obok nas powstała inna szkoła, dyktatorska i~parlamentarna, której udało się zwyciężyć i~uczynić socjalizm czymś tak hybrydycznym i~przystosowawczym, że niemożliwe było pogodzić z~naszymi ideałami i~metodami
+doktrynę, która była odrażająca dla naszej natury. 
+
+
+
+
+ 
+\noindent LUIGI: W~rzeczywistości zrozumiałem twoje argumenty i~z pewnością zgadzamy się w~wielu sprawach, zwłaszcza w~krytyce
+kapitalizmu. 
+
+ 
+Ale nie we wszystkim się zgadzamy, po pierwsze dlatego, że anarchiści wierzą tylko w~rewolucję i~wyrzekają się bardziej
+cywilizowanych środków walki, które zastąpiły te gwałtowne metody, które być może kiedyś były konieczne, a po drugie,
+ponieważ nawet gdybyśmy finalizowali gwałtowną rewolucją, konieczne byłoby wprowadzenie do władzy nowego rządu, aby
+działał w~sposób uporządkowany i~nie pozostawiał wszystkiego arbitralnym działaniom i~wściekłości mas. 
+
+
+
+
+ 
+\noindent GIORGIO: Cóż, przedyskutujmy to dalej. Czy naprawdę wierzycie, że możliwe jest radykalne przekształcenie społeczeństwa,
+zniesienie przywilejów, obalenie rządu, wywłaszczenie burżuazji bez użycia siły? 
+
+ 
+Mam nadzieję, że nie łudzicie się, że właściciele i~władcy poddadzą się bez oporu, bez użycia sił, którymi dysponują, i~da się ich jakoś nakłonić do odgrywania roli ofiarnych ofiar. W~przeciwnym razie zapytaj tych tutaj panów, którzy,
+gdyby mogli, pozbyliby się ciebie i~mnie z~wielką przyjemnością i~bardzo szybko. 
+
+
+
+
+ 
+\noindent LUIGI: Nie, nie mam takich złudzeń. 
+
+ 
+Dzisiaj robotnicy stanowią zdecydowaną większość elektoratu i~mają prawo głosu w~sprawach administracyjnych i~w~wyborach
+politycznych, wydaje mi się, że gdyby byli świadomi i~chętni, mogliby bez większego wysiłku umieścić u władzy ludzi,
+którym mogliby zaufać, socjalistów i, jeśli kto chce, nawet niektórych anarchistów, którzy mogliby stanowić dobre
+prawa, znacjonalizować ziemię i~warsztaty oraz wprowadzić socjalizm. 
+
+
+
+
+ 
+\noindent GIORGIO: Oczywiście, gdyby robotnicy byli świadomi i~zaangażowani! 
+
+ 
+Ale gdyby byli wystarczająco rozwinięci, aby móc zrozumieć przyczyny swoich problemów i~lekarstwa na nie, gdyby naprawdę
+byli zdeterminowani, by się wyzwolić, wówczas rewolucja mogłaby zostać przeprowadzona z~niewielką lub żadną przemocą, a
+sami robotnicy mogliby robić, co chcą i~nie trzeba by było posyłać do parlamentu i~do rządu ludzi, którzy, nawet jeśli
+nie dali się upić i~zepsuć pokusami władzy, jak to niestety bywa, nie są w~stanie zaspokajać potrzeb społecznych i~robić to, czego oczekują od nich wyborcy. 
+
+ 
+Jednak niestety pracownicy, a przynajmniej zdecydowana większość z~nich, są nieświadomi lub oddani; żyją w~warunkach,
+które nie dopuszczają możliwości wyzwolenia się moralnego, chyba że najpierw nastąpi poprawa ich sytuacji materialnej.
+Tak więc transformacja społeczeństwa musi nastąpić dzięki inicjatywie i~pracy tych grup mniejszościowych, które dzięki
+szczęśliwym okolicznościom były w~stanie wznieść się ponad wspólny poziom, mniejszości liczbowych, które ostatecznie
+stają się dominującą siłą zdolną do pociągnięcia ich za sobą zacofane masy. 
+
+ 
+Przyjrzyjcie się faktom, a zobaczycie wkrótce, że właśnie z~powodu warunków moralnych i~materialnych, w~jakich znajduje
+się proletariat, burżuazja i~rząd zawsze uzyskują od parlamentu to, co im odpowiada. Dlatego przyznają powszechne prawo
+wyborcze i~pozwalają mu funkcjonować. Gdyby dostrzegli jakiekolwiek niebezpieczeństwo legalnego wywłaszczenia, jako
+pierwsi odstąpiliby od legalności i~pogwałcili to, co nazywają wolą ludu. Już tak robią przy każdej okazji, gdy prawa
+przez pomyłkę działają przeciwko nim. 
+
+
+
+
+ 
+\noindent LUIGI: Mówisz tak, ale w~międzyczasie widzimy, że liczba socjalistycznych posłów stale rośnie. Pewnego dnia będą
+większością i\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Ale czy nie widzicie, że kiedy socjaliści wchodzą do parlamentu, od razu zostają oswojeni i~z zagrożenia stają
+się kolaborantami i~zwolennikami panującego porządku? w~końcu wysyłając socjalistów do parlamentu, oddajemy burżuazji
+przysługę, ponieważ najbardziej aktywni, zdolni i~popularni ludzie są usuwani z~serc mas i~transportowani do środowiska
+burżuazyjnego. 
+
+ 
+Ponadto, jak już panu powiedziałem, kiedy socjalistyczni posłowie do parlamentu naprawdę staną się zagrożeniem, rząd
+wypędzi ich z~parlamentu bagnetem i~zniesie powszechne prawo wyborcze. 
+
+
+
+
+ 
+\noindent LUIGI: Może ci się tak wydawać, ponieważ zawsze postrzegasz rzeczy w~kategoriach świata w~skrajnym kryzysie. 
+
+ 
+Przeciwieństwo jest prawdą. Świat porusza się stopniowo dzięki stopniowej ewolucji. 
+
+ 
+Dla proletariatu jest to konieczne, by przygotować się do przejęcia władzy od burżuazji, kształcąc się, organizując się,
+wysyłając swoich przedstawicieli do organów stanowiących i~tworzących prawa; a kiedy dojrzeje, weźmie wszystko w~swoje
+ręce i~powstanie nowe społeczeństwo, do którego aspirujemy. 
+
+ 
+We wszystkich krajach cywilizowanych wzrasta liczba posłów socjalistycznych i~naturalnie rośnie też ich poparcie wśród
+mas. 
+
+ 
+Pewnego dnia z~pewnością staną się większością, a jeśli wtedy burżuazja i~jej rząd nie ustąpią pokojowo i~nie będą
+próbowały przemocą stłumić woli ludu, to na przemoc odpowiemy przemocą. 
+
+ 
+Konieczne jest poświęcenie czasu. Próba narzucenia praw natury i~historii jest bezużyteczna i~szkodliwa. 
+
+
+
+
+ 
+\noindent GIORGIO: Drogi Luigi, prawa natury nie potrzebują obrońców: same budzą szacunek. Ludzie mozolnie je odkrywają i~wykorzystują swoje odkrycie do czynienia dobra lub zła; ale wystrzegaj się przyjmowania jako praw naturalnych faktów
+społecznych, które zainteresowane strony (w naszym przypadku ekonomiści i~socjologowie broniący burżuazji) opisują jako
+takie. 
+
+ 
+Jeśli chodzi o ,,prawa historii'', są one formułowane po historii. Przede wszystkim twórzmy historię. 
+
+ 
+Świat porusza się wolno lub szybko, idzie do przodu lub do tyłu, w~wyniku nieokreślonej liczby czynników naturalnych i~ludzkich, i~błędem jest wierzyć w~ciągłą ewolucję, która zawsze porusza się w~tym samym kierunku. 
+
+ 
+Obecnie z~pewnością prawdą jest, że społeczeństwo znajduje się w~ciągłej, powolnej ewolucji; ale ewolucja w~istocie
+oznacza zmianę, a jeśli niektóre zmiany prowadzą nas we właściwym kierunku, które sprzyjają wyniesieniu ludzkości ku
+nadrzędnemu ideałowi wspólnoty i~wolności, to inne zamiast tego wzmacniają istniejące instytucje lub cofają i~anulują
+postęp już osiągnięty. 
+
+ 
+Podczas gdy ludzie pozostają w~opozycji do siebie, żadne zyski nie są pewne, żaden postęp w~organizacji społecznej nie
+może być uznany za ostatecznie osiągnięty. 
+
+ 
+Musimy wykorzystać i~wspierać wszystkie elementy postępu i~walki, utrudniać i~próbować zneutralizować regresywne i~konserwatywne siły. 
+
+ 
+Dziś los ludzkości zależy od walki między robotnikami a wyzyskiwaczami i~od pojednania między dwiema wrogimi klasami, od
+współpracy między kapitalistami i~robotnikami, między rządem a ludem, prowadzonej z~zamiarem lub pod pretekstem
+stonowania sporów społecznych, służy jedynie faworyzowaniu klasy ciemiężców, wzmocnieniu chwiejnych instytucji i, co
+gorsza, oddzieleniu od mas najbardziej rozwiniętych elementów proletariackich i~przekształceniu ich w~nową klasę
+uprzywilejowaną, mającą interes wspólny z~baronami przemysł, finanse i~politykę, w~utrzymywaniu ogromnej większości
+ludzi w~stanie niższości i~podporządkowania. 
+
+ 
+Mówisz o ewolucji i~wydajesz się myśleć, że koniecznie i~nieuchronnie, czy ludzie tego chcą, czy nie, ludzkość dotrze do
+socjalizmu, czyli społeczeństwa stworzonego dla równego interesu wszystkich, w~którym środki produkcji należą do
+wszystkich, w~którym każdy będzie robotnikiem, w~którym każdy będzie korzystał na równych prawach ze wszystkich
+dobrodziejstw cywilizacji. 
+
+ 
+Ale tak nie jest prawdziwe. Socjalizm nadejdzie, jeśli ludzie tego zechcą i~zrobią wszystko, co konieczne, aby go
+osiągnąć. W~przeciwnym razie możliwe jest, że zamiast socjalizmu powstałaby sytuacja społeczna, w~której różnice między
+ludźmi byłyby większe i~trwalsze, w~której ludzkość zostałaby podzielona na dwie różne rasy, szlachciców i~służących, z~klasą pośrednią, która służyć zapewnieniu, poprzez połączenie inteligencji i~brutalnej siły, dominacji jednego nad
+drugim, albo po prostu może istnieć kontynuacja obecnego stanu ciągłej walki, przemian ulepszeń i~pogorszenia, kryzysów
+i okresowych wojen. 
+
+ 
+Właściwie powiedziałbym, że gdybyśmy zostawili rzeczy ich naturalnemu biegowi, ewolucja prawdopodobnie potoczyłaby się w~kierunku przeciwnym do tego, którego pragniemy, zmierzałaby w~kierunku konsolidacji przywilejów, w~kierunku stabilnej
+równowagi ustanowionej na korzyść teraźniejszości władców, bo to naturalne, że siła należy do silnych, i~kto rozpoczyna
+walkę z~pewną przewagą nad przeciwnikiem, zawsze uzyska większą przewagę w~toku zmagań. 
+
+
+
+
+ 
+\noindent LUIGI: Być może masz rację; właśnie dlatego musimy wykorzystać wszystkie dostępne nam środki: edukację, organizację i~walkę polityczną\ldots 
+
+
+
+
+ 
+\noindent GIORGIO: Wszystkie środki, tak, ale wszystkie środki, które prowadzą do naszego celu. 
+
+ 
+Edukacja, na pewno. Jest to pierwsza rzecz, która jest potrzebna, ponieważ jeśli nie oddziałujemy na umysły jednostek,
+jeśli nie budzimy ich sumień, jeśli nie pobudzamy zmysłów, jeśli nie pobudzimy ich woli, postęp nie będzie możliwy. A
+przez wykształcenie mam na myśli nie tyle naukę książkową, choć też potrzebną, ale mało dostępną dla proletariuszy,
+raczej wykształcenie, które zdobywa się poprzez świadomy kontakt ze społeczeństwem, propagandę, dyskusje,
+zainteresowanie sprawami publicznymi, udział w~walce o doskonalenie swoje i~innych. 
+
+ 
+Ta edukacja jednostki jest konieczna i~wystarczyłaby do przekształcenia świata, gdyby można było ją rozszerzyć na
+wszystkich. 
+
+ 
+Jednak niestety nie jest to możliwe. Ludzie są pod wpływami, zdominowani, można powiedzieć, kształtowani przez
+środowisko, w~którym żyją; a kiedy środowisko nie jest odpowiednie, postęp można osiągnąć tylko poprzez walkę z~nim. W~danym momencie tylko ograniczona liczba jednostek jest zdolna, czy to dzięki odziedziczonym zdolnościom, czy też dzięki
+szczególnie sprzyjającym okolicznościom, wznieść się ponad środowisko, zareagować przeciwko niemu i~przyczynić się do
+jego przemiany. 
+
+ 
+Dlatego to świadoma mniejszość musi przełamać lody i~gwałtownie zmienić zewnętrzne okoliczności. 
+
+ 
+Organizacja: Świetna i~potrzebna rzecz, pod warunkiem, że służy do walki z~bossami, a nie do dogadywania się z~nimi. 
+
+ 
+Walka polityczna: Oczywiście, pod warunkiem, że mamy na myśli walkę z~rządem, a nie współpracę z~rządem. 
+
+ 
+Zwróć uwagę. Jeśli chcesz ulepszyć system kapitalistyczny i~sprawić, by był znośny, a co za tym idzie utrwalić go,
+wówczas pewne dostosowania, pewne zakresy współpracy mogą być do zaakceptowania; ale jeśli naprawdę chcesz obalić
+system, musisz wyraźnie postawić się na zewnątrz i~przeciwko samemu systemowi. 
+
+ 
+A ponieważ rewolucja jest konieczna i~skoro jakkolwiek by na to nie spojrzeć, problem zostanie rozwiązany tylko przez
+rewolucję, czy nie sądzisz, że powinniśmy od teraz przygotowywać się duchowo i~materialnie, zamiast oszukiwać masy i~dawać im nadzieję? móc wyzwolić się bez ofiar i~krwawych walk. 
+
+
+
+
+ 
+\noindent LUIGI: W~porządku. Załóżmy, że masz rację i~że rewolucja jest nieunikniona. Jest wielu socjalistów, którzy mówią to
+samo. Ale zawsze będzie konieczne ustanowienie nowego rządu do kierowania i~organizowania rewolucji. 
+
+
+
+
+ 
+\noindent GIORGIO: Dlaczego? Jeśli wśród mas nie będzie wystarczającej liczby rewolucjonistów, pracowników fizycznych i~niefizycznych, zdolnych do zaspokojenia potrzeb walki i~życia, rewolucja nie zostanie dokonana, a jeśli zostanie
+dokonana, nie zatriumfuje. A jeśli istnieje wystarczająca liczba, do czego służy rząd, jeśli nie do sparaliżowania
+powszechnej inicjatywy iw istocie do zdławienia samej rewolucji. 
+
+ 
+Co właściwie może zrobić rząd parlamentarny lub dyktatorski? 
+
+ 
+Musi przede wszystkim obmyślać i~zapewnić sobie własne istnienie jako rząd, innymi słowy stworzyć siłę zbrojną, aby
+bronić się przed swoimi przeciwnikami i~narzucać własną wolę krnąbrnym; wtedy musiałby się dokształcać, studiować,
+próbować godzić sprzeczne wole i~interesy, a więc ustanawiać prawa\ldots które najprawdopodobniej nikomu się nie
+spodobają. 
+
+ 
+Tymczasem trzeba żyć dalej. Każda nieruchomość \begin{itshape} \end{itshape}\textit{de
+facto} przeszłaby w~ręce robotników, a następnie, ponieważ konieczne jest zaspokojenie codziennych potrzeb, ci sami
+robotnicy musieliby rozwiązywać problemy życia codziennego bez czekania na decyzje rządzących, ci ostatni więc\ldots mogą
+tylko zadeklarować swoją bezużyteczność jako władcy i~wtapiają się w~tłum jako robotnicy. 
+
+ 
+Albo własność pozostałaby w~rękach właścicieli, wtedy oni, trzymając i~rozporządzając bogactwami według własnego
+uznania, pozostaliby prawdziwymi arbitrami życia społecznego,i upewniliby się, że nowy rząd złożony z~socjalistów (nie
+anarchistów, ponieważ anarchiści nie chcą rządzić ani być rządzonymi) albo podporządkuje się życzeniom burżuazji, albo
+zostanie szybko zmieciony. 
+
+ 
+Nie będę się nad tym rozwodzić, bo muszę iść i~nie wiem, kiedy wrócę. Minie trochę czasu, zanim się zobaczymy. 
+
+ 
+Pomyśl o tym, co powiedziałem, mam nadzieję, że kiedy wrócę, znajdę nowego towarzysza. 
+
+ 
+Do widzenia wszystkim. 
+
+
+\tableofcontents
+\end{document}
